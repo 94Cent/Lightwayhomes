@@ -1,12 +1,54 @@
 import React from 'react';
 import Project1 from "../../assets/images/project-1.png";
 import ProjectSm from "../../assets/images/project-1.png";
+import ChevronLeft from "../../assets/icons/chevron-left.png";
+import ChevronRight from "../../assets/icons/chevron-right.png"
+import { Card, CardContent } from "../../component/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../../component/ui/carousel"
+
+// import { Carousel } from "flowbite-react";
 
 function Projects() {
   const ProjectCard = () => (
     <div className="w-full p-4 rounded-t mx-auto">
-      <img src={Project1} alt="Project" className="w-full md:h-80 h-64 object-cover rounded mb-4" />
+      {/* <img src={Project1} alt="Project" className="w-full md:h-80 h-64 object-cover rounded mb-4" />
       <div className="grid grid-cols-4 mx-auto gap-4 w-full md:gap-x-4 gap-x-2 gap-y-2">
+        {Array(4).fill().map((_, index) => (
+          <img key={index} src={ProjectSm} alt="Project Thumbnail" className="w-full md:h-24 h-[75px] object-cover rounded mb-4" />
+        ))}
+      </div> */}
+      <div className=''>
+      {/* <Carousel slide={false} indicators={false}>
+      <img src={Project1} alt="Project" className="w-full md:h-80 h-64 object-cover rounded mb-4" />
+      <img src={Project1} alt="Project" className="w-full md:h-80 h-64 object-cover rounded mb-4" />
+      <img src={Project1} alt="Project" className="w-full md:h-80 h-64 object-cover rounded mb-4" />
+      <img src={Project1} alt="Project" className="w-full md:h-80 h-64 object-cover rounded mb-4" />
+      </Carousel> */}
+      <Carousel className="w-full">
+      <CarouselContent className="bg-transparent">
+        {Array.from({ length: 5 }).map((_, index) => (
+          <CarouselItem className="bg-transparent xl:max-w-[600px] md:max-w-[100%]" key={index}>
+            <div className="p-1">
+              <Card className="bg-transparent max-w-[600px] p-0 border-0 shadow-none">
+                <CardContent className="flex items-center p-0 bg-transparent justify-center">
+                <img src={Project1} alt="Project" className="w-full md:h-80 h-64 object-cover rounded-lg mb-4" />
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious className="z-50 absolute left-[2%]" />
+      <CarouselNext className="z-50 absolute right-[2%]" />
+    </Carousel>
+      </div>
+      <div className="max-w-xl grid grid-cols-4 mx-auto gap-4 w-full md:gap-x-4 gap-x-2 gap-y-2">
         {Array(4).fill().map((_, index) => (
           <img key={index} src={ProjectSm} alt="Project Thumbnail" className="w-full md:h-24 h-[75px] object-cover rounded mb-4" />
         ))}
@@ -43,11 +85,11 @@ function Projects() {
   );
 
   return (
-    <section className="md:py-16 py-8">
-      <div className="container mx-auto text-purple">
+    <section className="py-8">
+      <div className="mx-auto text-purple">
         <h2 className="md:text-3xl text-2xl font-normal my-4 text-center mb-8">Our Projects</h2>
         <ProjectSection />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-auto gap-4 md:w-[80%] w-full gap-x-16 gap-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-auto gap-4 xl:w-[80%] lg:w-[90%] md:w-full w-full gap-x-16 gap-y-4">
           {Array(4).fill().map((_, index) => (
             <ProjectCard key={index} />
           ))}
