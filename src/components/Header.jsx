@@ -1,16 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import CustomNavLink from './CustomNavLink';
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuViewport,
   
 } from "../component/ui/navigation-menu"
 
@@ -24,12 +21,12 @@ function Header() {
 
   return (
     <header className="bg-white shadow">
-      <div className="container mx-auto px-12 py-4 flex justify-between items-center text-purple">
+      <div className="container mx-auto md:px-12 px-4 py-4 flex justify-between items-center text-purple">
         <div className="text-2xl text-purple">LWH..</div>
         <nav className="space-x-6 ml-2 lg:flex justify-between items-center w-[45%] text-purple hidden">
           <CustomNavLink to="/">Home</CustomNavLink>
           <CustomNavLink to="/about">About</CustomNavLink>
-          <NavLink to="/career">Career</NavLink>
+          <CustomNavLink to="/career">Career</CustomNavLink>
           <NavigationMenu className="flex items-center w-56">
   <NavigationMenuList className="">
     <NavigationMenuItem className="">

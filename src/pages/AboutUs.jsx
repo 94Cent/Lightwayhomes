@@ -1,3 +1,4 @@
+import Appreciation from "../components/about/Appreciation"
 import AboutHero from "../components/about/AboutHero"
 import CoreTeam from "../components/about/CoreTeam"
 import CoreValues from "../components/about/CoreValues"
@@ -13,6 +14,7 @@ const AboutUs=()=>{
             <Vision/>
             <CoreValues/>
             <CoreTeam/>
+            <Appreciation />
         </section>
     )
 }
