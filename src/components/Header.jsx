@@ -28,7 +28,7 @@ function Header() {
         <div className="text-2xl text-purple">LWH..</div>
         <nav className="space-x-6 ml-2 lg:flex justify-between items-center w-[45%] text-purple hidden">
           <CustomNavLink to="/">Home</CustomNavLink>
-          <NavLink to="/about">About</NavLink>
+          <CustomNavLink to="/about">About</CustomNavLink>
           <NavLink to="/career">Career</NavLink>
           <NavigationMenu className="flex items-center w-56">
   <NavigationMenuList className="">
