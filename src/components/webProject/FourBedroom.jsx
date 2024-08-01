@@ -1,17 +1,17 @@
 import fourBedroom from "../../assets/images/4-bedroom.png"
 const FourBedroomMansionatte=()=>{
     return(
-            <section className="pt-24 md:w-[80%] mx-auto sm:w-full">
+            <section className="pt-24">
               <div className="pb-5">
-                <h2 className="text-purple text-2xl border-b-2 border-b-purple py-6 text-center font-bold">
+                <h2 className="text-purple text-2xl border-b border-b-purple py-6 text-center font-bold">
                 Price and Payment Plan
                 </h2>
               </div>
-              <div className="relative">
+              <div className="relative mt-12 md:w-[70%] mx-auto sm:w-[80%] w-[90%]">
                 <div>
-                  <img className="w-full mx-auto md:h-screen" src={fourBedroom} alt="" />
+                  <img className="w-full mx-auto md:h-[80vh] h-[60vh]" src={fourBedroom} alt="" />
                 </div>
-                <div className="absolute top-6 w-full text-center font-bold text-purple text-2xl">
+                <div className="absolute top-6 w-full text-center font-bold text-purple md:text-2xl text-xl">
                   <h2>4-BEDROOM MANSIONATTE</h2>
                 </div>
                 <div className="flex items-center justify-between absolute bottom-10 w-full px-2">
@@ -23,7 +23,7 @@ const FourBedroomMansionatte=()=>{
                   </button>
                 </div>
               </div>
-              <div className="text-purple border-b border-x border-purple pt-5 text-center">
+              <div className="text-purple border-b border-x md:w-[70%] mx-auto sm:w-[80%] w-[90%] text-center border-purple pt-10">
                 <h2 className="py-6 text-2xl">4-BEDROOM MANSIONATTE</h2>
                 <p className="pb-6 pt-4 text-lg">While you spread the balance over 6 months
                 </p>

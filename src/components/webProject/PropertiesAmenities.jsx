@@ -99,18 +99,18 @@ const PropertiesAmenities = () => {
     return (
       <section className="mt-24">
         <div>
-          <h2 className="text-2xl py-3 border-b border-b-purple font-bold text-center text-purple">
+          <h2 className="text-2xl py-3 font-bold text-center text-purple">
             Properties Amenities
           </h2>
-          <div className="border-purple border-x border-b text-purple py-6">
-            <h5 className="w-[80%] text-center mx-auto">
+          <div className="border-purple lg:w-[70%] md:w-[83%] mx-auto sm:w-[80%] w-[90%] border-x border text-purple md:py-8 py-4">
+            <h5 className="xl:md:w-[40%] md:w-[80%] w-[90%] mx-auto">
               The Naples will be equipped with modern facilities to give you a
               worthwhile living experience.
             </h5>
           </div>
-          <div className="grid sm:grid-cols-3 grid-cols-2 place-items-center gap-y-16 md:w-[60%] md:text-base text-sm w-full mx-auto mt-5 text-purple">
+          <div className="grid sm:grid-cols-3 grid-cols-2 place-items-center gap-y-16 md:text-base text-sm mx-auto text-purple md:w-[83%] sm:w-[80%] w-[90%]">
             {amenities.map((amenty) => (
-              <div className="border border-purple text-center px-1 sm:w-48 w-[88%] justify-center h-44 flex flex-col items-center">
+              <div className="border border-purple text-center px-1 sm:w-48 w-[90%] justify-center h-44 flex flex-col items-center">
                 {amenty.svg}
                 <div className="pt-6">{amenty.text}</div>
               </div>

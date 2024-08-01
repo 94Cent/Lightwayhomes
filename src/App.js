@@ -6,6 +6,9 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact"
 import AboutUs from "./pages/AboutUs";
 import Careers from "./pages/Careers";
+import WebProjectPage from "./pages/WebProjectPage";
+import data from "./data.json"
+
 
 
 function App() {
@@ -17,6 +20,7 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/career" element={<Careers />} />
+        <Route path="/projects/:name" element={<WebProjectPage projects={data.projects} />} />
       </Routes>
       <Footer />
     </div>

@@ -1,26 +1,24 @@
-const BuildingInsight = () => {
-    return (
-      <section className="flex flex-col gap-y-20 items-center justify-center">
-        {/* Youtube iframe */}
-        <div></div>
-        {/* Text */}
-        <div className="text-purple text-center">
-          <h2 className="text-2xl pb-10">
-            A CAPTIVATING AND LUXURIOUS LIFESTYLE!!!!
-          </h2>
-          <p className=" w-[90%] mx-auto first-letter:text-2xl first-letter:text-purple first-letter:font-medium">
-            The Roman height is a premium residential development tailored towards
-            meeting modern day living with contemporary architecture. The
-            development consists of exquisitely designed 4-bedroom terrace.
-            Townhouses with BQ, 1, 2 and 3-Bedroom maisonettes located in a
-            secured and fully serviced estate. These residential apartments are
-            designed for savvy investors and first time home owners that desires a
-            home in a serene and upgraded environment of Arepo, a suburb of Lagos.
-            If you crave for a captivating apartment and luxurious lifestyle, at a
-            reasonable price, consider investing in The Naples, Arepo.
-          </p>
-        </div>
-      </section>
-    );
-  };
-  export default BuildingInsight;
+const BuildingInsight = ({project}) => {
+  return (
+    <section className="flex flex-col my-12 gap-y-20 items-center justify-center">
+      <div className="bg-white md:rounded-lg rounded overflow-hidden xl:w-[70%] md:w-[80%] w-[90%]">
+        <iframe
+          className="w-full md:h-[480px] h-80"
+          src={project.channelLink}
+          title="YouTube video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+      <div className="text-purple font-medium">
+        <h2 className="text-2xl pb-4 text-center">
+          A CAPTIVATING AND LUXURIOUS LIFESTYLE!!!!
+        </h2>
+        <p className="md:w-[70%] w-[90%] mx-auto first-letter:text-2xl first-letter:text-purple first-letter:font-medium">
+          {project.channelDescription}
+        </p>
+      </div>
+    </section>
+  );
+};
+export default BuildingInsight;

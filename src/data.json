@@ -1,0 +1,76 @@
+{
+  "projects": [
+    {
+      "name": "The Naples",
+      "description": "The Naples Arepo is a premium residential development tailored towards meeting modern day living with contemporary architecture",
+      "image": "/images/contact-hero.png",
+      "channelLink": "https://www.youtube.com/embed/iJ5FZTIvKGA",
+      "channelDescription": "The Naples is a premium residential development tailored towards meeting modern day living with contemporary architecture. The development consists of exquisitely designed 4-bedroom terrace. Townhouses with BQ, 1, 2 and 3-Bedroom maisonettes located in a secured and fully serviced estate. These residential apartments are designed for savvy investors and first time home owners that desires a home in a serene and upgraded environment of Arepo, a suburb of Lagos. If you crave for a captivating apartment and luxurious lifestyle, at a reasonable price, consider investing in The Naples, Arepo.",
+      "exteriorImage": ["/images/exterior-1.png", "/images/exterior-2.png", "/images/floor-plan-2.png"],
+      "exteriorDescription": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
+      "interiorImage": ["/images/interior-1.png", "/images/interior-2.png"],
+      "interiorDescription": "Ample space within each apartment helps guarantee cool interior and a home good for your health. The headroom is high enough to keep the building ventilated, increased perception of space and more natural light. The interior design is flexible, adaptable and caters to your desired lifestyle.",
+      "floorImage": ["/images/floor-plan-1.png", "/images/floor-plan-2.png"],
+      "floorDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
+      "1BedroomImage": ["/images/floor-plan-1.png", "/images/floor-plan-2.png"],
+      "1BedroomDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
+      "4BedroomImage":  ["/images/4-bedroom-2.png", "/images/4-bedroom-1.png"]
+    },
+      {
+        "name": "The Roman Height",
+        "description": "The Roman height Arepo is a premium residential development tailored towards meeting modern day living with contemporary architecture",
+        "image": "/images/contact-hero.png",
+        "channelLink": "https://www.youtube.com/embed/iJ5FZTIvKGA",
+        "channelDescription": "The Roman height is a premium residential development tailored towards meeting modern day living with contemporary architecture. The development consists of exquisitely designed 4-bedroom terrace. Townhouses with BQ, 1, 2 and 3-Bedroom maisonettes located in a secured and fully serviced estate. These residential apartments are designed for savvy investors and first time home owners that desires a home in a serene and upgraded environment of Arepo, a suburb of Lagos. If you crave for a captivating apartment and luxurious lifestyle, at a reasonable price, consider investing in The Naples, Arepo.",
+        "exteriorImage": ["/images/exterior-2.png", "/images/exterior-1.png"],
+        "exteriorDescription": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
+        "interiorImage": ["/images/interior-2.png", "/images/interior-1.png"],
+        "interiorDescription": "Ample space within each apartment helps guarantee cool interior and a home good for your health. The headroom is high enough to keep the building ventilated, increased perception of space and more natural light. The interior design is flexible, adaptable and caters to your desired lifestyle.",
+        "floorImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
+        "floorDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
+        "1BedroomImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
+        "1BedroomDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
+        "4BedroomImage": ["/images/4-bedroom-2.png", "/images/4-bedroom-1.png"]
+      },
+      {
+        "name": "The Novara Court",
+        "description": "The Novara Court Arepo is a premium residential development tailored towards meeting modern day living with contemporary architecture",
+        "image": "/images/contact-hero.png",
+        "channelLink": "https://www.youtube.com/embed/iJ5FZTIvKGA",
+        "channelDescription": "Novara Court is a premium residential development tailored towards meeting modern day living with contemporary architecture. The development consists of exquisitely designed 4-bedroom terrace. Townhouses with BQ, 1, 2 and 3-Bedroom maisonettes located in a secured and fully serviced estate. These residential apartments are designed for savvy investors and first time home owners that desires a home in a serene and upgraded environment of Arepo, a suburb of Lagos. If you crave for a captivating apartment and luxurious lifestyle, at a reasonable price, consider investing in The Naples, Arepo.",
+        "exteriorImage": ["/images/exterior-2.png", "/images/exterior-1.png"],
+        "exteriorDescription": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
+        "interiorImage": ["/images/interior-2.png", "/images/interior-1.png"],
+        "interiorDescription": "Ample space within each apartment helps guarantee cool interior and a home good for your health. The headroom is high enough to keep the building ventilated, increased perception of space and more natural light. The interior design is flexible, adaptable and caters to your desired lifestyle.",
+        "floorImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
+        "floorDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
+        "1BedroomImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
+        "1BedroomDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
+        "4BedroomImage": ["/images/4-bedroom-2.png", "/images/4-bedroom-1.png"]
+      }
+    
+  ],
+  "updates": [
+    {
+      "title": "The Naples Update",
+      "content": "The Naples has received new amenities including a state-of-the-art gym and a rooftop pool.",
+      "image": "./images/updates/the-naples-update.jpg"
+    },
+    {
+      "title": "The Roman Height Update",
+      "content": "The Roman Height has been upgraded with a new security system and enhanced landscaping.",
+      "image": "./images/updates/the-roman-height-update.jpg"
+    },
+    {
+      "title": "Novara Court Update",
+      "content": "Novara Court is undergoing major renovations to improve the living experience for residents.",
+      "image": "./images/updates/novara-court-update.jpg"
+    }
+  ],
+  "contacts": {
+    "phone": "+2348057615213",
+    "email": "info@lwh.com",
+    "address": "123 Main Street, Lagos, Nigeria",
+    "image": "./images/contact.jpg"
+  }
+}
