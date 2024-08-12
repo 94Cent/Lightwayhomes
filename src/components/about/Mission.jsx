@@ -31,7 +31,7 @@ const Mission = () => {
 const Vision = () => {
     return (
       <section className="my-12 container">
-        <h2 className="text-purple w-full py-6 border-b-purple border-b text-2xl font-medium text-center">
+        <h2 className="text-purple w-full py-6 border-b-purple border-b text-3xl font-medium text-center">
           Our Vision
         </h2>
         <div className="flex flex-wrap items-center justify-center gap-x-24 gap-y-16 mt-20">

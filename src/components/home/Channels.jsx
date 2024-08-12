@@ -9,7 +9,7 @@ function Channels() {
           <div className="bg-white md:rounded-lg rounded overflow-hidden shadow-lg">
             <iframe 
               className="w-full md:h-96 h-64"
-              src="https://www.youtube.com/embed/iJ5FZTIvKGA" 
+              src="https://www.youtube.com/embed/Fy9W1zkfk1Q" 
               title="YouTube video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen
@@ -18,7 +18,7 @@ function Channels() {
           <div className="bg-white md:rounded-lg rounded overflow-hidden shadow-lg">
             <iframe 
               className="w-full md:h-96 h-64"
-              src="https://www.youtube.com/embed/QTAxXh84sQI" 
+              src="https://www.youtube.com/embed/53H6giagV3Q" 
               title="YouTube video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen

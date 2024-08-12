@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './SliderCard.css';
-const ProjectSlider = ({images}) => {
+const ProjectSlider = ({images, texts}) => {
     const [currentImage, setCurrentImage] = useState(0);
   const [prevImage, setPrevImage] = useState(null);
 
@@ -16,6 +16,7 @@ const ProjectSlider = ({images}) => {
   return (
     <div className="relative slider-container lg:h-[520px] h-[400px]">
         {images.map((image, index) => (
+          <>
           <img
             key={index}
             src={image}
@@ -24,7 +25,13 @@ const ProjectSlider = ({images}) => {
               index === prevImage ? 'prev' : ''
             }`}
           />
+          </>
         ))}
+        {texts && texts[currentImage] && (
+              <div className="absolute top-6 right-5 text-purple sm:text-2xl text-lg">
+                <h2>{texts[currentImage]}</h2>
+              </div>
+            )}
         <button
           onClick={prevImageHandler}
           className="absolute top-1/2 transform -translate-y-1/2 left-0 size-9 bg-purple text-2xl font-light text-white rounded-full"

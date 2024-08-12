@@ -1,0 +1,33 @@
+/* Hide default Slick arrows */
+.slick-prev, .slick-next {
+    display: none !important;
+  }
+  
+  /* Style custom arrows */
+  .custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+    display: none; /* Hide by default */
+  }
+  
+  .custom-arrow-next {
+    right: 10px;
+  }
+  
+  .custom-arrow-prev {
+    left: 10px;
+  }
+  
+  /* Show arrows on hover */
+  .group:hover .custom-arrow {
+    display: block;
+  }
+  
+  .custom-arrow svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  

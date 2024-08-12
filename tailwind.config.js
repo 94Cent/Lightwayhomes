@@ -3,10 +3,10 @@ const flowbite = require("flowbite-react/tailwind");
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -33,15 +33,15 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage: {
-                'custom-hero': "url('/src/assets/images/hero.png')",
-                'contact-hero': "url('/src/assets/images/contact-hero.png')",
-               },
-               colors: {
-                        purple: '#800080',
-                        customLightPurple: '#D6BCFA',
-                        customDarkPurple: '#4C2889',
-                        customGray: '#E2E8F0',
-                      },
+        "custom-hero": "url('/src/assets/images/hero.png')",
+        "contact-hero": "url('/src/assets/images/contact-hero.png')",
+      },
+      colors: {
+        purple: "#800080",
+        customLightPurple: "#D6BCFA",
+        customDarkPurple: "#4C2889",
+        customGray: "#E2E8F0",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -58,9 +58,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), flowbite.plugin(),],
-}
-
-
-
-
+  plugins: [require("tailwindcss-animate"), flowbite.plugin()],
+};

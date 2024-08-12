@@ -97,7 +97,7 @@ const PropertiesAmenities = () => {
       },
     ];
     return (
-      <section className="mt-24">
+      <section className="md:mt-24 mt-8">
         <div>
           <h2 className="text-2xl py-3 font-bold text-center text-purple">
             Properties Amenities
