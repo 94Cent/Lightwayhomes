@@ -7,7 +7,7 @@ const CustomNavLink = ({ to, children, className, ...props }) => {
       to={to}
       {...props}
       className={({ isActive }) =>
-        `text-purple ${className} ${isActive ? 'font-bold' : 'font-normal'}`
+        `text-purple hover:bg-purple hover:text-white ${className} ${isActive ? 'font-bold lg:bg-transparent lg:text-purple bg-purple text-white' : 'font-normal'}`
       }
     >
       {children}

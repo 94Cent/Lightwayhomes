@@ -3,10 +3,14 @@
     {
       "name": "The Naples",
       "description": "The Naples Arepo is a premium residential development tailored towards meeting modern day living with contemporary architecture",
-      "image": "/images/contact-hero.png",
-      "channelLink": "https://www.youtube.com/embed/iJ5FZTIvKGA",
+      "image": "/images/naples-hero-home.jpg",
+      "channelLink": "https://www.youtube.com/embed/Fy9W1zkfk1Q?si=x7Xe1qmY5PxTc7Xj",
       "channelDescription": "The Naples is a premium residential development tailored towards meeting modern day living with contemporary architecture. The development consists of exquisitely designed 4-bedroom terrace. Townhouses with BQ, 1, 2 and 3-Bedroom maisonettes located in a secured and fully serviced estate. These residential apartments are designed for savvy investors and first time home owners that desires a home in a serene and upgraded environment of Arepo, a suburb of Lagos. If you crave for a captivating apartment and luxurious lifestyle, at a reasonable price, consider investing in The Naples, Arepo.",
-      "exteriorImage": ["/images/exterior-1.png", "/images/exterior-2.png", "/images/floor-plan-2.png"],
+      "exteriorImage": [
+        "/images/exterior-1.png",
+        "/images/exterior-2.png",
+        "/images/floor-plan-2.png"
+      ],
       "exteriorDescription": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
       "interiorImage": ["/images/interior-1.png", "/images/interior-2.png"],
       "interiorDescription": "Ample space within each apartment helps guarantee cool interior and a home good for your health. The headroom is high enough to keep the building ventilated, increased perception of space and more natural light. The interior design is flexible, adaptable and caters to your desired lifestyle.",
@@ -14,205 +18,295 @@
       "floorDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
       "1BedroomImage": ["/images/floor-plan-1.png", "/images/floor-plan-2.png"],
       "1BedroomDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
-      "4BedroomImage":  ["/images/4-bedroom-2.png", "/images/4-bedroom-1.png"]
+      "4BedroomImage": ["/images/4-bedroom-2.png", "/images/4-bedroom-1.png"]
     },
-      {
-        "name": "The Roman Height",
-        "description": "The Roman height Arepo is a premium residential development tailored towards meeting modern day living with contemporary architecture",
-        "image": "/images/contact-hero.png",
-        "channelLink": "https://www.youtube.com/embed/iJ5FZTIvKGA",
-        "channelDescription": "The Roman height is a premium residential development tailored towards meeting modern day living with contemporary architecture. The development consists of exquisitely designed 4-bedroom terrace. Townhouses with BQ, 1, 2 and 3-Bedroom maisonettes located in a secured and fully serviced estate. These residential apartments are designed for savvy investors and first time home owners that desires a home in a serene and upgraded environment of Arepo, a suburb of Lagos. If you crave for a captivating apartment and luxurious lifestyle, at a reasonable price, consider investing in The Naples, Arepo.",
-        "exteriorImage": ["/images/exterior-2.png", "/images/exterior-1.png"],
-        "exteriorDescription": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
-        "interiorImage": ["/images/interior-2.png", "/images/interior-1.png"],
-        "interiorDescription": "Ample space within each apartment helps guarantee cool interior and a home good for your health. The headroom is high enough to keep the building ventilated, increased perception of space and more natural light. The interior design is flexible, adaptable and caters to your desired lifestyle.",
-        "floorImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
-        "floorDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
-        "1BedroomImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
-        "1BedroomDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
-        "4BedroomImage": ["/images/4-bedroom-2.png", "/images/4-bedroom-1.png"]
-      },
-      {
-        "name": "The Novara Court",
-        "description": "The Novara Court Arepo is a premium residential development tailored towards meeting modern day living with contemporary architecture",
-        "image": "/images/contact-hero.png",
-        "channelLink": "https://www.youtube.com/embed/iJ5FZTIvKGA",
-        "channelDescription": "Novara Court is a premium residential development tailored towards meeting modern day living with contemporary architecture. The development consists of exquisitely designed 4-bedroom terrace. Townhouses with BQ, 1, 2 and 3-Bedroom maisonettes located in a secured and fully serviced estate. These residential apartments are designed for savvy investors and first time home owners that desires a home in a serene and upgraded environment of Arepo, a suburb of Lagos. If you crave for a captivating apartment and luxurious lifestyle, at a reasonable price, consider investing in The Naples, Arepo.",
-        "exteriorImage": ["/images/exterior-2.png", "/images/exterior-1.png"],
-        "exteriorDescription": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
-        "interiorImage": ["/images/interior-2.png", "/images/interior-1.png"],
-        "interiorDescription": "Ample space within each apartment helps guarantee cool interior and a home good for your health. The headroom is high enough to keep the building ventilated, increased perception of space and more natural light. The interior design is flexible, adaptable and caters to your desired lifestyle.",
-        "floorImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
-        "floorDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
-        "1BedroomImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
-        "1BedroomDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
-        "4BedroomImage": ["/images/4-bedroom-2.png", "/images/4-bedroom-1.png"]
-      }
-    
+    {
+      "name": "The Roman Height",
+      "description": "The Roman height Arepo is a premium residential development tailored towards meeting modern day living with contemporary architecture",
+      "image": "/images/roman-height-home-hero.jpg",
+      "channelLink": "https://www.youtube.com/embed/5zmJe6FRd8s?si=z0bR3vittPjy31po",
+      "channelDescription": "The Roman height is a premium residential development tailored towards meeting modern day living with contemporary architecture. The development consists of exquisitely designed 4-bedroom terrace. Townhouses with BQ, 1, 2 and 3-Bedroom maisonettes located in a secured and fully serviced estate. These residential apartments are designed for savvy investors and first time home owners that desires a home in a serene and upgraded environment of Arepo, a suburb of Lagos. If you crave for a captivating apartment and luxurious lifestyle, at a reasonable price, consider investing in The Naples, Arepo.",
+      "exteriorImage": ["/images/exterior-2.png", "/images/exterior-1.png"],
+      "exteriorDescription": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
+      "interiorImage": ["/images/interior-2.png", "/images/interior-1.png"],
+      "interiorDescription": "Ample space within each apartment helps guarantee cool interior and a home good for your health. The headroom is high enough to keep the building ventilated, increased perception of space and more natural light. The interior design is flexible, adaptable and caters to your desired lifestyle.",
+      "floorImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
+      "floorDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
+      "1BedroomImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
+      "1BedroomDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
+      "4BedroomImage": ["/images/4-bedroom-2.png", "/images/4-bedroom-1.png"]
+    },
+    {
+      "name": "The Novara Court",
+      "description": "The Novara Court Arepo is a premium residential development tailored towards meeting modern day living with contemporary architecture",
+      "image": "/images/novara-hero-home.jpg",
+      "channelLink": "https://www.youtube.com/embed/Fy9W1zkfk1Q?si=x7Xe1qmY5PxTc7Xj",
+      "channelDescription": "Novara Court is a premium residential development tailored towards meeting modern day living with contemporary architecture. The development consists of exquisitely designed 4-bedroom terrace. Townhouses with BQ, 1, 2 and 3-Bedroom maisonettes located in a secured and fully serviced estate. These residential apartments are designed for savvy investors and first time home owners that desires a home in a serene and upgraded environment of Arepo, a suburb of Lagos. If you crave for a captivating apartment and luxurious lifestyle, at a reasonable price, consider investing in The Naples, Arepo.",
+      "exteriorImage": ["/images/exterior-2.png", "/images/exterior-1.png"],
+      "exteriorDescription": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
+      "interiorImage": ["/images/interior-2.png", "/images/interior-1.png"],
+      "interiorDescription": "Ample space within each apartment helps guarantee cool interior and a home good for your health. The headroom is high enough to keep the building ventilated, increased perception of space and more natural light. The interior design is flexible, adaptable and caters to your desired lifestyle.",
+      "floorImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
+      "floorDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
+      "1BedroomImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
+      "1BedroomDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
+      "4BedroomImage": ["/images/4-bedroom-2.png", "/images/4-bedroom-1.png"]
+    }
   ],
   "projectsUpdate": [
-  {
-    "name": "The Roman Height",
-    "description": "The Naples Arepo is a premium residential development tailored towards meeting modern day living with contemporary architecture",
-    "projects": [
     {
-      "name": "Palm Estate",
-      "projectSummary": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
-      "exteriorImage": ["/images/exterior-1.png", "/images/exterior-2.png", "/images/floor-plan-2.png"],
-      "text": [ "THE PROPOSED EXTERIOR STRUCTURE","THE PROPOSED INTERIOR STRUCTURE ", "THE PROPOSED FLOOR PLAN STRUCTURE"
+      "name": "The Roman Height",
+      "description": "You can easily go through our work-in-progress and upcoming projects and turn on notification, in order to be notified when a project is completed.",
+      "img": ["/images/naples-update2.jpg", "/images/romanheight-update1.jpg"],
+      "channel": "https://www.youtube.com/embed/5zmJe6FRd8s?si=z0bR3vittPjy31po",
+      "projects": [
+        {
+          "name": "Palm Estate",
+          "projectSummary": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
+          "exteriorImage": [
+            "/images/exterior-1.png",
+            "/images/exterior-2.png",
+            "/images/floor-plan-2.png"
+          ],
+          "text": [
+            "THE PROPOSED EXTERIOR STRUCTURE",
+            "THE PROPOSED INTERIOR STRUCTURE ",
+            "THE PROPOSED FLOOR PLAN STRUCTURE"
+          ],
+          "duration": "1 year 4 months",
+          "engineer": "Julius Berger",
+          "location": "Lagos, ikeja"
+        },
+        {
+          "name": "Redvine mall",
+          "projectSummary": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
+          "exteriorImage": [
+            "/images/exterior-1.png",
+            "/images/exterior-2.png",
+            "/images/floor-plan-2.png"
+          ],
+          "text": [
+            "THE PROPOSED EXTERIOR STRUCTURE",
+            "THE PROPOSED INTERIOR STRUCTURE ",
+            "THE PROPOSED FLOOR PLAN STRUCTURE"
+          ],
+          "duration": "1 year 4 months",
+          "engineer": "Julius Berger",
+          "location": "Lagos, ikeja"
+        },
+        {
+          "name": "Palm Estate",
+          "projectSummary": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
+          "exteriorImage": [
+            "/images/exterior-1.png",
+            "/images/exterior-2.png",
+            "/images/floor-plan-2.png"
+          ],
+          "text": [
+            "THE PROPOSED EXTERIOR STRUCTURE",
+            "THE PROPOSED INTERIOR STRUCTURE ",
+            "THE PROPOSED FLOOR PLAN STRUCTURE"
+          ],
+          "duration": "1 year 4 months",
+          "engineer": "Julius Berger",
+          "location": "Lagos, ikeja"
+        }
       ],
-      "duration":"1 year 4 months",
-      "engineer": "Julius Berger",
-      "location": "Lagos, ikeja"
+      "faq": [
+        {
+          "faqTrigger": "What title do you have over Roman Heights?",
+          "faqResponse": "Roman Heights Arepo is covered by a Certificate of Occupancy"
+        },
+        {
+          "faqTrigger": "Are there other charges apart from the purchase price?",
+          "faqResponse": "You will be charged a developmental fee of #2.5Million which covers provision of facilities. Also, a legal fee of 2.5% of the purchase price will be charged each subscriber"
+        },
+        {
+          "faqTrigger": "Will there be facility management services at Roman Heights?",
+          "faqResponse": "Yes. Roman Heights will be a service apartment where comprehensive facility management services will be provided. An annual service charge will be payable by all subscribers which will be used to pay for sundry services e.g. security services, water &amp; waste management, and maintenance of common facilities within the building."
+        },
+        {
+          "faqTrigger": "When will construction start?",
+          "faqResponse": "Construction is scheduled to commence by December, 2023."
+        },
+        {
+          "faqTrigger": "When will the buildings be ready?",
+          "faqResponse": "Roman Heights Arepo is covered by a Certificate of Occupancy"
+        },
+        {
+          "faqTrigger": "What title do you have over Roman Heights?",
+          "faqResponse": "Roman Heights Arepo is covered by a Certificate of Occupancy"
+        }
+      ]
     },
     {
-      "name": "Redvine mall",
-      "projectSummary": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
-      "exteriorImage": ["/images/exterior-1.png", "/images/exterior-2.png", "/images/floor-plan-2.png"],
-      "text": [ "THE PROPOSED EXTERIOR STRUCTURE","THE PROPOSED INTERIOR STRUCTURE ", "THE PROPOSED FLOOR PLAN STRUCTURE"
-      ],
-      "duration":"1 year 4 months",
-      "engineer": "Julius Berger",
-      "location": "Lagos, ikeja"
+      "name": "The Naples",
+      "description": "You can easily go through our work-in-progress and upcoming projects and turn on notification, in order to be notified when a project is completed.",
+      "img": ["/images/naple-update-1.jpg", "/images/naples-update2.jpg"],
+      "channel": "https://www.youtube.com/embed/Fy9W1zkfk1Q?si=x7Xe1qmY5PxTc7Xj",
+      "projects": [
+        {
+          "name": "Palm Estate",
+          "projectSummary": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
+          "exteriorImage": [
+            "/images/exterior-1.png",
+            "/images/exterior-2.png",
+            "/images/floor-plan-2.png"
+          ],
+          "text": [
+            "THE PROPOSED EXTERIOR STRUCTURE",
+            "THE PROPOSED INTERIOR STRUCTURE ",
+            "THE PROPOSED FLOOR PLAN STRUCTURE"
+          ],
+          "duration": "1 year 4 months",
+          "engineer": "Julius Berger",
+          "location": "Lagos, ikeja"
+        },
+        {
+          "name": "Redvine mall",
+          "projectSummary": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
+          "exteriorImage": [
+            "/images/exterior-1.png",
+            "/images/exterior-2.png",
+            "/images/floor-plan-2.png"
+          ],
+          "text": [
+            "THE PROPOSED EXTERIOR STRUCTURE",
+            "THE PROPOSED INTERIOR STRUCTURE ",
+            "THE PROPOSED FLOOR PLAN STRUCTURE"
+          ],
+          "duration": "1 year 4 months",
+          "engineer": "Julius Berger",
+          "location": "Lagos, ikeja"
+        },
+        {
+          "name": "Palm Estate",
+          "projectSummary": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
+          "exteriorImage": [
+            "/images/exterior-1.png",
+            "/images/exterior-2.png",
+            "/images/floor-plan-2.png"
+          ],
+          "text": [
+            "THE PROPOSED EXTERIOR STRUCTURE",
+            "THE PROPOSED INTERIOR STRUCTURE ",
+            "THE PROPOSED FLOOR PLAN STRUCTURE"
+          ],
+          "duration": "1 year 4 months",
+          "engineer": "Julius Berger",
+          "location": "Lagos, ikeja"
+        }
+      ]
     },
     {
-      "name": "Palm Estate",
-      "projectSummary": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
-      "exteriorImage": ["/images/exterior-1.png", "/images/exterior-2.png", "/images/floor-plan-2.png"],
-      "text": [ "THE PROPOSED EXTERIOR STRUCTURE","THE PROPOSED INTERIOR STRUCTURE ", "THE PROPOSED FLOOR PLAN STRUCTURE"
-      ],
-      "duration":"1 year 4 months",
-      "engineer": "Julius Berger",
-      "location": "Lagos, ikeja"
+      "name": "The Novara Court",
+      "description": "You can easily go through our work-in-progress and upcoming projects and turn on notification, in order to be notified when a project is completed.",
+      "img": ["/images/novara-hero-home.jpg", "/images/novara-update2.jpg"],
+      "channel": "https://www.youtube.com/embed/Fy9W1zkfk1Q?si=x7Xe1qmY5PxTc7Xj",
+      "projects": [
+        {
+          "name": "Palm Estate",
+          "projectSummary": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
+          "exteriorImage": [
+            "/images/exterior-1.png",
+            "/images/exterior-2.png",
+            "/images/floor-plan-2.png"
+          ],
+          "text": [
+            "THE PROPOSED EXTERIOR STRUCTURE",
+            "THE PROPOSED INTERIOR STRUCTURE ",
+            "THE PROPOSED FLOOR PLAN STRUCTURE"
+          ],
+          "duration": "1 year 4 months",
+          "engineer": "Julius Berger",
+          "location": "Lagos, ikeja"
+        },
+        {
+          "name": "Redvine mall",
+          "projectSummary": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
+          "exteriorImage": [
+            "/images/exterior-1.png",
+            "/images/exterior-2.png",
+            "/images/floor-plan-2.png"
+          ],
+          "text": [
+            "THE PROPOSED EXTERIOR STRUCTURE",
+            "THE PROPOSED INTERIOR STRUCTURE ",
+            "THE PROPOSED FLOOR PLAN STRUCTURE"
+          ],
+          "duration": "1 year 4 months",
+          "engineer": "Julius Berger",
+          "location": "Lagos, ikeja"
+        },
+        {
+          "name": "Palm Estate",
+          "projectSummary": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
+          "exteriorImage": [
+            "/images/exterior-1.png",
+            "/images/exterior-2.png",
+            "/images/floor-plan-2.png"
+          ],
+          "text": [
+            "THE PROPOSED EXTERIOR STRUCTURE",
+            "THE PROPOSED INTERIOR STRUCTURE ",
+            "THE PROPOSED FLOOR PLAN STRUCTURE"
+          ],
+          "duration": "1 year 4 months",
+          "engineer": "Julius Berger",
+          "location": "Lagos, ikeja"
+        }
+      ]
     }
   ],
-  "faq": [
+  "testimonials": [
     {
-      "faqTrigger": "What title do you have over Roman Heights?",
-      "faqResponse": "Roman Heights Arepo is covered by a Certificate of Occupancy"
+      "author": "Bukola Falana",
+      "testimonial": "“The team was not only professional but also friendly and approachable. The day I called was the same day I inspected the site. After my due diligence, I paid for my two-bedroom maisonette, and to my surprise, I got my receipt and contract of sale the same day. ",
+      "testimonial2": "I would highly recommend their services to anyone in need of a trusted and reliable real estate company.",
+      "date": "Monday, September 23, 2017"
     },
     {
-      "faqTrigger": "Are there other charges apart from the purchase price?",
-      "faqResponse": "You will be charged a developmental fee of #2.5Million which covers provision of facilities. Also, a legal fee of 2.5% of the purchase price will be charged each subscriber"
+      "author": "Maryam Abubakar",
+      "testimonial": "“Light Way Homes delivered as promised with my Land and ensured my allocation and documentation were done immediately after my final payment.Thank you for helping me find my dream home. I look forward to working with you again the future.",
+      "date": "Thursday, August 31, 2017"
     },
     {
-      "faqTrigger": "Will there be facility management services at Roman Heights?",
-      "faqResponse": "Yes. Roman Heights will be a service apartment where comprehensive facility management services will be provided. An annual service charge will be payable by all subscribers which will be used to pay for sundry services e.g. security services, water &amp; waste management, and maintenance of common facilities within the building."
+      "author": "Bukola Falana",
+      "testimonial": "“The team was not only professional but also friendly and approachable. The day I called was the same day I inspected the site. After my due diligence, I paid for my two-bedroom maisonette, and to my surprise, I got my receipt and contract of sale the same day. ",
+      "testimonial2": "I would highly recommend their services to anyone in need of a trusted and reliable real estate company.",
+      "date": "Monday, September 23, 2017"
     },
     {
-      "faqTrigger": "When will construction start?",
-      "faqResponse": "Construction is scheduled to commence by December, 2023."
-    },
-    {
-      "faqTrigger": "When will the buildings be ready?",
-      "faqResponse": "Roman Heights Arepo is covered by a Certificate of Occupancy"
-    },
-    {
-      "faqTrigger": "What title do you have over Roman Heights?",
-      "faqResponse": "Roman Heights Arepo is covered by a Certificate of Occupancy"
+      "author": "Maryam Abubakar",
+      "testimonial": "“Light Way Homes delivered as promised with my Land and ensured my allocation and documentation were done immediately after my final payment.Thank you for helping me find my dream home. I look forward to working with you again the future.",
+      "date": "Thursday, August 31, 2017"
     }
-  ]
-},
-{
-  "name": "The Naples",
-  "description": "The Naples Arepo is a premium residential development tailored towards meeting modern day living with contemporary architecture",
-  "projects": [
-  {
-    "name": "Palm Estate",
-    "projectSummary": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
-    "exteriorImage": ["/images/exterior-1.png", "/images/exterior-2.png", "/images/floor-plan-2.png"],
-    "text": [ "THE PROPOSED EXTERIOR STRUCTURE","THE PROPOSED INTERIOR STRUCTURE ", "THE PROPOSED FLOOR PLAN STRUCTURE"
-      ],
-    "duration":"1 year 4 months",
-    "engineer": "Julius Berger",
-    "location": "Lagos, ikeja"
-  },
-  {
-    "name": "Redvine mall",
-    "projectSummary": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
-    "exteriorImage": ["/images/exterior-1.png", "/images/exterior-2.png", "/images/floor-plan-2.png"],
-    "text": [ "THE PROPOSED EXTERIOR STRUCTURE","THE PROPOSED INTERIOR STRUCTURE ", "THE PROPOSED FLOOR PLAN STRUCTURE"
-      ],
-    "duration":"1 year 4 months",
-    "engineer": "Julius Berger",
-    "location": "Lagos, ikeja"
-  },
-  {
-    "name": "Palm Estate",
-    "projectSummary": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
-    "exteriorImage": ["/images/exterior-1.png", "/images/exterior-2.png", "/images/floor-plan-2.png"],
-    "text": [ "THE PROPOSED EXTERIOR STRUCTURE","THE PROPOSED INTERIOR STRUCTURE ", "THE PROPOSED FLOOR PLAN STRUCTURE"
-      ],
-    "duration":"1 year 4 months",
-    "engineer": "Julius Berger",
-    "location": "Lagos, ikeja"
-  }
-]
-},
-{
-  "name": "The Novara Court",
-  "description": "The Naples Arepo is a premium residential development tailored towards meeting modern day living with contemporary architecture",
-  "projects": [
-  {
-    "name": "Palm Estate",
-    "projectSummary": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
-    "exteriorImage": ["/images/exterior-1.png", "/images/exterior-2.png", "/images/floor-plan-2.png"],
-    "text": [ "THE PROPOSED EXTERIOR STRUCTURE","THE PROPOSED INTERIOR STRUCTURE ", "THE PROPOSED FLOOR PLAN STRUCTURE"
-      ],
-    "duration":"1 year 4 months",
-    "engineer": "Julius Berger",
-    "location": "Lagos, ikeja"
-  },
-  {
-    "name": "Redvine mall",
-    "projectSummary": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
-    "exteriorImage": ["/images/exterior-1.png", "/images/exterior-2.png", "/images/floor-plan-2.png"],
-    "text": [ "THE PROPOSED EXTERIOR STRUCTURE","THE PROPOSED INTERIOR STRUCTURE ", "THE PROPOSED FLOOR PLAN STRUCTURE"
-      ],
-    "duration":"1 year 4 months",
-    "engineer": "Julius Berger",
-    "location": "Lagos, ikeja"
-  },
-  {
-    "name": "Palm Estate",
-    "projectSummary": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
-    "exteriorImage": ["/images/exterior-1.png", "/images/exterior-2.png", "/images/floor-plan-2.png"],
-    "text": [ "THE PROPOSED EXTERIOR STRUCTURE","THE PROPOSED INTERIOR STRUCTURE ", "THE PROPOSED FLOOR PLAN STRUCTURE"
-      ],
-    "duration":"1 year 4 months",
-    "engineer": "Julius Berger",
-    "location": "Lagos, ikeja"
-  }
-]
-}
-
-],
-"testimonials": [
-  {
-    "author": "Bukola Falana",
-    "testimonial": "“The team was not only professional but also friendly and approachable. The day I called was the same day I inspected the site. After my due diligence, I paid for my two-bedroom maisonette, and to my surprise, I got my receipt and contract of sale the same day. ",
-    "testimonial2": "I would highly recommend their services to anyone in need of a trusted and reliable real estate company.",
-    "date": "Monday, September 23, 2017"
-  },
-  {
-    "author": "Maryam Abubakar",
-    "testimonial": "“Light Way Homes delivered as promised with my Land and ensured my allocation and documentation were done immediately after my final payment.Thank you for helping me find my dream home. I look forward to working with you again the future.",
-    "date": "Thursday, August 31, 2017"
-  },
-  {
-    "author": "Bukola Falana",
-    "testimonial": "“The team was not only professional but also friendly and approachable. The day I called was the same day I inspected the site. After my due diligence, I paid for my two-bedroom maisonette, and to my surprise, I got my receipt and contract of sale the same day. ",
-    "testimonial2": "I would highly recommend their services to anyone in need of a trusted and reliable real estate company.",
-    "date": "Monday, September 23, 2017"
-  },
-  {
-    "author": "Maryam Abubakar",
-    "testimonial": "“Light Way Homes delivered as promised with my Land and ensured my allocation and documentation were done immediately after my final payment.Thank you for helping me find my dream home. I look forward to working with you again the future.",
-    "date": "Thursday, August 31, 2017"
-  }
-
-],
-"contacts": {
+  ],
+  "teams": [
+    {
+      "name": "Funmilayo Adesanya",
+      "img": "/images/funmi3.jpg",
+      "role": "MD/CEO",
+      "about": "Funmi Adesanya is the Managing Director/CEO of Light Way Homes and Investment Limited. She is a highly accomplished and visionary professional with over fourteen years of experience in the real estate industry. She has a broad range of expertise managing real estate investments, properties development and management. She possesses a diverse skill set, specializing in sales and marketing, corporate/administrative functions, construction, training, capacity building, coaching, and mentoring. Funmi’s exceptional leadership skills and strategic mindset have propelled her to the forefront of the industry, making her a trusted name in the market.",
+      "about2": "Funmi has successfully navigated the ever-changing landscape of the real estate sector. Her extensive knowledge and proficiency in market trends, property valuation, and investment analysis have consistently delivered outstanding results. She has demonstrated exceptional negotiation skills and a keen eye for identifying lucrative investment opportunities, enabling her to optimize returns for clients and stakeholders.",
+      "about3": "Funmi's integrity and ability to foster strong relationships with clients, contractors, and key industry professionals have been instrumental in building Light Way Homes into a reputable brand. She has been involved in numerous high-profile real estate projects, ranging from residential and commercial developments to large-scale infrastructure projects. Her hands-on approach, combined with her comprehensive understanding of the construction process, ensures that projects are executed to the highest standards of quality and efficiency. Funmi holds a Bachelor's degree in Political Science from the University of Ilorin and continues to enhance her knowledge through various professional development programs and certifications, staying up-to-date with the latest industry advancements and best practices. With her vast experience, comprehensive knowledge, integrity, and exceptional leadership skills, Funmi has established herself as a prominent figure in the real estate industry. Her unwavering commitment to excellence, combined with her strategic vision, continues to drive her company's success and position it as a market leader."
+    },
+    {
+      "name": "Olumide Olujuyigbe",
+      "img": "/images/olumide2.jpg",
+      "role": "Chartered Architect",
+      "about": "Arc Olumide Olujuyigbe is a well trained chartered architect with over 10 years working experience in designs construction and project management . He is a masters degree holder from Obafemi Awolowo University and certified member of the Nigerian Institute of Architects as well as Architect Regularization Council of Nigeria.",
+      "about2": "Architect Olumide prides himself in the effective use of space to creating master piece designs that are both functional and aesthetically appealing. Proficient in the use of revenant softwares, he has good knowledge of BIM standards and green architecture. He is happily married and a father of two."
+    },
+    {
+      "name": "Agboola O.Osunbanjo",
+      "img": "/images/Engr-Biyi2.jpg",
+      "role": "Civil/Structural Engineer",
+      "about": "Engr. Osunbanjo is the principal partner of DAOTEC ENGINEERS, a firm that specializes in Civil/ Structural engineering, Construction and Consultancy. He possesses a B. Sc (Hons.), degree of Obafemi Awolowo University, Ile-Ife in Civil Engineering. In addition, he is Corporate Member of Nigeria Society of Engineers (MNSE), and a registered Member, Council for the Regulation of Engineering in Nigeria (COREN). He has over thirty years of experience in Design, Construction and Management of Civil, Geological and Building Engineering Structures.",
+      "about2": "He has been involved in various projects, which include Grenadines Homes Arepo, Lekki-Ajah, Makun-Shagamu and Katampe Abuja, His Glory Estate Ikorodu among others."
+    }
+  ],
+  "contacts": {
     "phone": "+2348057615213",
     "email": "info@lwh.com",
     "address": "123 Main Street, Lagos, Nigeria",

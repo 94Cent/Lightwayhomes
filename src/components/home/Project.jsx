@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import '../SliderCard.css';
+import React, { useState } from "react";
+import "../SliderCard.css";
 import ProjectSm from "../../assets/images/project-1-sm.png";
 import ProjectImg from "../../assets/images/project-1.png";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "component/ui/tabs";
 
 const ProjectCard = ({ images }) => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -32,9 +33,9 @@ const ProjectCard = ({ images }) => {
             key={index}
             src={image}
             alt="Project"
-            className={`slider-image object-cover rounded-t-lg h-full ${index === currentImage ? 'active' : ''} ${
-              index === prevImage ? 'prev' : ''
-            }`}
+            className={`slider-image object-cover rounded-t-lg h-full ${
+              index === currentImage ? "active" : ""
+            } ${index === prevImage ? "prev" : ""}`}
           />
         ))}
         <button
@@ -58,7 +59,7 @@ const ProjectCard = ({ images }) => {
             src={ProjectSm}
             alt="Project Thumbnail"
             className={`w-full md:h-24 h-[75px] object-cover cursor-pointer rounded ${
-              index === currentImage ? 'border-2 border-purple' : ''
+              index === currentImage ? "border-2 border-purple" : ""
             }`}
           />
         ))}
@@ -87,33 +88,71 @@ const ProjectCard = ({ images }) => {
   );
 };
 
-const ProjectSection = () => (
-  <div className="flex md:flex-row flex-col justify-between w-[90%] gap-y-4 mx-auto md:my-12 my-6">
-    <button className="px-4 md:w-[30%] py-4 bg-purple text-white text-xl">Ongoing Projects</button>
-    <button className="px-4 py-4 md:w-[30%] border border-purple text-xl">Completed Projects</button>
-    <button className="px-4 py-4 border border-purple md:w-[30%] text-xl">Upcoming Projects</button>
-  </div>
+const ProjectSection = ({ activeIndex, setActiveIndex }) => (
+  <TabsList className="relative z-50 flex md:flex-row flex-col justify-between w-[90%] gap-y-4 mx-auto md:my-12 my-6 mb-44 bg-transparent">
+    <TabsTrigger
+      value="ongoing Projects"
+      className={`px-4 md:w-[30%] w-full py-4 text-xl ${
+        activeIndex === "ongoing" ? "bg-purple text-white" : "border-purple border hover:bg-purple hover:text-white text-black"
+      }`}
+      onClick={() => setActiveIndex("ongoing")}
+    >
+      Ongoing Projects
+    </TabsTrigger>
+    <TabsTrigger
+      value="completed Projects"
+      className={`px-4 py-4 md:w-[30%] w-full text-xl ${
+        activeIndex === "completed" ? "bg-purple text-white " : "border-purple border hover:bg-purple hover:text-white text-black"
+      }`}
+      onClick={() => setActiveIndex("completed")}
+    >
+      Completed Projects
+    </TabsTrigger>
+    <TabsTrigger
+      value="upcoming Projects"
+      className={`px-4 py-4 md:w-[30%] w-full text-xl ${
+        activeIndex === "upcoming" ? "bg-purple text-white" : "border-purple border hover:bg-purple hover:text-white text-black"
+      }`}
+      onClick={() => setActiveIndex("upcoming")}
+    >
+      Upcoming Projects
+    </TabsTrigger>
+  </TabsList>
 );
 
 const Projects = () => {
-  const images = [
-    ProjectImg,
-    ProjectImg,
-    ProjectImg,
-    ProjectImg,
-  ];
+  const images = [ProjectImg, ProjectImg, ProjectImg, ProjectImg];
+  const [activeIndex, setActiveIndex] = useState("ongoing");
 
   return (
     <section className="py-8">
-      <div className="mx-auto text-purple">
-        <h2 className="md:text-3xl text-2xl font-normal my-4 text-center mb-8">Our Projects</h2>
-        <ProjectSection />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-auto gap-4 xl:w-[80%] lg:w-[90%] md:w-full w-full xl:gap-x-16 lg:gap-x-10 gap-x-6 gap-y-4">
-          {Array(4).fill().map((_, index) => (
-            <ProjectCard key={index} images={images} />
-          ))}
-        </div>
-      </div>
+      <Tabs
+        value={activeIndex}
+        onValueChange={setActiveIndex}
+        defaultValue="ongoing Projects"
+        className="mx-auto text-purple"
+      >
+        <h2 className="md:text-3xl text-2xl font-normal my-4 text-center mb-8">
+          Our Projects
+        </h2>
+        <ProjectSection activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
+        <TabsContent
+          value="ongoing"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-auto gap-4 xl:w-[80%] lg:w-[90%] md:w-full w-full xl:gap-x-16 lg:gap-x-10 gap-x-6 gap-y-4"
+        >
+          {Array(4)
+            .fill()
+            .map((_, index) => (
+              <ProjectCard key={index} images={images} />
+            ))}
+        </TabsContent>
+        <TabsContent value="completed">
+          <h2>Completed projects coming soon</h2>
+        </TabsContent>
+        <TabsContent value="upcoming">
+          <h2>Upcoming projects coming soon</h2>
+        </TabsContent>
+      </Tabs>
     </section>
   );
 };

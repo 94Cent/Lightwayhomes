@@ -5,7 +5,7 @@ import CoreValues from "../components/about/CoreValues"
 import {Mission, Vision } from "../components/about/Mission"
 import TheOrganisation from "../components/about/TheOrganization"
 
-const AboutUs=({testimonials})=>{
+const AboutUs=({testimonials, teams})=>{
     return(
         <section>
             <AboutHero/>
@@ -13,7 +13,7 @@ const AboutUs=({testimonials})=>{
             <Mission/>
             <Vision/>
             <CoreValues/>
-            <CoreTeam/>
+            <CoreTeam teams={teams} />
             <Appreciation testimonial={testimonials} />
         </section>
     )

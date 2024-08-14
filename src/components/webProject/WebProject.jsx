@@ -4,9 +4,9 @@ const WebProject = ({project}) => {
     <section className="w-full overflow-hidden">
       <div className="h-full relative">
         <div>
-          <img className="h-48 sm:h-full" src={romanHeightImg} alt="" />
+          <img className="w-full md:h-[90vh] h-[400px] object-cover zoom-in-150" src={project.image} alt="" />
         </div>
-        <div className="text-center text-white text-4xl z-10 h-full flex items-center absolute top-0 font-medium w-full">
+        <div className="md:px-12 px-6 absolute md:h-[90vh] h-full inset-0 bg-black bg-opacity-50 flex flex-col text-white text-center text-6xl font-bold justify-center items-center">
           <h2 className="w-full">{project.name}</h2>
         </div>
       </div>

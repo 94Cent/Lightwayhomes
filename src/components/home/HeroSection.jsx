@@ -88,17 +88,16 @@ const HeroCarousel = () => {
   };
 
   return (
-    <div className="relative w-full h-screen overflow-hidden group">
+    <div className="relative w-full md:h-screen h-[400px] overflow-hidden group">
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div key={index} className="w-full h-full flex-shrink-0 relative">
-            <img src={slide.image} alt={`Slide ${index}`} className="w-full h-screen object-cover" />
-            <div className="md:px-12 px-6 absolute h-screen inset-0 bg-black bg-opacity-50 flex flex-col justify-center text-white">
-              <div className="lg:w-[70%] md:w-[80%] w-full">
+            <img src={slide.image} alt={`Slide ${index}`} className="w-full md:h-screen h-[400px] object-cover" />
+            <div className="md:px-12 px-6 absolute md:h-screen h-full inset-0 bg-black bg-opacity-50 flex flex-col text-white">
+              <div className="lg:w-[70%] md:w-[80%] w-full h-full flex flex-col justify-center">
               {slide.heading && <h1 className="md:text-4xl text-3xl lg:text-6xl font-bold mb-4 text-start">{slide.heading}</h1>}
               {slide.caption && <p className="text-lg md:text-2xl mb-8">{slide.caption}</p>}
-              {slide.label && <Link to={`/projects/${slide.label}`} className="bg-purple text-white font-bold py-2.5 px-5 ">
-
+              {slide.label && <Link to={`/projects/${slide.label}`} className="w-36 h-12 bg-purple text-white font-bold py-2.5 px-5 text-center ">
                 Learn More
               </Link>}
               </div>
