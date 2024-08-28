@@ -93,7 +93,7 @@ const ProjectCard = ({ images, project }) => {
             <div className="bg-white text-purple p-4 flex items-center justify-center">
               <button className="font-normal">Pre-Order</button>
             </div>
-            <Link to={getProjectLink(project.project_name_id)}>
+            <Link to={`projects${getProjectLink(project.project_name_id)}`}>
               <div className="bg-purple-700 text-center col-span-2 p-4">
                 <button className="font-normal">Learn More</button>
               </div>
@@ -193,7 +193,7 @@ const Projects = () => {
               <ProjectCard key={index} images={images} project={project} />
             ))
           ) : (
-            <h2 className="text-center text-xl text-gray-500">
+            <h2 className="text-center text-xl text-gray-500 font-bold w-[80vw] mx-auto flex justify-center items-center">
               No ongoing projects available.
             </h2>
           )}
@@ -207,7 +207,7 @@ const Projects = () => {
               <ProjectCard key={index} images={images} project={project} />
             ))
           ) : (
-            <h2 className="text-center text-xl text-gray-500">
+            <h2 className="text-center text-xl text-gray-500 font-bold w-[90vw] mx-auto flex justify-center items-center">
               No completed projects available.
             </h2>
           )}
@@ -220,7 +220,7 @@ const Projects = () => {
               <ProjectCard key={index} images={images} project={project} />
             ))
           ) : (
-            <h2 className="text-center text-xl text-gray-500">
+            <h2 className="text-center text-xl text-gray-500 font-bold w-[90vw] mx-auto flex justify-center items-center">
               No upcoming projects available.
             </h2>
           )}

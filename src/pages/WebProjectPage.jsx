@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import BuildingInsight from "../components/webProject/BuildingInsight";
 import Exterior from "../components/webProject/Exterior";
 import FAQ from "../components/webProject/Faq";
-import FloorStructure from "../components/webProject/FloorStructure";
 import FourBedroomMansionatte from "../components/webProject/FourBedroom";
 import Interior from "../components/webProject//Interior";
 import OneBedroomMansionatte from "../components/webProject/OneBedroom";
@@ -59,13 +58,13 @@ const WebProjectPage = ({ projects }) => {
       <div>
         <WebProject project={project} projectCat={projectCat} />
         <BuildingInsight project={project} />
-        <Exterior project={project} />
-        <Interior project={project} />
-        <FloorStructure project={project} />
+      {project.name  !== "The Novara Courts" && <Exterior project={project} />}
+      {project.name  !== "The Novara Courts" && <Interior project={project} />}
+      {/* {project.name  !== "The Novara Courts" &&  <FloorStructure project={project} />} */}
         <OneBedroomMansionatte project={project} projectCat={projectCat} />
         <PropertiesAmenities project={project} />
         <FourBedroomMansionatte project={project} projectCat={projectCat} />
-        <FAQ />
+        <FAQ faqs={project?.faq} />
         <ProjectBronchure project={project} />
         <ProjectUpdate project={project} />
         <ProjectMap project={project} />

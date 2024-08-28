@@ -14,7 +14,7 @@ export const AddProject = ({ isOpen, setIsOpen }) => {
     status: "in progress",
     address: "",
     nameID: "",
-    engineer: "lightway homes",
+    engineer: "Light Way Homes",
     pictures: [],
   });
 
@@ -71,6 +71,7 @@ export const AddProject = ({ isOpen, setIsOpen }) => {
     } finally {
       setIsLoading(false); // Stop loading
       setIsOpen(false);
+      window.location.reload();
     }
   };
 
@@ -114,7 +115,7 @@ export const AddProject = ({ isOpen, setIsOpen }) => {
                 <input
                   id="pricing"
                   name="pricing"
-                  type="number"
+                  type="text"
                   value={formData.pricing}
                   onChange={handleChange}
                   placeholder="62,000,000"

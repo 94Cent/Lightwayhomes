@@ -2,17 +2,21 @@
   "projects": [
     {
       "name": "The Naples",
-      "description": "The Naples Arepo is a premium residential development tailored towards meeting modern day living with contemporary architecture",
+      "description": "The Naples Arepo is a premium residential development tailored towards meeting modern day living with contemporary architecture. The development consists of exquisitely designed 4-bedroom terrace townhouses with BQ and service plot located in a secured and fully serviced community within Voera Estate. These residential apartments are designed for savvy investors and first time home owners that desires a home in a serene and upgraded environment at reasonable prices.",
       "image": "/images/naples-hero-home.jpg",
       "channelLink": "https://www.youtube.com/embed/Fy9W1zkfk1Q?si=x7Xe1qmY5PxTc7Xj",
       "channelDescription": "The Naples is a premium residential development tailored towards meeting modern day living with contemporary architecture. The development consists of exquisitely designed 4-bedroom terrace. Townhouses with BQ, 1, 2 and 3-Bedroom maisonettes located in a secured and fully serviced estate. These residential apartments are designed for savvy investors and first time home owners that desires a home in a serene and upgraded environment of Arepo, a suburb of Lagos. If you crave for a captivating apartment and luxurious lifestyle, at a reasonable price, consider investing in The Naples, Arepo.",
       "exteriorImage": [
-        "/images/exterior-1.png",
-        "/images/exterior-2.png",
-        "/images/floor-plan-2.png"
+        "/images/naples-hero-home.jpg",
+        "/images/bedroom-1.jpg",
+        "/images/bedroom-2.jpg"
       ],
       "exteriorDescription": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
-      "interiorImage": ["/images/interior-1.png", "/images/interior-2.png"],
+      "interiorImage": [
+        "/images/exterior-2.png",
+        "/images/interior-2.png",
+        "/images/exterior-1.png"
+      ],
       "interiorDescription": "Ample space within each apartment helps guarantee cool interior and a home good for your health. The headroom is high enough to keep the building ventilated, increased perception of space and more natural light. The interior design is flexible, adaptable and caters to your desired lifestyle.",
       "floorImage": ["/images/floor-plan-1.png", "/images/floor-plan-2.png"],
       "floorDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
@@ -34,18 +38,61 @@
           "image": "/images/bedroom-3.jpg"
         }
       ],
-      "location": "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3963.358648198447!2d3.3588741736503676!3d6.602274922245651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sNo.%204%2C%20Oyewo%20close%2C%20Clay%20Busstop%2C%20Juli%20Estate%2C%20off%20Kudirat%20Abiola%20way%2C%20Oregun%2C%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1722947283803!5m2!1sen!2sng",
-      "brochure": "https://drive.google.com/uc?export=download&id=1NtaVSxyfRdPtAKjBNY2lKkgokhUXj0UA"
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.597249293163!2d3.4227809736510784!3d6.696700921129148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b952a352bedbf%3A0xcbcff4a59dadf00c!2sArepo%20Rd%2C%20Pakuro%20121101%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1724867307342!5m2!1sen!2sng",
+      "brochure": "https://drive.google.com/uc?export=download&id=1NtaVSxyfRdPtAKjBNY2lKkgokhUXj0UA",
+      "faq": [
+        {
+          "question": "What title do you have over the houses?",
+          "answer": "Our houses are covered by a Certificate of Occupancy."
+        },
+        {
+          "question": "Are there other charges apart from the purchase price?",
+          "answer": "You will be charged a developmental fee of 7.5% of the purchase price which covers provision of facilities. Also, a legal fee of 3% of the purchase price will be charged to each subscriber."
+        },
+        {
+          "question": "Will there be facility management services at your estate?",
+          "answer": "Yes. There will be comprehensive facility management services provided at our estates. An annual service charge will be payable by all subscribers, which will be used to pay for sundry services such as security services, water and waste management, and maintenance of common infrastructure within the estate."
+        },
+        {
+          "question": "How long can I spread my payment for my dream home?",
+          "answer": "You can spread your payment over a maximum period of 24 months. However, you need to deposit a minimum of 10% of the purchase price."
+        },
+        {
+          "question": "On completion, can you carry out property rental management on my property?",
+          "answer": "Yes. We offer property management services which help relieve owners of all the stress involved in managing their properties and guarantee them annual rental income."
+        },
+        {
+          "question": "Will my house be fully finished?",
+          "answer": "The houses on sale will not be fully finished but semi-finished. This is to allow each subscriber to finish their unit to their own taste. However, we can undertake to complete the building at the request of the subscriber. Our semi-finished units have all external works fully completed with windows and external doors fitted, coupled with electrical wirings."
+        },
+        {
+          "question": "What are not included in the semi-finished units?",
+          "answer": "All internal woodwork, internal doors, sanitary or electrical fittings, burglaries, tiling, POP screening, and internal painting works are all excluded."
+        },
+        {
+          "question": "What if I want to buy a fully finished unit?",
+          "answer": "A fully finished unit will be available on demand. Reach out to our marketing team for the price of your desired unit based on your choice of interior materials and fittings."
+        }
+      ]
     },
     {
       "name": "The Roman Heights",
-      "description": "The Roman height Arepo is a premium residential development tailored towards meeting modern day living with contemporary architecture",
+      "description": "Soaring to New Heights! Roman Heights by Lightway Homes is the ultimate high-rise luxury masterpiece in Arepo; the first of its kind. Get ready to elevate your lifestyle with a rooftop lounge, refreshing swimming pool, convenient lifts, modern office space, a standard gym, uninterrupted power supply, convenient parking and incredible common areas.Roman Heights comprises of two units of 3-bedroom apartments and eight units of 2bedroom maisonettes. It is a deluxe yet affordable home being developed to give you an ecstatic experience you crave for in your dream home.Secure your unit now and experience the pinnacle of luxury living! ",
       "image": "/images/roman-height-home-hero.jpg",
       "channelLink": "https://www.youtube.com/embed/5zmJe6FRd8s?si=z0bR3vittPjy31po",
       "channelDescription": "The Roman height is a premium residential development tailored towards meeting modern day living with contemporary architecture. The development consists of exquisitely designed 4-bedroom terrace. Townhouses with BQ, 1, 2 and 3-Bedroom maisonettes located in a secured and fully serviced estate. These residential apartments are designed for savvy investors and first time home owners that desires a home in a serene and upgraded environment of Arepo, a suburb of Lagos. If you crave for a captivating apartment and luxurious lifestyle, at a reasonable price, consider investing in The Naples, Arepo.",
-      "exteriorImage": ["/images/exterior-2.png", "/images/exterior-1.png"],
+      "exteriorImage": [
+        "/images/roman-1.jpg",
+        "/images/roman-2.jpg",
+        "/images/roman-3.jpg"
+      ],
       "exteriorDescription": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
-      "interiorImage": ["/images/interior-2.png", "/images/interior-1.png"],
+      "interiorImage": [
+        "/images/interior-2.png",
+        "/images/floor-plan-2.png",
+        "/images/exterior-2.png",
+        "/images/1-bedroom-2.png"
+      ],
       "interiorDescription": "Ample space within each apartment helps guarantee cool interior and a home good for your health. The headroom is high enough to keep the building ventilated, increased perception of space and more natural light. The interior design is flexible, adaptable and caters to your desired lifestyle.",
       "floorImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
       "floorDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
@@ -67,16 +114,53 @@
           "image": "/images/bedroom-3.jpg"
         }
       ],
-      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.597249413219!2d3.420742467853562!3d6.6967009063447245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b952a352bedbf%3A0xcbcff4a59dadf00c!2sArepo%20Rd%2C%20Pakuro%20121101%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1724257908597!5m2!1sen!2sng",
-      "brochure": "https://drive.google.com/uc?export=download&id=17D1th1yfBVSK6j7XxsABek-04OevB-Qo"
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.597249293163!2d3.4227809736510784!3d6.696700921129148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b952a352bedbf%3A0xcbcff4a59dadf00c!2sArepo%20Rd%2C%20Pakuro%20121101%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1724867307342!5m2!1sen!2sng",
+      "brochure": "https://drive.google.com/uc?export=download&id=17D1th1yfBVSK6j7XxsABek-04OevB-Qo",
+      "faq": [
+        {
+          "question": "What title do you have over the houses?",
+          "answer": "Our houses are covered by a Certificate of Occupancy."
+        },
+        {
+          "question": "Are there other charges apart from the purchase price?",
+          "answer": "You will be charged a developmental fee of 7.5% of the purchase price which covers provision of facilities. Also, a legal fee of 3% of the purchase price will be charged to each subscriber."
+        },
+        {
+          "question": "Will there be facility management services at your estate?",
+          "answer": "Yes. There will be comprehensive facility management services provided at our estates. An annual service charge will be payable by all subscribers, which will be used to pay for sundry services such as security services, water and waste management, and maintenance of common infrastructure within the estate."
+        },
+        {
+          "question": "How long can I spread my payment for my dream home?",
+          "answer": "You can spread your payment over a maximum period of 24 months. However, you need to deposit a minimum of 10% of the purchase price."
+        },
+        {
+          "question": "On completion, can you carry out property rental management on my property?",
+          "answer": "Yes. We offer property management services which help relieve owners of all the stress involved in managing their properties and guarantee them annual rental income."
+        },
+        {
+          "question": "Will my house be fully finished?",
+          "answer": "The houses on sale will not be fully finished but semi-finished. This is to allow each subscriber to finish their unit to their own taste. However, we can undertake to complete the building at the request of the subscriber. Our semi-finished units have all external works fully completed with windows and external doors fitted, coupled with electrical wirings."
+        },
+        {
+          "question": "What are not included in the semi-finished units?",
+          "answer": "All internal woodwork, internal doors, sanitary or electrical fittings, burglaries, tiling, POP screening, and internal painting works are all excluded."
+        },
+        {
+          "question": "What if I want to buy a fully finished unit?",
+          "answer": "A fully finished unit will be available on demand. Reach out to our marketing team for the price of your desired unit based on your choice of interior materials and fittings."
+        }
+      ]
     },
     {
       "name": "The Novara Courts",
-      "description": "The Novara Court Arepo is a premium residential development tailored towards meeting modern day living with contemporary architecture",
+      "description": "Novara Court is the newest mixed residential development from the stable of Light Way Homes. Novara Court is beautifully crafted with particular emphasis on attractive and eco-friendly environment where your dream of a livable and ecstatic atmosphere becomes realizable. Enjoy the wellness, flora, fauna, and the green living that comes with Novara Court, where you experience nature at its best. Novara Court is nestled within a well-developed environment and surrounded by different residential estates as well as various industrial facilities, amongst which are Nestlé, Olam Group, International Breweries PLC and Apple and Pears Ltd",
       "image": "/images/novara-hero-home.jpg",
       "channelLink": "https://www.youtube.com/embed/Fy9W1zkfk1Q?si=x7Xe1qmY5PxTc7Xj",
       "channelDescription": "Novara Court is a premium residential development tailored towards meeting modern day living with contemporary architecture. The development consists of exquisitely designed 4-bedroom terrace. Townhouses with BQ, 1, 2 and 3-Bedroom maisonettes located in a secured and fully serviced estate. These residential apartments are designed for savvy investors and first time home owners that desires a home in a serene and upgraded environment of Arepo, a suburb of Lagos. If you crave for a captivating apartment and luxurious lifestyle, at a reasonable price, consider investing in The Naples, Arepo.",
-      "exteriorImage": ["/images/exterior-2.png", "/images/exterior-1.png"],
+      "exteriorImage": [
+        "/images/novara-hero-home.jpg",
+        "/images/novara-update2.jpg"
+      ],
       "exteriorDescription": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
       "interiorImage": ["/images/interior-2.png", "/images/interior-1.png"],
       "interiorDescription": "Ample space within each apartment helps guarantee cool interior and a home good for your health. The headroom is high enough to keep the building ventilated, increased perception of space and more natural light. The interior design is flexible, adaptable and caters to your desired lifestyle.",
@@ -101,7 +185,42 @@
           "image": "/images/bedroom-3.jpg"
         }
       ],
-      "location": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3958.2689383452816!2d3.398149!3d7.21013!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a484ac71ecf79%3A0x2d872ba18b5aabde!2sAwo%20110121%2C%20Ogun%20State%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1724259597952!5m2!1sen!2sus"
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31693.448863943897!2d3.3998108130278952!3d6.808589715665262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bc0b91a29fa81%3A0xe92e570709273423!2sMowe%2C%20Loburo%20110113%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1724867645620!5m2!1sen!2sng",
+      "brochure": "https://drive.google.com/uc?export=download&id=1NuDXFSE4F6oUYPLM7umzXMCceCsAzbxN",
+      "faq": [
+        {
+          "question": "Where is Novara Court located?",
+          "answer": "Novara Court is situated at Oriilemo, Mowe Ofada, by Interchange, Obafemi-Owode Local Government Area."
+        },
+        {
+          "question": "Who is the developer of Novara Court?",
+          "answer": "LightWay Homes and Investment Limited."
+        },
+        {
+          "question": "What title is on Novara Court?",
+          "answer": "Novara Court is covered by a registered survey."
+        },
+        {
+          "question": "Are there any encumbrances on the land?",
+          "answer": "No, the land is free from every known government acquisition or interest and no adverse claimant on the land."
+        },
+        {
+          "question": "What is the size of the plot?",
+          "answer": "300sqm, 500sqm, and 600sqm respectively."
+        },
+        {
+          "question": "Are there other charges aside from the price of the plot?",
+          "answer": "Yes, the charges include:\n- Developmental fee: N2,500/sqm\n- Deed of Assignment: N200,000\n- Survey and Allocation: N300,000"
+        },
+        {
+          "question": "How long can I spread my payment for my dream plot?",
+          "answer": "You can spread your payment over a maximum period of 24 months. However, you need to deposit a minimum of N200,000 while the balance can be spread over the number of months you decide to choose.\nNote: Payment spread between 0 - 6 months is interest-free, while payment spread beyond 6 months attracts a 10% interest charge per annum."
+        },
+        {
+          "question": "What document will I get after the initial deposit?",
+          "answer": "Offer letter, receipt of payment, and contract of sales agreement."
+        }
+      ]
     }
   ],
   "projectsUpdate": [
@@ -110,7 +229,7 @@
       "description": "You can easily go through our work-in-progress and upcoming projects and turn on notification, in order to be notified when a project is completed.",
       "img": ["/images/naples-update2.jpg", "/images/romanheight-update1.jpg"],
       "channel": "https://www.youtube.com/embed/5zmJe6FRd8s?si=z0bR3vittPjy31po",
-      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.597249413219!2d3.420742467853562!3d6.6967009063447245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b952a352bedbf%3A0xcbcff4a59dadf00c!2sArepo%20Rd%2C%20Pakuro%20121101%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1724257908597!5m2!1sen!2sng",
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.597249293163!2d3.4227809736510784!3d6.696700921129148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b952a352bedbf%3A0xcbcff4a59dadf00c!2sArepo%20Rd%2C%20Pakuro%20121101%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1724867307342!5m2!1sen!2sng",
       "brochure": "https://drive.google.com/uc?export=download&id=17D1th1yfBVSK6j7XxsABek-04OevB-Qo",
       "projects": [
         {
@@ -167,28 +286,36 @@
       ],
       "faq": [
         {
-          "faqTrigger": "What title do you have over Roman Heights?",
-          "faqResponse": "Roman Heights Arepo is covered by a Certificate of Occupancy"
+          "question": "What title do you have over the houses?",
+          "answer": "Our houses are covered by a Certificate of Occupancy."
         },
         {
-          "faqTrigger": "Are there other charges apart from the purchase price?",
-          "faqResponse": "You will be charged a developmental fee of #2.5Million which covers provision of facilities. Also, a legal fee of 2.5% of the purchase price will be charged each subscriber"
+          "question": "Are there other charges apart from the purchase price?",
+          "answer": "You will be charged a developmental fee of 7.5% of the purchase price which covers provision of facilities. Also, a legal fee of 3% of the purchase price will be charged to each subscriber."
         },
         {
-          "faqTrigger": "Will there be facility management services at Roman Heights?",
-          "faqResponse": "Yes. Roman Heights will be a service apartment where comprehensive facility management services will be provided. An annual service charge will be payable by all subscribers which will be used to pay for sundry services e.g. security services, water &amp; waste management, and maintenance of common facilities within the building."
+          "question": "Will there be facility management services at your estate?",
+          "answer": "Yes. There will be comprehensive facility management services provided at our estates. An annual service charge will be payable by all subscribers, which will be used to pay for sundry services such as security services, water and waste management, and maintenance of common infrastructure within the estate."
         },
         {
-          "faqTrigger": "When will construction start?",
-          "faqResponse": "Construction is scheduled to commence by December, 2023."
+          "question": "How long can I spread my payment for my dream home?",
+          "answer": "You can spread your payment over a maximum period of 24 months. However, you need to deposit a minimum of 10% of the purchase price."
         },
         {
-          "faqTrigger": "When will the buildings be ready?",
-          "faqResponse": "Roman Heights Arepo is covered by a Certificate of Occupancy"
+          "question": "On completion, can you carry out property rental management on my property?",
+          "answer": "Yes. We offer property management services which help relieve owners of all the stress involved in managing their properties and guarantee them annual rental income."
         },
         {
-          "faqTrigger": "What title do you have over Roman Heights?",
-          "faqResponse": "Roman Heights Arepo is covered by a Certificate of Occupancy"
+          "question": "Will my house be fully finished?",
+          "answer": "The houses on sale will not be fully finished but semi-finished. This is to allow each subscriber to finish their unit to their own taste. However, we can undertake to complete the building at the request of the subscriber. Our semi-finished units have all external works fully completed with windows and external doors fitted, coupled with electrical wirings."
+        },
+        {
+          "question": "What are not included in the semi-finished units?",
+          "answer": "All internal woodwork, internal doors, sanitary or electrical fittings, burglaries, tiling, POP screening, and internal painting works are all excluded."
+        },
+        {
+          "question": "What if I want to buy a fully finished unit?",
+          "answer": "A fully finished unit will be available on demand. Reach out to our marketing team for the price of your desired unit based on your choice of interior materials and fittings."
         }
       ]
     },
@@ -197,7 +324,7 @@
       "description": "You can easily go through our work-in-progress and upcoming projects and turn on notification, in order to be notified when a project is completed.",
       "img": ["/images/naple-update-1.jpg", "/images/naples-update2.jpg"],
       "channel": "https://www.youtube.com/embed/Fy9W1zkfk1Q?si=x7Xe1qmY5PxTc7Xj",
-      "location": "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3963.358648198447!2d3.3588741736503676!3d6.602274922245651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sNo.%204%2C%20Oyewo%20close%2C%20Clay%20Busstop%2C%20Juli%20Estate%2C%20off%20Kudirat%20Abiola%20way%2C%20Oregun%2C%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1722947283803!5m2!1sen!2sng",
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.597249293163!2d3.4227809736510784!3d6.696700921129148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b952a352bedbf%3A0xcbcff4a59dadf00c!2sArepo%20Rd%2C%20Pakuro%20121101%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1724867307342!5m2!1sen!2sng",
       "brochure": "https://drive.google.com/uc?export=download&id=1NtaVSxyfRdPtAKjBNY2lKkgokhUXj0UA",
       "projects": [
         {
@@ -251,6 +378,40 @@
           "engineer": "Julius Berger",
           "location": "Lagos, ikeja"
         }
+      ],
+      "faq": [
+        {
+          "question": "What title do you have over the houses?",
+          "answer": "Our houses are covered by a Certificate of Occupancy."
+        },
+        {
+          "question": "Are there other charges apart from the purchase price?",
+          "answer": "You will be charged a developmental fee of 7.5% of the purchase price which covers provision of facilities. Also, a legal fee of 3% of the purchase price will be charged to each subscriber."
+        },
+        {
+          "question": "Will there be facility management services at your estate?",
+          "answer": "Yes. There will be comprehensive facility management services provided at our estates. An annual service charge will be payable by all subscribers, which will be used to pay for sundry services such as security services, water and waste management, and maintenance of common infrastructure within the estate."
+        },
+        {
+          "question": "How long can I spread my payment for my dream home?",
+          "answer": "You can spread your payment over a maximum period of 24 months. However, you need to deposit a minimum of 10% of the purchase price."
+        },
+        {
+          "question": "On completion, can you carry out property rental management on my property?",
+          "answer": "Yes. We offer property management services which help relieve owners of all the stress involved in managing their properties and guarantee them annual rental income."
+        },
+        {
+          "question": "Will my house be fully finished?",
+          "answer": "The houses on sale will not be fully finished but semi-finished. This is to allow each subscriber to finish their unit to their own taste. However, we can undertake to complete the building at the request of the subscriber. Our semi-finished units have all external works fully completed with windows and external doors fitted, coupled with electrical wirings."
+        },
+        {
+          "question": "What are not included in the semi-finished units?",
+          "answer": "All internal woodwork, internal doors, sanitary or electrical fittings, burglaries, tiling, POP screening, and internal painting works are all excluded."
+        },
+        {
+          "question": "What if I want to buy a fully finished unit?",
+          "answer": "A fully finished unit will be available on demand. Reach out to our marketing team for the price of your desired unit based on your choice of interior materials and fittings."
+        }
       ]
     },
     {
@@ -258,7 +419,8 @@
       "description": "You can easily go through our work-in-progress and upcoming projects and turn on notification, in order to be notified when a project is completed.",
       "img": ["/images/novara-hero-home.jpg", "/images/novara-update2.jpg"],
       "channel": "https://www.youtube.com/embed/Fy9W1zkfk1Q?si=x7Xe1qmY5PxTc7Xj",
-      "location": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3958.2689383452816!2d3.398149!3d7.21013!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a484ac71ecf79%3A0x2d872ba18b5aabde!2sAwo%20110121%2C%20Ogun%20State%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1724259597952!5m2!1sen!2sus",
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31693.448863943897!2d3.3998108130278952!3d6.808589715665262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bc0b91a29fa81%3A0xe92e570709273423!2sMowe%2C%20Loburo%20110113%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1724867645620!5m2!1sen!2sng",
+      "brochure": "https://drive.google.com/uc?export=download&id=1NuDXFSE4F6oUYPLM7umzXMCceCsAzbxN",
       "projects": [
         {
           "name": "Palm Estate",
@@ -310,6 +472,40 @@
           "duration": "1 year 4 months",
           "engineer": "Julius Berger",
           "location": "Lagos, ikeja"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Where is Novara Court located?",
+          "answer": "Novara Court is situated at Oriilemo, Mowe Ofada, by Interchange, Obafemi-Owode Local Government Area."
+        },
+        {
+          "question": "Who is the developer of Novara Court?",
+          "answer": "LightWay Homes and Investment Limited."
+        },
+        {
+          "question": "What title is on Novara Court?",
+          "answer": "Novara Court is covered by a registered survey."
+        },
+        {
+          "question": "Are there any encumbrances on the land?",
+          "answer": "No, the land is free from every known government acquisition or interest and no adverse claimant on the land."
+        },
+        {
+          "question": "What is the size of the plot?",
+          "answer": "300sqm, 500sqm, and 600sqm respectively."
+        },
+        {
+          "question": "Are there other charges aside from the price of the plot?",
+          "answer": "Yes, the charges include:\n- Developmental fee: N2,500/sqm\n- Deed of Assignment: N200,000\n- Survey and Allocation: N300,000"
+        },
+        {
+          "question": "How long can I spread my payment for my dream plot?",
+          "answer": "You can spread your payment over a maximum period of 24 months. However, you need to deposit a minimum of N200,000 while the balance can be spread over the number of months you decide to choose.\nNote: Payment spread between 0 - 6 months is interest-free, while payment spread beyond 6 months attracts a 10% interest charge per annum."
+        },
+        {
+          "question": "What document will I get after the initial deposit?",
+          "answer": "Offer letter, receipt of payment, and contract of sales agreement."
         }
       ]
     }

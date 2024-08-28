@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "../../component/ui/table";
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 const AdminDashboard = () => {
   const [allSubscriber, setAllSubscriber] = useState([])
@@ -44,7 +43,7 @@ const AdminDashboard = () => {
       const response = await fetch("https://lightwayhomesltd.com/backend/controller/reservation.php?action=getallreservation");
       const data = await response.json();
       setAllReservation(data)
-      setReservations(data.slice(0, 10)); // Display 10 reservations
+      setReservations(data.slice(0, 5)); // Display 10 reservations
     } catch (error) {
       toast.error("Failed to fetch reservations.");
     }
@@ -74,7 +73,7 @@ const AdminDashboard = () => {
       </div>
         <div className="flex-1 bg-white rounded-lg shadow-lg p-6">
         <h2 className="text-xl font-bold text-purple mb-4">Recent Subscribers</h2>
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto overflow-y-auto md:h-[36rem] h-[25rem]">
               <Table className="w-full bg-white">
                 <TableHeader>
                   <TableRow>
@@ -83,7 +82,7 @@ const AdminDashboard = () => {
                     <TableHead>Date Subscribed</TableHead>
                   </TableRow>
                 </TableHeader>
-                <TableBody className="overflow-y-scroll">
+                <TableBody className="">
                   {allSubscriber.map((subscriber, index) => (
                     <TableRow key={subscriber.id} className="text-gray-700">
                       <TableCell>{index + 1}</TableCell>
@@ -99,11 +98,11 @@ const AdminDashboard = () => {
 
         <div className="md:col-span-1 flex flex-col gap-8">
           {/* Subscribers Section */}
-          <div className="bg-white rounded-lg shadow-lg p-6 h-[50%]">
+          <div className="bg-white rounded-lg shadow-lg p-6 min-h-[25rem]">
             
             <h2 className="text-xl font-bold text-purple mb-4">Projects</h2>
           <div className="overflow-x-auto">
-            <Table className="w-full bg-white">
+            <Table className="w-full bg-white h-[90%]">
               <TableHeader>
                 <TableRow>
                   <TableHead>No</TableHead>
@@ -130,7 +129,7 @@ const AdminDashboard = () => {
           </div>
 
           {/* Reservations Section */}
-          <div className="bg-white rounded-lg shadow-lg p-6 h-[50%]">
+          <div className="bg-white rounded-lg shadow-lg p-6 min-h-[25rem]">
             <h2 className="text-xl font-bold text-purple mb-4">Recent Reservations</h2>
             <div className="overflow-x-auto">
               <Table className="w-full bg-white">

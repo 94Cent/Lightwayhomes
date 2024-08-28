@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+
 
 const AdminSignup = () => {
   const [fName, setFname] = useState("");
@@ -36,7 +36,6 @@ const AdminSignup = () => {
       const data = await response.json();
       setIsLoading(false);
       if (data.status === "success") {
-        toast.success("Signup successful. Please login.");
         navigate("/admin/auth/login");
       } else {
         setIsLoading(false);

@@ -71,7 +71,7 @@ const ProjectUpdate = ({ project }) => {
         <h3 className="text-2xl font-medium">Project Update Coming Soon</h3>
       </div>
       <ProjectBronchure project={projectUpdates} />
-      <FAQ />
+      <FAQ faqs={projectUpdates.faq} />
       <ProjectMap project={projectUpdates} />
     </section>
   );

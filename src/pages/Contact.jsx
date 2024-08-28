@@ -121,7 +121,7 @@ function Contact() {
           <div className="flex items-center py-5 space-x-4 md:gap-x-6 gap-x-1 border-b border-purple">
             <div className="text-left w-[100%]">
               <p className="lg:text-lg md:text-base text-sm text-purple">
-                wh.investment@gmail.com info@lightway.com.ng lwh@lightway.com.ng
+              info@lightwayhomesltd.com lwh.investment@gmail.com
               </p>
             </div>
             <img

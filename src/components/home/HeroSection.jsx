@@ -7,8 +7,6 @@ import Hero2 from "../../assets/images/dream-hero-home.jpeg";
 import Hero1 from "../../assets/images/lifestyle-hero-home.jpeg";
 import Hero4 from "../../assets/images/novara-hero-home.jpg";
 import Hero5 from "../../assets/images/roman-height-home-hero.jpg";
-import Hero6 from "../../assets/images/Nairaland-Banner.jpg";
-import Hero7 from "../../assets/images/ambassador.jpg";
 import { Link } from "react-router-dom";
 
 const slides = [
@@ -40,13 +38,6 @@ const slides = [
     caption:
       "Welcome to Roman Heights Where Timeless Beauty Meets Mordern Luxury! ",
     label: "The-Roman-Height",
-  },
-  {
-    image: Hero6,
-  },
-  {
-    image: Hero7,
-    heading: "Meet our Brand Ambassador, Bukola Awoyemi(a.k.a Bukola Arugba)",
   },
 ];
 

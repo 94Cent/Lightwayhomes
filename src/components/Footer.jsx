@@ -125,6 +125,7 @@ function Footer() {
           </a>
         </div>
         <div className="absolute lg:right-20 md:right-8 right-2 md:-mt-20 mt-[560px] z-50">
+          <a href="http://wa.link/a7jepo">
           <img
             src={ChatHero}
             alt="chat"
@@ -135,6 +136,7 @@ function Footer() {
             alt="chat"
             className="h-12 max-w-64 md:hidden block"
           />
+          </a>
         </div>
         <div className="w-full flex flex-wrap justify-between gap-8 text-left border-white border-t md:px-6 px-3 py-8">
           <div>
@@ -148,8 +150,8 @@ function Footer() {
             <h4 className="md:text-xl text-lg font-normal mt-4 md:mb-3 mb-2">
               Our Email
             </h4>
+            <p>info@lightwayhomesltd.com </p>
             <p>lwh.investment@gmail.com</p>
-            <p>lwh@lightway.com.ng</p>
             <h4 className="md:text-xl text-lg font-normal mt-4 md:mb-3 mb-2">
               Our Phone Numbers
             </h4>
@@ -224,11 +226,6 @@ function Footer() {
                   </Link>
                 </li>
               </ul>
-              <div className="mt-16 text-center md:text-left lg:block hidden">
-                <div className="text-white mb-4 font-normal text-5xl ml-4">
-                  <img src={Logo} alt="logo" />
-                </div>
-              </div>
             </div>
           </div>
         </div>

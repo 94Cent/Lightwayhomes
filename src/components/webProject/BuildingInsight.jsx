@@ -14,8 +14,8 @@ const BuildingInsight = ({ project }) => {
         <h2 className="text-2xl pb-4 text-center">
           A CAPTIVATING AND LUXURIOUS LIFESTYLE!!!!
         </h2>
-        <p className="md:w-[70%] w-[90%] mx-auto first-letter:text-2xl first-letter:text-purple first-letter:font-medium md:text-left text-center">
-          {project.channelDescription}
+        <p className="md:w-[80%] w-[90%] mx-auto first-letter:text-2xl first-letter:text-purple first-letter:font-medium md:text-left text-center">
+        {project.description}
         </p>
       </div>
     </section>
