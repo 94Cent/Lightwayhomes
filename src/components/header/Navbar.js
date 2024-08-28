@@ -6,7 +6,7 @@ const Navbar = () => {
   const depthLevel = 0;
 
   return (
-    <nav className="space-x-6 ml-2 lg:flex justify-between items-center w-[55%] text-purple hidden">
+    <nav className="xl:space-x-6 space-x-3 ml-2 lg:flex justify-between items-center xl:w-[55%] text-purple hidden">
       <ul className="flex space-x-4">
         {menuItemsData.map((menu, index) => {
           return <MenuItems items={menu} key={index} depthLevel={depthLevel} />;

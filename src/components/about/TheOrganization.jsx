@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 function TheOrganization() {
   return (
@@ -21,7 +21,7 @@ function TheOrganization() {
         taking into consideration, the financial peculiarity of each customer.
       </p>
       <p>
-      In addition, we offer a path to real estate investment for well-informed
+        In addition, we offer a path to real estate investment for well-informed
         investors seeking high yield properties with good return on investment
         and capital appreciation. We work with a team of qualified and
         well-experienced professionals with decades of practice in civil
@@ -30,7 +30,7 @@ function TheOrganization() {
         management, joint venture development and real estate investment.
       </p>
     </section>
-  )
+  );
 }
 
-export default TheOrganization
+export default TheOrganization;

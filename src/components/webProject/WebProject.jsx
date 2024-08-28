@@ -1,4 +1,3 @@
-import romanHeightImg from "../../assets/images/contact-hero.png";
 const WebProject = ({project}) => {
   return (
     <section className="w-full overflow-hidden">

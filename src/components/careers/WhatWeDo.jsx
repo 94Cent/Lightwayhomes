@@ -7,13 +7,17 @@ const WhatWeDo = () => {
       <div className="md:absolute md:pb-0 pb-4 top-0 md:left-4 md:border-0 border-b border-purple">
         <div className="w-[1px] hidden md:block h-[32rem] bg-purple left-28 relative"></div>
         <div className="md:w-[27rem] relative md:h-[17rem]">
-          <img className="w-full h-full md:block hidden" src={excellently} alt="" />
+          <img
+            className="w-full h-full md:block hidden"
+            src={excellently}
+            alt=""
+          />
           <div className="md:absolute top-0 md:text-white text-purple md:px-3 md:text-lg">
             <h3 className="md:py-4 py-2 pb-5 md:px-3 text-2xl font-medium text-center">
               We do it excellently
             </h3>
             <p className="md:text-left text-center">
-            We’re relentless in our drive to understand our users better
+              We’re relentless in our drive to understand our users better
               through data-driven insights, so we can build the most impactful
               financial products. We’re always ready to step-up and challenge
               the status-quo but have the humility to seek feedback, listen and
@@ -26,9 +30,13 @@ const WhatWeDo = () => {
       <div className="md:absolute md:pb-0 pb-4 flex flex-col items-center top-0 left-96 md:border-0 border-b border-purple">
         <div className="w-[1px] hidden md:block h-48 bg-purple"></div>
         <div className="md:w-[26rem] md:text-lg relative md:h-60">
-          <img className="w-full h-full md:block hidden" src={together} alt="" />
+          <img
+            className="w-full h-full md:block hidden"
+            src={together}
+            alt=""
+          />
           <div className="md:absolute top-0 px-3 md:text-white text-purple md:px-3 md:text-lg">
-          <h3 className="py-4 pb-5 md:px-3 text-2xl font-medium text-center">
+            <h3 className="py-4 pb-5 md:px-3 text-2xl font-medium text-center">
               We do it together
             </h3>
             <p className="md:text-left text-center">
@@ -42,8 +50,10 @@ const WhatWeDo = () => {
       </div>
       <div className="md:absolute md:pb-0 pb-4 top-0 right-4 md:border-0 border-b border-purple">
         <div className="w-[1px] hidden md:block h-[53rem] bg-purple relative left-80"></div>
-        <div className="relative md:w-[28rem] md:h-72
-        ">
+        <div
+          className="relative md:w-[28rem] md:h-72
+        "
+        >
           <img className="w-full h-full md:block hidden" src={clients} alt="" />
           <div className="md:absolute top-0 md:text-white text-purple md:px-3 md:text-lg">
             <h3 className="py-4 pb-5 md:px-3 text-2xl font-medium text-center">
@@ -57,9 +67,9 @@ const WhatWeDo = () => {
               create outstanding service experiences.
             </p>
           </div>
-          </div>
+        </div>
       </div>
     </section>
-     );
-    };
-    export default WhatWeDo;
+  );
+};
+export default WhatWeDo;

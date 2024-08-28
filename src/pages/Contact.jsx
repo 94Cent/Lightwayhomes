@@ -9,12 +9,12 @@ import {
   faTwitter,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { Checkbox } from "../component/ui/checkbox";
+// import { Checkbox } from "../component/ui/checkbox";
 
 function Contact() {
   return (
     <div className="">
-      <section className="relative xl:h-screen md:h-[90vh] h-[60vh] bg-contact-hero bg-cover bg-center">
+      <section className="relative lg:h-[80vh] md:h-[65vh] h-80 bg-contact-hero bg-cover bg-center">
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white lg:w-[65%] md:w-[75%] w-90%">
             <h1 className="md:text-5xl text-4xl font-semibold">Contact Us</h1>
@@ -22,7 +22,7 @@ function Contact() {
         </div>
       </section>
 
-      <div className="bg-white md:p-8 p-4 mb-8 lg:mt-12 md:mt-8 mt-4">
+      {/* <div className="bg-white md:p-8 p-4 mb-8 lg:mt-12 md:mt-8 mt-4">
         <h3 className="md:text-4xl text-3xl text-center mb-4 text-purple">
           Let's get in touch
         </h3>
@@ -98,10 +98,10 @@ function Contact() {
             </button>
           </div>
         </form>
-      </div>
+      </div> */}
 
       <div className="mb-8 lg:w-[55%] md:w-[65%] w-[90%] mx-auto">
-        <h3 className="md:text-4xl text-3xl text-center mb-4 text-purple">
+        <h3 className="md:text-4xl text-3xl text-center my-4 text-purple">
           You can reach us via
         </h3>
         <div className="flex flex-col space-y-4 md:mt-16 mt-8">
@@ -137,34 +137,43 @@ function Contact() {
               className="lg:h-16 lg:w-16 md:w-12 md:h-12 w-8 h-8"
             />
             <div className="text-purple">
-              <p>+234555566666</p>
-              <p>+234789896554</p>
+              <p>+2348075161213</p>
+              <p>+2348038034077</p>
             </div>
           </div>
           <div className="flex items-center space-x-4">
             <div className="flex mx-auto items-center justify-center space-x-6 md:mb-2 mb-8 mt-12">
-              <a href="#" className="text-purple">
+              <a
+                href="https://www.youtube.com/@LightWay_Homes"
+                className="text-purple"
+              >
                 <FontAwesomeIcon
                   icon={faYoutube}
                   size="2x"
                   className="size-7"
                 />
               </a>
-              <a href="#" className="text-purple">
+              <a
+                href="https://web.facebook.com/investproperty.int"
+                className="text-purple"
+              >
                 <FontAwesomeIcon
                   icon={faFacebook}
                   size="1x"
                   className="size-7"
                 />
               </a>
-              <a href="#" className="text-purple">
+              <a href="/" className="text-purple">
                 <FontAwesomeIcon
                   icon={faTwitter}
                   size="1x"
                   className="size-7"
                 />
               </a>
-              <a href="#" className="text-purple">
+              <a
+                href="https://www.linkedin.com/company/light-way-homes-and-investment/"
+                className="text-purple"
+              >
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   size="1x"

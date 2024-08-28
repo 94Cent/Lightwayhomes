@@ -1,11 +1,10 @@
-// MenuItems.js
+import React, { useState, useEffect, useRef } from "react";
+import { NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
-import CustomNavLink from "components/CustomNavLink";
-import { useState, useEffect, useRef } from "react";
 
 const MenuItems = ({ items, depthLevel }) => {
   const [dropdown, setDropdown] = useState(false);
-  let ref = useRef();
+  const ref = useRef();
 
   useEffect(() => {
     const handler = (event) => {
@@ -27,14 +26,10 @@ const MenuItems = ({ items, depthLevel }) => {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
-      className="w-4 h-4"
+      className="w-4 h-4 transition-transform duration-200"
+      style={{ transform: dropdown ? "rotate(180deg)" : "rotate(0deg)" }}
     >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M19 9l-7 7-7-7"
-      />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
     </svg>
   );
 
@@ -44,85 +39,79 @@ const MenuItems = ({ items, depthLevel }) => {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
-      className="w-4 h-4"
+      className="w-4 h-4 transition-transform duration-200"
+      style={{ transform: dropdown ? "rotate(180deg)" : "rotate(0deg)" }}
     >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M9 5l7 7-7 7"
-      />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
     </svg>
   );
 
   const onMouseEnter = () => {
-    setDropdown(true);
+    window.innerWidth > 768 && setDropdown(true);
   };
 
   const onMouseLeave = () => {
+    window.innerWidth > 768 && setDropdown(false);
+  };
+
+  const closeDropdown = () => {
     setDropdown(false);
   };
 
   return (
     <li
-      className="relative hover:bg-purple hover:text-white"
+      className="relative"
       ref={ref}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      {items.url && items.submenu ? (
+      {items.submenu ? (
         <>
           <button
             type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
-            className={`flex items-center w-full justify-between text-left text-nowrap px-4 py-2 hover:bg-purple hover:text-white ${
-              depthLevel > 0 && "border-b border-purple"
+            onClick={() => setDropdown((prev) => !prev)}
+            className={`flex items-center w-full px-4 py-2 text-left hover:bg-purple hover:text-white ${
+              depthLevel > 0 ? "border-b border-purple" : ""
             }`}
-            onClick={() => setDropdown(!dropdown)}
           >
-            <CustomNavLink to={items.url}>{items.title}</CustomNavLink>
+            {items.url ? (
+              <NavLink
+                to={items.url}
+                className={({ isActive }) =>
+                  `flex-1 text-nowrap ${isActive ? "font-bold" : ""}`
+                }
+                onClick={closeDropdown}
+              >
+                {items.title}
+              </NavLink>
+            ) : (
+              <span className="flex-1">{items.title}</span>
+            )}
             <span className="ml-2">
               {depthLevel > 0 ? rightIcon : downIcon}
             </span>
           </button>
           <Dropdown
-            depthLevel={depthLevel}
             submenus={items.submenu}
             dropdown={dropdown}
-          />
-        </>
-      ) : !items.url && items.submenu ? (
-        <>
-          <button
-            type="button"
-            aria-haspopup="menu"
-            aria-expanded={dropdown ? "true" : "false"}
-            className={`flex items-center w-full text-left px-4 py-2 hover:bg-purple hover:text-white ${
-              depthLevel > 0
-                ? "border-b border-purple"
-                : "border-b border-purple"
-            }`}
-            onClick={() => setDropdown(!dropdown)}
-          >
-            {items.title}
-            <span className="ml-2 hover:text-white">{depthLevel > 0 ?  rightIcon : downIcon}</span>
-          </button>
-          <Dropdown
             depthLevel={depthLevel}
-            submenus={items.submenu}
-            dropdown={dropdown}
+            closeDropdown={closeDropdown}
           />
         </>
       ) : (
-        <CustomNavLink
+        <NavLink
           to={items.url}
-          className={`${
-            depthLevel > 0 && "border-b border-purple w-52"
-          } block px-4 py-2`}
+          className={({ isActive }) =>
+            `block px-4 py-2 hover:bg-purple hover:text-white ${
+              depthLevel > 0 ? "border-b border-purple" : ""
+            } ${isActive ? "font-bold" : ""}`
+          }
+          onClick={closeDropdown}
         >
           {items.title}
-        </CustomNavLink>
+        </NavLink>
       )}
     </li>
   );

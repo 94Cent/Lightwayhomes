@@ -1,4 +1,4 @@
-const BuildingInsight = ({project}) => {
+const BuildingInsight = ({ project }) => {
   return (
     <section className="flex flex-col my-12 gap-y-20 items-center justify-center">
       <div className="bg-white md:rounded-lg rounded overflow-hidden xl:w-[70%] md:w-[80%] w-[90%]">

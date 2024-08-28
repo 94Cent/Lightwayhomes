@@ -16,12 +16,29 @@
       "interiorDescription": "Ample space within each apartment helps guarantee cool interior and a home good for your health. The headroom is high enough to keep the building ventilated, increased perception of space and more natural light. The interior design is flexible, adaptable and caters to your desired lifestyle.",
       "floorImage": ["/images/floor-plan-1.png", "/images/floor-plan-2.png"],
       "floorDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
-      "1BedroomImage": ["/images/floor-plan-1.png", "/images/floor-plan-2.png"],
-      "1BedroomDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
-      "4BedroomImage": ["/images/4-bedroom-2.png", "/images/4-bedroom-1.png"]
+      "planDescription": "The Naples Estate, Arepo, is a smart move towards securing you and your family’s future! In this estate",
+      "plan": [
+        {
+          "name": "4 Bedroom Terrace + BQ ",
+          "price": "62,000,000",
+          "image": "/images/bedroom-1.jpg"
+        },
+        {
+          "name": "3 Bedroom Apartment",
+          "price": "55,000,000",
+          "image": "/images/bedroom-2.jpg"
+        },
+        {
+          "name": "2 Bedroom Apartment",
+          "price": "50,000,000",
+          "image": "/images/bedroom-3.jpg"
+        }
+      ],
+      "location": "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3963.358648198447!2d3.3588741736503676!3d6.602274922245651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sNo.%204%2C%20Oyewo%20close%2C%20Clay%20Busstop%2C%20Juli%20Estate%2C%20off%20Kudirat%20Abiola%20way%2C%20Oregun%2C%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1722947283803!5m2!1sen!2sng",
+      "brochure": "https://drive.google.com/uc?export=download&id=1NtaVSxyfRdPtAKjBNY2lKkgokhUXj0UA"
     },
     {
-      "name": "The Roman Height",
+      "name": "The Roman Heights",
       "description": "The Roman height Arepo is a premium residential development tailored towards meeting modern day living with contemporary architecture",
       "image": "/images/roman-height-home-hero.jpg",
       "channelLink": "https://www.youtube.com/embed/5zmJe6FRd8s?si=z0bR3vittPjy31po",
@@ -32,12 +49,29 @@
       "interiorDescription": "Ample space within each apartment helps guarantee cool interior and a home good for your health. The headroom is high enough to keep the building ventilated, increased perception of space and more natural light. The interior design is flexible, adaptable and caters to your desired lifestyle.",
       "floorImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
       "floorDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
-      "1BedroomImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
-      "1BedroomDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
-      "4BedroomImage": ["/images/4-bedroom-2.png", "/images/4-bedroom-1.png"]
+      "planDescription": "The Roman Height Estate, Arepo, is a smart move towards securing you and your family’s future! In this estate",
+      "plan": [
+        {
+          "name": "4 Bedroom Terrace + BQ ",
+          "price": "62,000,000",
+          "image": "/images/bedroom-1.jpg"
+        },
+        {
+          "name": "3 Bedroom Apartment",
+          "price": "55,000,000",
+          "image": "/images/bedroom-2.jpg"
+        },
+        {
+          "name": "2 Bedroom Apartment",
+          "price": "50,000,000",
+          "image": "/images/bedroom-3.jpg"
+        }
+      ],
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.597249413219!2d3.420742467853562!3d6.6967009063447245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b952a352bedbf%3A0xcbcff4a59dadf00c!2sArepo%20Rd%2C%20Pakuro%20121101%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1724257908597!5m2!1sen!2sng",
+      "brochure": "https://drive.google.com/uc?export=download&id=17D1th1yfBVSK6j7XxsABek-04OevB-Qo"
     },
     {
-      "name": "The Novara Court",
+      "name": "The Novara Courts",
       "description": "The Novara Court Arepo is a premium residential development tailored towards meeting modern day living with contemporary architecture",
       "image": "/images/novara-hero-home.jpg",
       "channelLink": "https://www.youtube.com/embed/Fy9W1zkfk1Q?si=x7Xe1qmY5PxTc7Xj",
@@ -48,17 +82,36 @@
       "interiorDescription": "Ample space within each apartment helps guarantee cool interior and a home good for your health. The headroom is high enough to keep the building ventilated, increased perception of space and more natural light. The interior design is flexible, adaptable and caters to your desired lifestyle.",
       "floorImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
       "floorDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
-      "1BedroomImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
-      "1BedroomDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
-      "4BedroomImage": ["/images/4-bedroom-2.png", "/images/4-bedroom-1.png"]
+      "planDescription": "The Novara Court Estate, Arepo, is a smart move towards securing you and your family’s future!",
+      "paymentPlan": "Secure a plot with N200,000 initial deposit and spread balance in 6 or 12 months.",
+      "plan": [
+        {
+          "name": "600SQM",
+          "price": "4,500,000",
+          "image": "/images/bedroom-1.jpg"
+        },
+        {
+          "name": "500SQM",
+          "price": "3,500,000",
+          "image": "/images/bedroom-2.jpg"
+        },
+        {
+          "name": "300SQM",
+          "price": "2,300,000",
+          "image": "/images/bedroom-3.jpg"
+        }
+      ],
+      "location": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3958.2689383452816!2d3.398149!3d7.21013!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a484ac71ecf79%3A0x2d872ba18b5aabde!2sAwo%20110121%2C%20Ogun%20State%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1724259597952!5m2!1sen!2sus"
     }
   ],
   "projectsUpdate": [
     {
-      "name": "The Roman Height",
+      "name": "The Roman Heights",
       "description": "You can easily go through our work-in-progress and upcoming projects and turn on notification, in order to be notified when a project is completed.",
       "img": ["/images/naples-update2.jpg", "/images/romanheight-update1.jpg"],
       "channel": "https://www.youtube.com/embed/5zmJe6FRd8s?si=z0bR3vittPjy31po",
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.597249413219!2d3.420742467853562!3d6.6967009063447245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b952a352bedbf%3A0xcbcff4a59dadf00c!2sArepo%20Rd%2C%20Pakuro%20121101%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1724257908597!5m2!1sen!2sng",
+      "brochure": "https://drive.google.com/uc?export=download&id=17D1th1yfBVSK6j7XxsABek-04OevB-Qo",
       "projects": [
         {
           "name": "Palm Estate",
@@ -144,6 +197,8 @@
       "description": "You can easily go through our work-in-progress and upcoming projects and turn on notification, in order to be notified when a project is completed.",
       "img": ["/images/naple-update-1.jpg", "/images/naples-update2.jpg"],
       "channel": "https://www.youtube.com/embed/Fy9W1zkfk1Q?si=x7Xe1qmY5PxTc7Xj",
+      "location": "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3963.358648198447!2d3.3588741736503676!3d6.602274922245651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sNo.%204%2C%20Oyewo%20close%2C%20Clay%20Busstop%2C%20Juli%20Estate%2C%20off%20Kudirat%20Abiola%20way%2C%20Oregun%2C%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1722947283803!5m2!1sen!2sng",
+      "brochure": "https://drive.google.com/uc?export=download&id=1NtaVSxyfRdPtAKjBNY2lKkgokhUXj0UA",
       "projects": [
         {
           "name": "Palm Estate",
@@ -199,10 +254,11 @@
       ]
     },
     {
-      "name": "The Novara Court",
+      "name": "The Novara Courts",
       "description": "You can easily go through our work-in-progress and upcoming projects and turn on notification, in order to be notified when a project is completed.",
       "img": ["/images/novara-hero-home.jpg", "/images/novara-update2.jpg"],
       "channel": "https://www.youtube.com/embed/Fy9W1zkfk1Q?si=x7Xe1qmY5PxTc7Xj",
+      "location": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3958.2689383452816!2d3.398149!3d7.21013!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a484ac71ecf79%3A0x2d872ba18b5aabde!2sAwo%20110121%2C%20Ogun%20State%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1724259597952!5m2!1sen!2sus",
       "projects": [
         {
           "name": "Palm Estate",

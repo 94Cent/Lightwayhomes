@@ -25,17 +25,17 @@ export const menuItemsData = [
           },
           {
             title: "The Roman Height",
-            url: "/projects/The-Roman-Height",
+            url: "/projects/The-Roman-Heights",
           },
         ],
       },
       {
         title: "Serviced Plot",
-        url: "/projects/The-Novara-Court",
+        url: "/projects/The-Novara-Courts",
         submenu: [
           {
             title: "The Novara Court",
-            url: "/projects/The-Novara-Court",
+            url: "/projects/The-Novara-Courts",
           },
         ],
       },
@@ -51,11 +51,11 @@ export const menuItemsData = [
       },
       {
         title: "The Roman Height Update",
-        url: "/projects-update/The-Roman-Height",
+        url: "/projects-update/The-Roman-Heights",
       },
       {
         title: "Novara Court Update",
-        url: "/projects-update/The-Novara-Court",
+        url: "/projects-update/The-Novara-Courts",
       },
     ],
   },

@@ -1,5 +1,5 @@
 import ProjectSlider from "../ProjectSlider";
-const Exterior = ({project}) => {
+const Exterior = ({ project }) => {
   return (
     <section className="pt-8">
       <div className="pb-5">

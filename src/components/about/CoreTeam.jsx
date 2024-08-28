@@ -1,21 +1,10 @@
 import React, { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "component/ui/tabs";
 import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "component/ui/popover";
-import {
   AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
   AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
   AlertDialogTrigger,
-} from "component/ui/alert-dialog"
+} from "component/ui/alert-dialog";
 import AboutTeam from "./AboutTeam";
 
 const CoreTeam = ({ teams }) => {
@@ -37,7 +26,8 @@ const CoreTeam = ({ teams }) => {
             value="management"
             className="px-4 w-[90%] py-4 text-xl cursor-pointer border-purple border hover:bg-purple hover:text-white text-purple"
             style={{
-              backgroundColor: activeIndex === "management" ? "purple" : "transparent",
+              backgroundColor:
+                activeIndex === "management" ? "purple" : "transparent",
               color: activeIndex === "management" ? "white" : "purple",
             }}
           >
@@ -47,7 +37,8 @@ const CoreTeam = ({ teams }) => {
             value="Board of Directors"
             className="px-4 w-[90%] py-4 text-xl cursor-pointer border-purple border hover:bg-purple hover:text-white text-purple"
             style={{
-              backgroundColor: activeIndex === "Board of Directors" ? "purple" : "transparent",
+              backgroundColor:
+                activeIndex === "Board of Directors" ? "purple" : "transparent",
               color: activeIndex === "Board of Directors" ? "white" : "purple",
             }}
           >
@@ -60,10 +51,7 @@ const CoreTeam = ({ teams }) => {
           className="grid lg:grid-cols-3 sm:grid-cols-2 place-items-center mx-auto gap-y-10 md:mt-0 mt-24"
         >
           {teams.map((team, index) => (
-            <div
-              key={index}
-              className="w-64 rounded-sm overflow-hidden"
-            >
+            <div key={index} className="w-64 rounded-sm overflow-hidden">
               <div className="bg-gray-300 md:h-64 h-56">
                 <img
                   src={team.img}
@@ -72,15 +60,15 @@ const CoreTeam = ({ teams }) => {
                 />
               </div>
               <AlertDialog className="bg-transparent">
-              <AlertDialogTrigger
-                className="bg-gray-300 border-2 w-full text-purple text-sm font-medium
+                <AlertDialogTrigger
+                  className="bg-gray-300 border-2 w-full text-purple text-sm font-medium
                   py-2 border-purple"
-              >
-                Learn More
-              </AlertDialogTrigger>
-              <AlertDialogContent className="w-full bg-transparent border-0 ">
-                <AboutTeam team={team} />
-              </AlertDialogContent>
+                >
+                  Learn More
+                </AlertDialogTrigger>
+                <AlertDialogContent className="w-full bg-transparent border-0 ">
+                  <AboutTeam team={team} />
+                </AlertDialogContent>
               </AlertDialog>
               <div className="bg-purple text-white text-center pb-3">
                 <h2 className="pt-3 pb-1 font-medium">{team.name}</h2>
@@ -95,10 +83,7 @@ const CoreTeam = ({ teams }) => {
           className="grid lg:grid-cols-3 sm:grid-cols-2 place-items-center gap-y-10"
         >
           {teams.map((team, index) => (
-            <div
-              key={index}
-              className="w-64 rounded-sm overflow-hidden"
-            >
+            <div key={index} className="w-64 rounded-sm overflow-hidden">
               <div className="bg-gray-300 md:h-64 h-56">
                 <img
                   src={team.img}

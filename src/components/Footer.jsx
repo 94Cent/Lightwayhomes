@@ -18,7 +18,7 @@ function Footer() {
   const [loading, setLoading] = useState(false);
   const handleSubmit = async (event) => {
     event.preventDefault();
-    setLoading(true)
+    setLoading(true);
 
     // Create a FormData object
     const formData = new FormData();
@@ -26,7 +26,7 @@ function Footer() {
 
     try {
       const response = await fetch(
-        "https://backend.lightway.com.ng/controller/subscriber.php?action=save_subscriber",
+        "https://lightwayhomesltd.com/backend/controller/subscriber.php?action=save_subscriber",
         {
           method: "POST",
           body: formData,
@@ -34,7 +34,7 @@ function Footer() {
       );
 
       const result = await response.json();
-      setLoading(false)
+      setLoading(false);
       if (response.ok) {
         toast.success("Subscription successful!", {
           position: "top-right",
@@ -66,6 +66,8 @@ function Footer() {
         draggable: true,
         progress: undefined,
       });
+      console.log(error, "error");
+      setLoading(false);
     }
   };
   return (
@@ -100,16 +102,25 @@ function Footer() {
         </div>
 
         <div className="flex justify-center space-x-6 md:mb-2 mb-8 mt-12">
-          <a href="#" className="text-white">
+          <a
+            href="https://www.youtube.com/@LightWay_Homes"
+            className="text-white"
+          >
             <FontAwesomeIcon icon={faYoutube} size="1x" className="size-6" />
           </a>
-          <a href="#" className="text-white">
+          <a
+            href="https://web.facebook.com/investproperty.int"
+            className="text-white"
+          >
             <FontAwesomeIcon icon={faFacebook} size="1x" className="size-6" />
           </a>
-          <a href="#" className="text-white">
+          <a href="/" className="text-white">
             <FontAwesomeIcon icon={faTwitter} size="1x" className="size-6" />
           </a>
-          <a href="#" className="text-white">
+          <a
+            href="https://www.linkedin.com/company/light-way-homes-and-investment/"
+            className="text-white"
+          >
             <FontAwesomeIcon icon={faLinkedin} size="1x" className="size-6" />
           </a>
         </div>
@@ -142,8 +153,8 @@ function Footer() {
             <h4 className="md:text-xl text-lg font-normal mt-4 md:mb-3 mb-2">
               Our Phone Numbers
             </h4>
-            <p>+234555566666</p>
-            <p>+234789896554</p>
+            <p>+2348038034077</p>
+            <p>+2348075161213</p>
           </div>
           <div className="md:w-1/2 w-full flex md:justify-between gap-x-12 text-left">
             <div>
@@ -162,22 +173,22 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-300">
+                  <a href="/" className="hover:text-gray-300">
                     Serviced Plot
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-300">
+                  <a href="/" className="hover:text-gray-300">
                     Serviced Apartment
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-300">
+                  <a href="/" className="hover:text-gray-300">
                     Become A Realtor
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-300">
+                  <a href="/" className="hover:text-gray-300">
                     Download Brochure
                   </a>
                 </li>
@@ -198,7 +209,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    to="/projects/The-Roman-Height"
+                    to="/projects/The-Roman-Heights"
                     className="hover:text-gray-300"
                   >
                     Roman Height
@@ -206,7 +217,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    to="/projects/The-Novara-Court"
+                    to="/projects/The-Novara-Courts"
                     className="hover:text-gray-300"
                   >
                     Novara Court

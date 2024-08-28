@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { menuItemsData } from "./menuItemsData";
-import { Link } from "react-router-dom";
 import CustomNavLink from "components/CustomNavLink";
 
 const MobileNavBar = ({ setIsOpen }) => {

@@ -33,7 +33,6 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage: {
-        "custom-hero": "url('/src/assets/images/hero.png')",
         "contact-hero": "url('/src/assets/images/contact-hero.png')",
       },
       colors: {

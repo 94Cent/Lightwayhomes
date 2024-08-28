@@ -1,13 +1,13 @@
 import WebProject from "components/projectUpdate/WebProject";
 import React from "react";
-import Exterior from "components/projectUpdate/Exterior";
+// import Exterior from "components/projectUpdate/Exterior";
 import { useParams } from "react-router-dom";
-import PropertiesAmenities from "components/webProject/PropertiesAmenities";
-import Shop from "../assets/icons/buy.svg";
+// import PropertiesAmenities from "components/webProject/PropertiesAmenities";
+// import Shop from "../assets/icons/buy.svg";
 import ProjectBronchure from "components/webProject/ProjectBrochure";
 import FAQ from "components/webProject/Faq";
 import ProjectMap from "components/webProject/ProjectMap";
-import { Bell, Clock, Truck, MapPin } from "lucide-react";
+// import { Bell, Clock, Truck, MapPin } from "lucide-react";
 
 const ProjectUpdate = ({ project }) => {
   const { name } = useParams();
@@ -18,11 +18,11 @@ const ProjectUpdate = ({ project }) => {
   if (!projectUpdates) {
     return <div>Project not found</div>;
   }
-  console.log(projectUpdates, "updates");
+  
   return (
     <section className="mb-12">
       <WebProject project={projectUpdates} />
-      {projectUpdates.projects.map((details) => (
+      {/* {projectUpdates.projects.map((details) => (
         <section className="mb-20">
           <h2 className="border-purple border-b w-full text-purple text-2xl font-bold text-center py-12">
             {details.name}
@@ -65,10 +65,14 @@ const ProjectUpdate = ({ project }) => {
             </button>
           </div>
         </section>
-      ))}
-      <ProjectBronchure />
+      ))} */}
+
+      <div className="my-16 text-center text-purple">
+        <h3 className="text-2xl font-medium">Project Update Coming Soon</h3>
+      </div>
+      <ProjectBronchure project={projectUpdates} />
       <FAQ />
-      <ProjectMap />
+      <ProjectMap project={projectUpdates} />
     </section>
   );
 };

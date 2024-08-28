@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../SliderCard.css";
-import ProjectSm from "../../assets/images/project-1-sm.png";
 import ProjectImg from "../../assets/images/project-1.png";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "component/ui/tabs";
+import { Link } from "react-router-dom";
 
-const ProjectCard = ({ images }) => {
+const ProjectCard = ({ images, project }) => {
   const [currentImage, setCurrentImage] = useState(0);
   const [prevImage, setPrevImage] = useState(null);
 
@@ -25,15 +25,28 @@ const ProjectCard = ({ images }) => {
     }
   };
 
+  const getProjectLink = (id) => {
+    switch (id) {
+      case "1":
+        return "/The-Naples";
+      case "2":
+        return "/The-Roman-Heights";
+      case "3":
+        return "/The-Novara-Courts";
+      default:
+        return "#";
+    }
+  };
+
   return (
     <div className="w-full p-4 rounded-t mx-auto">
       <div className="relative slider-container h-80">
-        {images.map((image, index) => (
+        {project.pic_names.map((image, index) => (
           <img
             key={index}
-            src={image}
-            alt="Project"
-            className={`slider-image object-cover rounded-t-lg h-full ${
+            src={`http://lightwayhomesltd.com/backend/uploads/${image}`}
+            alt={project.pic_names[currentImage]}
+            className={`slider-image object-cover rounded-t-lg h-full border border-purple ${
               index === currentImage ? "active" : ""
             } ${index === prevImage ? "prev" : ""}`}
           />
@@ -52,35 +65,39 @@ const ProjectCard = ({ images }) => {
         </button>
       </div>
       <div className="max-w-xl grid grid-cols-4 mx-auto gap-4 w-full md:gap-x-4 gap-x-2 gap-y-2 my-4">
-        {images.map((_, index) => (
+        {project.pic_names.map((image, index) => (
           <img
             key={index}
             onClick={() => handleThumbnailClick(index)}
-            src={ProjectSm}
+            src={`http://lightwayhomesltd.com/backend/uploads/${image}`}
             alt="Project Thumbnail"
-            className={`w-full md:h-24 h-[75px] object-cover cursor-pointer rounded ${
-              index === currentImage ? "border-2 border-purple" : ""
+            className={`w-full md:h-24 h-[75px] object-cover cursor-pointer rounded border ${
+              index === currentImage ? "border-2 border-purple" : "border-black"
             }`}
           />
         ))}
       </div>
       <div className="max-w-xl mx-auto bg-purple text-white rounded-lg overflow-hidden w-full">
         <div className="p-6 border-b text-center">
-          <h2 className="text-xl font-bold">Life worth complex</h2>
-          <p className="text-gray-200 mt-2">Ajah, off cement road block d</p>
+          <h2 className="text-xl font-bold">{project.title}</h2>
+          <p className="text-gray-200 mt-2">{project.address}</p>
         </div>
         <div className="grid grid-cols-2 gap-px">
           <div className="bg-purple-700 p-4 border-r">
             <p className="text-gray-200">Starting from</p>
-            <p className="md:text-2xl text-xl font-normal mt-4">#30,000,000</p>
+            <p className="md:text-2xl text-xl font-normal mt-4">
+              {project.pricing}
+            </p>
           </div>
           <div>
             <div className="bg-white text-purple p-4 flex items-center justify-center">
               <button className="font-normal">Pre-Order</button>
             </div>
-            <div className="bg-purple-700 text-center col-span-2 p-4">
-              <button className="font-normal">Learn More</button>
-            </div>
+            <Link to={getProjectLink(project.project_name_id)}>
+              <div className="bg-purple-700 text-center col-span-2 p-4">
+                <button className="font-normal">Learn More</button>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -93,7 +110,9 @@ const ProjectSection = ({ activeIndex, setActiveIndex }) => (
     <TabsTrigger
       value="ongoing Projects"
       className={`px-4 md:w-[30%] w-full py-4 text-xl ${
-        activeIndex === "ongoing" ? "bg-purple text-white" : "border-purple border hover:bg-purple hover:text-white text-black"
+        activeIndex === "ongoing"
+          ? "bg-purple text-white"
+          : "border-purple border hover:bg-purple hover:text-white text-black"
       }`}
       onClick={() => setActiveIndex("ongoing")}
     >
@@ -102,7 +121,9 @@ const ProjectSection = ({ activeIndex, setActiveIndex }) => (
     <TabsTrigger
       value="completed Projects"
       className={`px-4 py-4 md:w-[30%] w-full text-xl ${
-        activeIndex === "completed" ? "bg-purple text-white " : "border-purple border hover:bg-purple hover:text-white text-black"
+        activeIndex === "completed"
+          ? "bg-purple text-white "
+          : "border-purple border hover:bg-purple hover:text-white text-black"
       }`}
       onClick={() => setActiveIndex("completed")}
     >
@@ -111,7 +132,9 @@ const ProjectSection = ({ activeIndex, setActiveIndex }) => (
     <TabsTrigger
       value="upcoming Projects"
       className={`px-4 py-4 md:w-[30%] w-full text-xl ${
-        activeIndex === "upcoming" ? "bg-purple text-white" : "border-purple border hover:bg-purple hover:text-white text-black"
+        activeIndex === "upcoming"
+          ? "bg-purple text-white"
+          : "border-purple border hover:bg-purple hover:text-white text-black"
       }`}
       onClick={() => setActiveIndex("upcoming")}
     >
@@ -122,7 +145,29 @@ const ProjectSection = ({ activeIndex, setActiveIndex }) => (
 
 const Projects = () => {
   const images = [ProjectImg, ProjectImg, ProjectImg, ProjectImg];
+  const [projects, setProjects] = useState([]);
   const [activeIndex, setActiveIndex] = useState("ongoing");
+
+  useEffect(() => {
+    fetchProject();
+  }, []);
+
+  const fetchProject = async () => {
+    try {
+      const response = await fetch(
+        "http://lightwayhomesltd.com/backend/controller/project.php?action=getAllProject"
+      );
+      const data = await response.json();
+      setProjects(data);
+    } catch (error) {
+      console.log("Error fetching projects", error);
+    }
+  };
+
+  // Filter projects based on status
+  const ongoingProjects = projects.filter((project) => project.status === "in progress");
+  const completedProjects = projects.filter((project) => project.status === "completed");
+  const upcomingProjects = projects.filter((project) => project.status === "upcoming");
 
   return (
     <section className="py-8">
@@ -135,22 +180,50 @@ const Projects = () => {
         <h2 className="md:text-3xl text-2xl font-normal my-4 text-center mb-8">
           Our Projects
         </h2>
-        <ProjectSection activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
+        <ProjectSection
+          activeIndex={activeIndex}
+          setActiveIndex={setActiveIndex}
+        />
         <TabsContent
           value="ongoing"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-auto gap-4 xl:w-[80%] lg:w-[90%] md:w-full w-full xl:gap-x-16 lg:gap-x-10 gap-x-6 gap-y-4"
         >
-          {Array(4)
-            .fill()
-            .map((_, index) => (
-              <ProjectCard key={index} images={images} />
-            ))}
+          {ongoingProjects.length > 0 ? (
+            ongoingProjects.map((project, index) => (
+              <ProjectCard key={index} images={images} project={project} />
+            ))
+          ) : (
+            <h2 className="text-center text-xl text-gray-500">
+              No ongoing projects available.
+            </h2>
+          )}
         </TabsContent>
-        <TabsContent value="completed">
-          <h2>Completed projects coming soon</h2>
+        <TabsContent
+          value="completed"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-auto gap-4 xl:w-[80%] lg:w-[90%] md:w-full w-full xl:gap-x-16 lg:gap-x-10 gap-x-6 gap-y-4"
+        >
+          {completedProjects.length > 0 ? (
+            completedProjects.map((project, index) => (
+              <ProjectCard key={index} images={images} project={project} />
+            ))
+          ) : (
+            <h2 className="text-center text-xl text-gray-500">
+              No completed projects available.
+            </h2>
+          )}
         </TabsContent>
-        <TabsContent value="upcoming">
-          <h2>Upcoming projects coming soon</h2>
+        <TabsContent
+          value="upcoming"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-auto gap-4 xl:w-[80%] lg:w-[90%] md:w-full w-full xl:gap-x-16 lg:gap-x-10 gap-x-6 gap-y-4"
+        >
+          {upcomingProjects.length > 0 ? (upcomingProjects.map((project, index) => (
+              <ProjectCard key={index} images={images} project={project} />
+            ))
+          ) : (
+            <h2 className="text-center text-xl text-gray-500">
+              No upcoming projects available.
+            </h2>
+          )}
         </TabsContent>
       </Tabs>
     </section>

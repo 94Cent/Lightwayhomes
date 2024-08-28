@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import MobileNavbar from "./MobileNavbar";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
+import LogoColoured from "../../assets/images/logo-colured.png"
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,15 +12,15 @@ const Header = () => {
   };
   return (
     <header className="shadow-md bg-white">
-      <div className="container mx-auto md:px-12 px-4 py-4 flex justify-between items-center text-purple">
+      <div className="container mx-auto xl:px-12 md:px-6 px-4 py-4 flex justify-between items-center text-purple">
         <Link to="/" className="text-2xl text-purple">
-        LWH..
+        <img src={LogoColoured} alt="Logo" className="w-32 h-20" />
         </Link>
 
         <Navbar />
-        <div className="flex gap-x-1 justify-center item-center flex-row-reverse my-auto text-purple border-[1.5px] border-purple rounded-[10px] py-2 px-3">
-          <a href="tel:+2348075816173" className="">
-            +2348075816173
+        <div className="md:flex hidden gap-x-1 justify-center item-center flex-row-reverse my-auto text-purple border-[1.5px] border-purple rounded-[10px] py-2 px-3">
+          <a href="tel:+2348075161213" className="">
+            +2348075161213
           </a>
           <svg
             width="17"
@@ -39,8 +40,8 @@ const Header = () => {
         <div className="text-purple group cursor-pointer lg:hidden">
           <div onClick={toggleNavbar}>
             <svg
-              width="19"
-              height="16"
+              width="30"
+              height="30"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -70,8 +71,8 @@ const Header = () => {
             </div>
             <MobileNavbar setIsOpen={setIsOpen} />
             <div className="flex gap-x-1 justify-center items-center flex-row-reverse text-purple border-[1.5px] border-purple rounded-[10px] py-2 px-3 w-min mx-auto mt-4">
-              <a href="tel:+2348075816173" className="">
-                +2348075816173
+              <a href="tel:+2348075161213" className="">
+                +2348075161213
               </a>
               <svg
                 width="17"
