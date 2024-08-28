@@ -70,6 +70,32 @@ function Footer() {
       setLoading(false);
     }
   };
+  const downloadFiles = () => {
+    const links = [
+        'https://drive.google.com/uc?export=download&id=1NuDXFSE4F6oUYPLM7umzXMCceCsAzbxN',
+        'https://drive.google.com/uc?export=download&id=1NtaVSxyfRdPtAKjBNY2lKkgokhUXj0UA',
+        'https://drive.google.com/uc?export=download&id=17D1th1yfBVSK6j7XxsABek-04OevB-Qo'
+    ];
+
+    const downloadFile = (link) => {
+        return new Promise((resolve) => {
+            const a = document.createElement('a');
+            a.href = link;
+            a.download = '';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            setTimeout(() => resolve(), 10000); // Ensure enough time for each download to initiate
+        });
+    };
+
+    (async () => {
+        for (const link of links) {
+            await downloadFile(link);
+        }
+    })();
+};
+
   return (
     <footer className="bg-purple text-white md:py-12 py-4">
       <ToastContainer />
@@ -175,24 +201,24 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <a href="/" className="hover:text-gray-300">
+                  <Link to="/projects/The-Novara-Courts" className="hover:text-gray-300">
                     Serviced Plot
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/" className="hover:text-gray-300">
+                  <Link to="/projects/The-Naples" className="hover:text-gray-300">
                     Serviced Apartment
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/" className="hover:text-gray-300">
+                  <Link to="/career" className="hover:text-gray-300">
                     Become A Realtor
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/" className="hover:text-gray-300">
+                  <p onClick={downloadFiles} className="hover:text-gray-300 cursor-pointer">
                     Download Brochure
-                  </a>
+                  </p>
                 </li>
               </ul>
             </div>

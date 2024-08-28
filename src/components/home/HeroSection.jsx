@@ -30,14 +30,14 @@ const slides = [
     image: Hero4,
     heading: "Novara Court",
     caption: "Where you experience nature at it's best",
-    label: "The-Novara-Court",
+    label: "The-Novara-Courts",
   },
   {
     image: Hero5,
     heading: "Roman Heights",
     caption:
       "Welcome to Roman Heights Where Timeless Beauty Meets Mordern Luxury! ",
-    label: "The-Roman-Height",
+    label: "The-Roman-Heights",
   },
 ];
 
