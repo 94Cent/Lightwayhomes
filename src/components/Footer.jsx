@@ -5,6 +5,7 @@ import {
   faFacebook,
   faTwitter,
   faLinkedin,
+  faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import ChatHero from "../assets/images/chat-footer.png";
 import ChatHeroSm from "../assets/images/chat-footer-sm.png";
@@ -148,6 +149,12 @@ function Footer() {
             className="text-white"
           >
             <FontAwesomeIcon icon={faLinkedin} size="1x" className="size-6" />
+          </a>
+          <a
+            href="https://www.instagram.com/lightway_homes/"
+            className="text-white"
+          >
+            <FontAwesomeIcon icon={faInstagram} size="1x" className="size-6" />
           </a>
         </div>
         <div className="absolute lg:right-20 md:right-8 right-2 md:-mt-20 mt-[560px] z-50">

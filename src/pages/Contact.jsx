@@ -8,6 +8,7 @@ import {
   faFacebook,
   faTwitter,
   faLinkedin,
+  faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 // import { Checkbox } from "../component/ui/checkbox";
 
@@ -176,6 +177,16 @@ function Contact() {
               >
                 <FontAwesomeIcon
                   icon={faLinkedin}
+                  size="1x"
+                  className="size-7"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/lightway_homes/"
+                className="text-purple"
+              >
+                <FontAwesomeIcon
+                  icon={faInstagram}
                   size="1x"
                   className="size-7"
                 />
