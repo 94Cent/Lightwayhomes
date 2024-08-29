@@ -19,6 +19,7 @@ import ProtectedRoute from "pages/admin/ProtectedRoute";
 import LogoColoured from "./assets/images/logo-colured.png";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import AutoScroll from "components/AutoScroll";
 
 function App() {
   const location = useLocation();
@@ -74,6 +75,7 @@ function App() {
       </Routes>
       <Footer />
       <ScrollToTopButton />
+      <AutoScroll />
     </div>
   );
 }

@@ -74,7 +74,7 @@ function AdminProjects() {
   const fetchProjects = async () => {
     try {
       const response = await fetch(
-        "http://lightwayhomesltd.com/backend/controller/project.php?action=getAllProject"
+        "https://lightwayhomesltd.com/backend/controller/project.php?action=getAllProject"
       );
       const data = await response.json();
       if (response.ok) {

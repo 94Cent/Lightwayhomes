@@ -44,7 +44,7 @@ const ProjectCard = ({ images, project }) => {
         {project.pic_names.map((image, index) => (
           <img
             key={index}
-            src={`http://lightwayhomesltd.com/backend/uploads/${image}`}
+            src={`https://lightwayhomesltd.com/backend/uploads/${image}`}
             alt={project.pic_names[currentImage]}
             className={`slider-image object-cover rounded-t-lg h-full border border-purple ${
               index === currentImage ? "active" : ""
@@ -69,7 +69,7 @@ const ProjectCard = ({ images, project }) => {
           <img
             key={index}
             onClick={() => handleThumbnailClick(index)}
-            src={`http://lightwayhomesltd.com/backend/uploads/${image}`}
+            src={`https://lightwayhomesltd.com/backend/uploads/${image}`}
             alt="Project Thumbnail"
             className={`w-full md:h-24 h-[75px] object-cover cursor-pointer rounded border ${
               index === currentImage ? "border-2 border-purple" : "border-black"
@@ -155,7 +155,7 @@ const Projects = () => {
   const fetchProject = async () => {
     try {
       const response = await fetch(
-        "http://lightwayhomesltd.com/backend/controller/project.php?action=getAllProject"
+        "https://lightwayhomesltd.com/backend/controller/project.php?action=getAllProject"
       );
       const data = await response.json();
       setProjects(data);

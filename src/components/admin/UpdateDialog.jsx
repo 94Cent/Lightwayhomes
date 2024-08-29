@@ -33,7 +33,7 @@ export const DeleteDialog = ({
       formData.append("id", projectId);
 
       const response = await fetch(
-        "http://lightwayhomesltd.com/backend/controller/project.php?action=deleteProject",
+        "https://lightwayhomesltd.com/backend/controller/project.php?action=deleteProject",
         {
           method: "POST",
           body: formData,
@@ -122,7 +122,7 @@ export const UpdateDialog = ({
       formData.append("status", status);
 
       const response = await fetch(
-        "http://lightwayhomesltd.com/backend/controller/project.php?action=updateProjectStatus",
+        "https://lightwayhomesltd.com/backend/controller/project.php?action=updateProjectStatus",
         {
           method: "POST",
           body: formData,

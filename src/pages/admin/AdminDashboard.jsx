@@ -29,7 +29,7 @@ const AdminDashboard = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await fetch("http://lightwayhomesltd.com/backend/controller/project.php?action=getAllProject");
+      const response = await fetch("https://lightwayhomesltd.com/backend/controller/project.php?action=getAllProject");
       const data = await response.json();
       setAllProjects(data)
       setProjects(data.slice(0, 5)); // Display 10 projects

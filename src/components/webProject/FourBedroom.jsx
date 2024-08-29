@@ -65,7 +65,7 @@ const FourBedroomMansionatte = ({ project, projectCat }) => {
             <div>
               <img
                 className="w-full mx-auto md:h-[80vh] h-80 rounded-t-xl"
-                src={`http://lightwayhomesltd.com/backend/uploads/${plans[0]?.pic_names[0]}`}
+                src={`https://lightwayhomesltd.com/backend/uploads/${plans[0]?.pic_names[0]}`}
                 alt={plans[0]?.title}
               />
               <div className="absolute top-6 w-full text-center font-bold text-purple md:text-2xl text-xl">
@@ -101,7 +101,7 @@ const FourBedroomMansionatte = ({ project, projectCat }) => {
                 <div>
                   <img
                     className="w-full mx-auto md:h-[80vh] h-80 rounded-t-xl"
-                    src={`http://lightwayhomesltd.com/backend/uploads/${plan?.pic_names[0]}`}
+                    src={`https://lightwayhomesltd.com/backend/uploads/${plan?.pic_names[0]}`}
                     alt={plan?.title}
                   />
                   <div className="absolute top-6 w-full text-center font-bold text-purple md:text-2xl text-xl">

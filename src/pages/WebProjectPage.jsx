@@ -30,7 +30,7 @@ const WebProjectPage = ({ projects }) => {
   const fetchProjects = async () => {
     try {
       const response = await fetch(
-        "http://lightwayhomesltd.com/backend/controller/project.php?action=getProjectByName"
+        "https://lightwayhomesltd.com/backend/controller/project.php?action=getProjectByName"
       );
       const data = await response.json();
 

@@ -8,6 +8,8 @@ const BuildingInsight = ({ project }) => {
           title="YouTube video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
+          frameBorder="0"
+          allowTransparency="true"
         ></iframe>
       </div>
       <div className="text-purple font-medium">
@@ -15,7 +17,7 @@ const BuildingInsight = ({ project }) => {
           A CAPTIVATING AND LUXURIOUS LIFESTYLE!!!!
         </h2>
         <p className="md:w-[80%] w-[90%] mx-auto first-letter:text-2xl first-letter:text-purple first-letter:font-medium md:text-left text-center">
-        {project.description}
+          {project.description}
         </p>
       </div>
     </section>

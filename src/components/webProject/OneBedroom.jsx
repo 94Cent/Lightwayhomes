@@ -58,7 +58,7 @@ const OneBedroomMansionatte = ({ projectCat }) => {
           <div className="relative">
             <img
               className="w-full mx-auto md:h-[80vh] h-80 rounded-t-xl"
-              src={`http://lightwayhomesltd.com/backend/uploads/${singleProject?.pic_names[0]}`}
+              src={`https://lightwayhomesltd.com/backend/uploads/${singleProject?.pic_names[0]}`}
               alt={singleProject?.title}
             />
             <div className="absolute top-6 w-full z-50 text-center font-bold text-purple md:text-2xl text-lg px-2">
@@ -92,7 +92,7 @@ const OneBedroomMansionatte = ({ projectCat }) => {
               <div>
                 <img
                   className="w-full mx-auto md:h-[80vh] h-80 rounded-t-xl"
-                  src={`http://lightwayhomesltd.com/backend/uploads/${plans?.pic_names[0]}`}
+                  src={`https://lightwayhomesltd.com/backend/uploads/${plans?.pic_names[0]}`}
                   alt={plans?.title}
                 />
                 <div className="absolute top-6 w-full z-50 text-center font-bold text-purple md:text-2xl text-lg px-2">
