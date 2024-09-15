@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import ProjectBronchure from "components/webProject/ProjectBrochure";
 import FAQ from "components/webProject/Faq";
 import ProjectMap from "components/webProject/ProjectMap";
+import { Helmet } from "react-helmet";
 // import { Bell, Clock, Truck, MapPin } from "lucide-react";
 
 const ProjectUpdate = ({ project }) => {
@@ -18,9 +19,16 @@ const ProjectUpdate = ({ project }) => {
   if (!projectUpdates) {
     return <div>Project not found</div>;
   }
-  
+
   return (
     <section className="mb-12">
+      <Helmet>
+        <title>Project Update - Light Way Homes</title>
+        <meta
+          name="description"
+          content="get update from our latest project."
+        />
+      </Helmet>
       <WebProject project={projectUpdates} />
       {/* {projectUpdates.projects.map((details) => (
         <section className="mb-20">

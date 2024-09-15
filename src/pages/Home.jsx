@@ -4,6 +4,7 @@ import WelcomeSection from "../components/home/WelcomeSection";
 import Projects from "../components/home/Project";
 import Channels from "../components/home/Channels";
 import HeroCarousel from "components/home/HeroSection";
+import { Helmet } from "react-helmet";
 
 function Home() {
   const [quote, setQuote] = useState("");
@@ -32,6 +33,13 @@ function Home() {
   }, []);
   return (
     <div>
+      <Helmet>
+        <title>Home - Light Way Homes</title>
+        <meta
+          name="description"
+          content="Welcome to our website's homepage. Explore our services and projects."
+        />
+      </Helmet>
       <HeroCarousel />
       <section className="py-8 bg-white">
         <div className="container px-0 mx-auto">

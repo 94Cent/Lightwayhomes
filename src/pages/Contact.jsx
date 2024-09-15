@@ -10,11 +10,19 @@ import {
   faLinkedin,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import { Helmet } from "react-helmet";
 // import { Checkbox } from "../component/ui/checkbox";
 
 function Contact() {
   return (
     <div className="">
+      <Helmet>
+        <title>Contact Us - Light Way Homes</title>
+        <meta
+          name="description"
+          content="Get in touch with us through our contact page."
+        />
+      </Helmet>
       <section className="relative lg:h-[80vh] md:h-[65vh] h-80 bg-contact-hero bg-cover bg-center">
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white lg:w-[65%] md:w-[75%] w-90%">
@@ -122,7 +130,7 @@ function Contact() {
           <div className="flex items-center py-5 space-x-4 md:gap-x-6 gap-x-1 border-b border-purple">
             <div className="text-left w-[100%]">
               <p className="lg:text-lg md:text-base text-sm text-purple">
-              info@lightwayhomesltd.com lwh.investment@gmail.com
+                info@lightwayhomesltd.com lwh.investment@gmail.com
               </p>
             </div>
             <img
