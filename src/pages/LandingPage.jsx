@@ -2,6 +2,7 @@ import React from "react";
 import NovaraHero from "../assets/images/novara-hero-home.jpg";
 import NaplesHero from "../assets/images/naples-hero-home.jpg";
 import RomanHero from "../assets/images/roman-height-home-hero.jpg";
+// import Hero from "../assets/images/hero.png"
 import { Helmet } from "react-helmet";
 const LandingPage = () => {
   const projectDetails = [
@@ -39,8 +40,11 @@ const LandingPage = () => {
           content="Discover the amazing projects we have worked on."
         />
       </Helmet>
-      <section className="mx-24 md:w-9/10 w-4/5 flex flex-col justify-center items-center text-purple">
-        <div className="md:w-8/10 flex flex-col justify-center items-center text-center my-12">
+      {/* <section className="w-screen max:h-[80vh]">
+        <img src={Hero} alt="hero" className="size-full object-cover" />
+      </section> */}
+      <section className="mx-auto md:w-9/10 w-4/5 flex flex-col justify-center items-center text-purple">
+        <div className="md:w-8/10 w-full flex flex-col justify-center items-center text-center my-12">
           <h2 className="font-semibold text-4xl">Property Brochures</h2>
           <p className="my-4 mx-auto md:w-[600px] w-9/10 text-center">
             At Light Way Homes, we have multiple real estate investment options
@@ -51,11 +55,11 @@ const LandingPage = () => {
         <div className="w-full text-center">
           {projectDetails.map((detail, index) => (
             <div key={index} className="w-9/10 my-16 border-purple border-t-2">
-              <div className="flex gap-x-12 justify-center items-center py-6">
-                <div className="w-1/2">
+              <div className="flex md:flex-row flex-col gap-x-12 justify-center items-center py-6">
+                <div className="lg:w-1/2 md:w-2/3 w-full md:my-0 my-8">
                   <img src={detail.image} alt="landing details" />
                 </div>
-                <div className="w-1/2 text-purple text-start">
+                <div className="lg:w-1/2 md:w-2/3 w-full text-purple text-start">
                   <h4 className="font-bold text-2xl">{detail.name}</h4>
                   <p className="my-3.5">{detail.description}</p>
                   <button className="text-white bg-purple rounded py-3 bg-gradient-to-r from-purple to-pink-900 font-bold px-4">
