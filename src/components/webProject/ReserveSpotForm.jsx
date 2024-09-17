@@ -19,7 +19,8 @@ import { Input } from "../../component/ui/input";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const ReserveSpotForm = () => {
+const ReserveSpotForm = (id) => {
+  console.log("id", id.id)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -54,6 +55,7 @@ const ReserveSpotForm = () => {
     data.append("email", formData.email);
     data.append("phone_number", formData.phone);
     data.append("method", formData.method);
+    data.append("project_id", id.id);
 
     try {
       const response = await fetch(
