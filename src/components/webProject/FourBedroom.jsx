@@ -77,7 +77,7 @@ const FourBedroomMansionatte = ({ project, projectCat }) => {
               {plans[0]?.title}
               </h2>
               <p className="md:pb-6 py-3 md:pt-4 md:text-lg text-base">
-                While you spread the balance over 6 to 12 months
+                While you spread the balance over 6 to 12 months 
               </p>
               <p className="font-bold md:text-lg text-base mb-6">
                 <i>From </i>#{plans[0]?.pricing}
@@ -89,7 +89,7 @@ const FourBedroomMansionatte = ({ project, projectCat }) => {
                   </button>
                 </PopoverTrigger>
                 <PopoverContent className="w-full bg-transparent border-0 mx-0">
-                  <ReserveSpotForm />
+                  <ReserveSpotForm id={plans[0]?.id} />
                 </PopoverContent>
               </Popover>
             </div>
@@ -113,7 +113,7 @@ const FourBedroomMansionatte = ({ project, projectCat }) => {
                     {plan?.title}
                   </h2>
                   <p className="md:pb-6 py-3 md:pt-4 md:text-lg text-base">
-                    While you spread the balance over 6 to 12 months
+                    While you spread the balance over 6 to 12 months 
                   </p>
                   <p className="font-bold md:text-lg text-base mb-6">
                     <i>From </i>#{plan?.pricing}
@@ -126,7 +126,7 @@ const FourBedroomMansionatte = ({ project, projectCat }) => {
                       </button>
                     </PopoverTrigger>
                     <PopoverContent className="w-full bg-transparent border-0 mx-0">
-                      <ReserveSpotForm />
+                      <ReserveSpotForm id={plan?.id} />
                     </PopoverContent>
                   </Popover>
                 </div>

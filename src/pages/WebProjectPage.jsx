@@ -11,6 +11,7 @@ import ProjectUpdate from "../components/webProject/ProjectUpdate";
 import PropertiesAmenities from "../components/webProject/PropertiesAmenities";
 import WebProject from "../components/webProject/WebProject";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 const WebProjectPage = ({ projects }) => {
   const { name } = useParams();
@@ -55,12 +56,19 @@ const WebProjectPage = ({ projects }) => {
 
   return (
     <section>
+      <Helmet>
+        <title>Our Projects - Light Way Homes</title>
+        <meta
+          name="description"
+          content="Discover the amazing projects we have worked on."
+        />
+      </Helmet>
       <div>
         <WebProject project={project} projectCat={projectCat} />
         <BuildingInsight project={project} />
-      {project.name  !== "The Novara Courts" && <Exterior project={project} />}
-      {project.name  !== "The Novara Courts" && <Interior project={project} />}
-      {/* {project.name  !== "The Novara Courts" &&  <FloorStructure project={project} />} */}
+        {project.name !== "The Novara Courts" && <Exterior project={project} />}
+        {project.name !== "The Novara Courts" && <Interior project={project} />}
+        {/* {project.name  !== "The Novara Courts" &&  <FloorStructure project={project} />} */}
         <OneBedroomMansionatte project={project} projectCat={projectCat} />
         <PropertiesAmenities project={project} />
         <FourBedroomMansionatte project={project} projectCat={projectCat} />

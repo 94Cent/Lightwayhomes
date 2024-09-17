@@ -20,6 +20,7 @@ import LogoColoured from "./assets/images/logo-colured.png";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import AutoScroll from "components/AutoScroll";
+import LandingPage from "pages/LandingPage";
 
 function App() {
   const location = useLocation();
@@ -49,6 +50,7 @@ function App() {
         )
       }
       <Routes>
+        <Route path="/landing-page" element={<LandingPage />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs testimonials={data.testimonials} teams={data.teams} />} />
         <Route path="/contact" element={<Contact />} />

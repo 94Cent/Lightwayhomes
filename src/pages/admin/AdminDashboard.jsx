@@ -137,7 +137,7 @@ const AdminDashboard = () => {
                   <TableRow>
                     <TableHead>No</TableHead>
                     <TableHead>Name</TableHead>
-                    <TableHead>Email</TableHead>
+                    <TableHead>Title</TableHead>
                     <TableHead>Date Reserved</TableHead>
                     <TableHead>Method</TableHead>
                   </TableRow>
@@ -147,7 +147,7 @@ const AdminDashboard = () => {
                     <TableRow key={reservation.id} className="text-gray-700">
                       <TableCell>{index + 1}</TableCell>
                       <TableCell>{reservation.name}</TableCell>
-                      <TableCell>{reservation.email}</TableCell>
+                      <TableCell>{reservation.project_title}</TableCell>
                       <TableCell>{new Date(reservation.date_added).toLocaleDateString()}</TableCell>
                       <TableCell>{reservation.method}</TableCell>
                     </TableRow>
