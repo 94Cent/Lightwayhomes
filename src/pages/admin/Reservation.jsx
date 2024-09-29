@@ -23,7 +23,9 @@ const Reservation = () => {
       const data = await response.json();
       if (response.ok) {
         setReservation(data);
+        console.log(data, "Data reservation");
       } else {
+        console.log(data, "Data reservation");
       }
     } catch (error) {
       console.log(error, "Data reservation");
