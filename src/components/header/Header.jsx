@@ -14,7 +14,7 @@ const Header = () => {
     <header className="shadow-md bg-white">
       <div className="container mx-auto xl:px-12 md:px-6 px-4 py-4 flex justify-between items-center text-purple">
         <Link to="/" className="text-2xl text-purple">
-        <img src={LogoColoured} alt="Logo" className="w-32 h-20" />
+        <img src={LogoColoured} alt="Logo" className="w-25 h-20" />
         </Link>
 
         <Navbar />
