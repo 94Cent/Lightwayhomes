@@ -1,10 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
     "\\src",
+    "\\src\\component",
+    "\\src\\components",
+    "\\src\\components\\about",
+    "\\src\\components\\admin",
+    "\\src\\components\\header",
+    "\\src\\components\\home",
+    "\\src\\lib",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\pages\\AboutUs.jsx",
+  "SelectedNode": "\\src\\pages\\Home.jsx",
   "PreviewInSolutionExplorer": false
 }

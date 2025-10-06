@@ -15,12 +15,12 @@ function WelcomeSection() {
         </div>
         <div className="w-full md:w-1/2 p-4 text-center">
           <h2 className="md:text-3xl text-xl font-normal text-purple mb-2 md:mt-0 mt-6">
-            Welcome to Lightway Homes
+            Welcome to Light Way Homes
           </h2>
           <hr className="border-purple border-[2px] mb-4 md:w-44 w-28 mx-auto text-center rounded-xl" />
           <p className="text-lg text-purple mb-6">
             <span className="text-4xl text-purple font-normal">W</span>e are a
-            real estate company providing marketing, advisory and developmental
+            real estate company providing advisory and developmental
             services across the entire real estate value chain in Nigeria and
             across Africa.
           </p>

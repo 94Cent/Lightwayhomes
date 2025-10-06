@@ -19,7 +19,7 @@
         "/images/exterior-1.png"
       ],
       "interiorDescription": "Ample space within each apartment helps guarantee cool interior and a home good for your health. The headroom is high enough to keep the building ventilated, increased perception of space and more natural light. The interior design is flexible, adaptable and caters to your desired lifestyle.",
-      "floorImage": ["/images/floor-plan-1.png", "/images/floor-plan-2.png"],
+      "floorImage": [ "/images/floor-plan-1.png", "/images/floor-plan-2.png" ],
       "floorDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
       "planDescription": "The Naples Estate, Arepo, is a smart move towards securing you and your family’s future! In this estate",
       "plan": [
@@ -40,7 +40,7 @@
         }
       ],
       "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.597249293163!2d3.4227809736510784!3d6.696700921129148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b952a352bedbf%3A0xcbcff4a59dadf00c!2sArepo%20Rd%2C%20Pakuro%20121101%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1724867307342!5m2!1sen!2sng",
-      "brochure": "https://drive.google.com/uc?export=download&id=1NtaVSxyfRdPtAKjBNY2lKkgokhUXj0UA",
+      "brochure": "https://selar.co/5q3h01",
       "faq": [
         {
           "question": "What title do you have over the houses?",
@@ -96,7 +96,7 @@
         "/images/1-bedroom-2.png"
       ],
       "interiorDescription": "Step into a realm of boundless possibilities and limitless imagination at Roman Heights. Our interior design transcends the ordinary, embracing versatility and adaptability to suit your unique desires and needs. With soaring high ceilings, the promise of more space and light becomes an everyday reality, elevating your spirits and enriching your daily life. Indulge in the opulent aesthetics, which seamlessly blend with the ingenious space maximization techniques. The interior ambience creates an ethereal sanctuary, where comfort and beauty converge in perfect harmony. At Roman Heights, we redefine the art of living, crafting an innovative and unobtrusive environment that complements your lifestyle, granting you a sense of fulfilment like never before.",
-      "floorImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
+      "floorImage": [ "/images/floor-plan-2.png", "/images/floor-plan-1.png" ],
       "floorDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
       "planDescription": "The Roman Height Estate, Arepo, is a smart move towards securing you and your family’s future! In this estate",
       "plan": [
@@ -117,7 +117,7 @@
         }
       ],
       "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.597249293163!2d3.4227809736510784!3d6.696700921129148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b952a352bedbf%3A0xcbcff4a59dadf00c!2sArepo%20Rd%2C%20Pakuro%20121101%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1724867307342!5m2!1sen!2sng",
-      "brochure": "https://drive.google.com/uc?export=download&id=17D1th1yfBVSK6j7XxsABek-04OevB-Qo",
+      "brochure": "https://selar.co/i3223m",
       "faq": [
         {
           "question": "What title do you have over the houses?",
@@ -165,9 +165,9 @@
         "/images/novara-update2.jpg"
       ],
       "exteriorDescription": "Careful attention was paid to developing The Naples apartments, with manifest emphasis on simple shapes, purposeful functionality, intentional asymmetry, clean lines, natural lighting, open floor concept and smart home features. Apartments comes with balconies to give a panoramic view of the environment, aesthetics, outdoor space, fresh air and allow natural light into your apartment.",
-      "interiorImage": ["/images/interior-2.png", "/images/interior-1.png"],
+      "interiorImage": [ "/images/interior-2.png", "/images/interior-1.png" ],
       "interiorDescription": "Ample space within each apartment helps guarantee cool interior and a home good for your health. The headroom is high enough to keep the building ventilated, increased perception of space and more natural light. The interior design is flexible, adaptable and caters to your desired lifestyle.",
-      "floorImage": ["/images/floor-plan-2.png", "/images/floor-plan-1.png"],
+      "floorImage": [ "/images/floor-plan-2.png", "/images/floor-plan-1.png" ],
       "floorDescription": "The floor plan has been designed to enhance the life of occupants by maximizing space, light and airflow while simultaneously creating a natural flow between rooms. Moving through the space within each unit is seamless and fitting to your lifestyle.",
       "planDescription": "The Novara Court Estate, Arepo, is a smart move towards securing you and your family’s future!",
       "paymentPlan": "Secure a plot with N200,000 initial deposit and spread balance in 6 or 12 months.",
@@ -189,7 +189,7 @@
         }
       ],
       "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31693.448863943897!2d3.3998108130278952!3d6.808589715665262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bc0b91a29fa81%3A0xe92e570709273423!2sMowe%2C%20Loburo%20110113%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1724867645620!5m2!1sen!2sng",
-      "brochure": "https://drive.google.com/uc?export=download&id=1NuDXFSE4F6oUYPLM7umzXMCceCsAzbxN",
+      "brochure": "https://selar.co/323431",
       "faq": [
         {
           "question": "Where is Novara Court located?",
@@ -230,10 +230,10 @@
     {
       "name": "The Roman Heights",
       "description": "You can easily go through our work-in-progress and upcoming projects and turn on notification, in order to be notified when a project is completed.",
-      "img": ["/images/naples-update2.jpg", "/images/romanheight-update1.jpg"],
+      "img": [ "/images/naples-update2.jpg", "/images/romanheight-update1.jpg" ],
       "channel": "https://www.youtube.com/embed/5zmJe6FRd8s?si=z0bR3vittPjy31po",
       "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.597249293163!2d3.4227809736510784!3d6.696700921129148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b952a352bedbf%3A0xcbcff4a59dadf00c!2sArepo%20Rd%2C%20Pakuro%20121101%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1724867307342!5m2!1sen!2sng",
-      "brochure": "https://drive.google.com/uc?export=download&id=17D1th1yfBVSK6j7XxsABek-04OevB-Qo",
+      "brochure": "https://selar.co/i3223m",
       "projects": [
         {
           "name": "Palm Estate",
@@ -325,10 +325,10 @@
     {
       "name": "The Naples",
       "description": "You can easily go through our work-in-progress and upcoming projects and turn on notification, in order to be notified when a project is completed.",
-      "img": ["/images/naple-update-1.jpg", "/images/naples-update2.jpg"],
+      "img": [ "/images/naple-update-1.jpg", "/images/naples-update2.jpg" ],
       "channel": "https://www.youtube.com/embed/Fy9W1zkfk1Q?si=x7Xe1qmY5PxTc7Xj",
       "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.597249293163!2d3.4227809736510784!3d6.696700921129148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b952a352bedbf%3A0xcbcff4a59dadf00c!2sArepo%20Rd%2C%20Pakuro%20121101%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1724867307342!5m2!1sen!2sng",
-      "brochure": "https://drive.google.com/uc?export=download&id=1NtaVSxyfRdPtAKjBNY2lKkgokhUXj0UA",
+      "brochure": "https://selar.co/5q3h01",
       "projects": [
         {
           "name": "Palm Estate",
@@ -420,10 +420,10 @@
     {
       "name": "The Novara Courts",
       "description": "You can easily go through our work-in-progress and upcoming projects and turn on notification, in order to be notified when a project is completed.",
-      "img": ["/images/novara-hero-home.jpg", "/images/novara-update2.jpg"],
+      "img": [ "/images/novara-hero-home.jpg", "/images/novara-update2.jpg" ],
       "channel": "https://www.youtube.com/embed/Fy9W1zkfk1Q?si=x7Xe1qmY5PxTc7Xj",
       "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31693.448863943897!2d3.3998108130278952!3d6.808589715665262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bc0b91a29fa81%3A0xe92e570709273423!2sMowe%2C%20Loburo%20110113%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1724867645620!5m2!1sen!2sng",
-      "brochure": "https://drive.google.com/uc?export=download&id=1NuDXFSE4F6oUYPLM7umzXMCceCsAzbxN",
+      "brochure": "https://selar.co/323431",
       "projects": [
         {
           "name": "Palm Estate",

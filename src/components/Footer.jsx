@@ -73,9 +73,8 @@ function Footer() {
   };
   const downloadFiles = () => {
     const links = [
-        'https://drive.google.com/uc?export=download&id=1NuDXFSE4F6oUYPLM7umzXMCceCsAzbxN',
-        'https://drive.google.com/uc?export=download&id=1NtaVSxyfRdPtAKjBNY2lKkgokhUXj0UA',
-        'https://drive.google.com/uc?export=download&id=17D1th1yfBVSK6j7XxsABek-04OevB-Qo'
+        
+        'https://selar.co/m/light-way-homes1'
     ];
 
     const downloadFile = (link) => {

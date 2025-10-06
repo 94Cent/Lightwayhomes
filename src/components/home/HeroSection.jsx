@@ -36,7 +36,7 @@ const slides = [
     image: Hero5,
     heading: "Roman Heights",
     caption:
-      "Welcome to Roman Heights Where Timeless Beauty Meets Mordern Luxury! ",
+      "Welcome to Roman Heights Where Timeless Beauty Meets Modern Luxury! ",
     label: "The-Roman-Heights",
   },
 ];
