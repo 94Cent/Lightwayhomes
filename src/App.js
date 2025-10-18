@@ -21,6 +21,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import AutoScroll from "components/AutoScroll";
 import LandingPage from "pages/LandingPage";
+import InspectionPage from "pages/InspectionPage";
 
 function App() {
   const location = useLocation();
@@ -55,6 +56,7 @@ function App() {
         <Route path="/about" element={<AboutUs testimonials={data.testimonials} teams={data.teams} />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/career" element={<Careers />} />
+        <Route path="/inspection" element={<InspectionPage />} />
         <Route path="/projects/:name" element={<WebProjectPage projects={data.projects} />} />
         <Route path="/projects-update/:name" element={<ProjectUpdate project={data.projectsUpdate} />} />
         <Route path="/admin/auth/login" element={<AdminLogin />} />
