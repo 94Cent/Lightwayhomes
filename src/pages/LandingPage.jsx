@@ -97,8 +97,7 @@ function LandingPage() {
         </div>
 
         <a 
-          href=""
-          target="_blank" 
+          href="http://wa.me/2348075161213"
           rel=""
           className="flex items-center space-x-4 cursor-pointer hover:opacity-80 transition duration-300 py-20 lg:py-0"
         >

@@ -12,7 +12,7 @@ function AppointmentForm(){
                     </p>
                 </div>
 
-                <form action="" className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <form action="https://formsubmit.co/lwh.investment@gmail.com" className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label htmlFor="fullname" className="block text-gray-800 font-semibold mb-2">
                             Full Name <span className="text-red-500">*</span>
