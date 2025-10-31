@@ -54,31 +54,31 @@ function LandingPage() {
 
     const FancyInspectionButton = () => {
         return (
-            <div className="relative flex items-center justify-center gap-6 py-20 px-6 bg-gradient-to-br from-purple-50 via-white to-blue-50 min-h-[500px] overflow-hidden">
+            <div className="relative flex items-center justify-center gap-6 py-10 md:py-20 px-4 md:px-6 bg-gradient-to-br from-purple-50 via-white to-blue-50 min-h-[300px] md:min-h-[500px] overflow-hidden">
                 {/* Animated background elements */}
-                <div className="absolute top-10 left-10 w-80 h-80 bg-gradient-to-r from-blue-200 to-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float-slow"></div>
-                <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-r from-purple-200 to-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-float-medium"></div>
-                <div className="absolute bottom-20 left-1/4 w-72 h-72 bg-gradient-to-r from-pink-200 to-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float-fast"></div>
+                <div className="absolute top-10 left-10 w-40 h-40 md:w-80 md:h-80 bg-gradient-to-r from-blue-200 to-purple-200 rounded-full mix-blend-multiply filter blur-xl md:blur-3xl opacity-60 animate-float-slow"></div>
+                <div className="absolute top-20 right-20 w-48 h-48 md:w-96 md:h-96 bg-gradient-to-r from-purple-200 to-pink-200 rounded-full mix-blend-multiply filter blur-xl md:blur-3xl opacity-50 animate-float-medium"></div>
+                <div className="absolute bottom-20 left-1/4 w-36 h-36 md:w-72 md:h-72 bg-gradient-to-r from-pink-200 to-blue-200 rounded-full mix-blend-multiply filter blur-xl md:blur-3xl opacity-60 animate-float-fast"></div>
                 
                 {/* Floating emojis instead of icons */}
-                <div className="absolute top-1/4 left-1/4 text-6xl opacity-30 animate-bounce-slow">🏠</div>
-                <div className="absolute top-1/3 right-1/4 text-4xl opacity-30 animate-bounce-medium">🔒</div>
-                <div className="absolute bottom-1/4 left-1/3 text-5xl opacity-30 animate-bounce-fast">⭐</div>
+                <div className="absolute top-1/4 left-1/4 text-4xl md:text-6xl opacity-30 animate-bounce-slow">🏠</div>
+                <div className="absolute top-1/3 right-1/4 text-3xl md:text-4xl opacity-30 animate-bounce-medium">🔒</div>
+                <div className="absolute bottom-1/4 left-1/3 text-4xl md:text-5xl opacity-30 animate-bounce-fast">⭐</div>
                 
                 <Link
                     to="/inspection"
-                    className="relative group inline-flex items-center justify-center px-20 py-12 text-5xl font-extrabold text-white bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 rounded-4xl shadow-2xl hover:shadow-4xl transform hover:scale-110 transition-all duration-500 ease-out hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 overflow-hidden border-4 border-white/30"
+                    className="relative group inline-flex items-center justify-center px-6 py-4 md:px-20 md:py-12 text-xl md:text-5xl font-bold md:font-extrabold text-white bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 rounded-2xl md:rounded-4xl shadow-xl md:shadow-2xl hover:shadow-2xl md:hover:shadow-4xl transform hover:scale-105 transition-all duration-500 ease-out hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 overflow-hidden border-2 md:border-4 border-white/30 w-full max-w-xs md:max-w-none mx-4"
                 >
                     {/* Animated background shine effect */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-12 translate-x-[-150%] group-hover:translate-x-[150%] transition-transform duration-1500 ease-out"></div>
                     
                     {/* Main button content */}
-                    <span className="relative z-10 flex items-center gap-8 tracking-wider">
-                        <span className="text-shadow-lg bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
+                    <span className="relative z-10 flex items-center gap-3 md:gap-8 tracking-normal md:tracking-wider text-center justify-center w-full">
+                        <span className="text-shadow md:text-shadow-lg bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent text-sm md:text-5xl leading-tight">
                             Book Inspection Now!!
                         </span>
                         <svg 
-                            className="w-12 h-12 group-hover:translate-x-3 group-hover:scale-125 transition-all duration-300 ease-out" 
+                            className="w-6 h-6 md:w-12 md:h-12 group-hover:translate-x-1 md:group-hover:translate-x-3 group-hover:scale-110 md:group-hover:scale-125 transition-all duration-300 ease-out flex-shrink-0" 
                             fill="none" 
                             stroke="currentColor" 
                             viewBox="0 0 24 24"
@@ -86,17 +86,17 @@ function LandingPage() {
                             <path 
                                 strokeLinecap="round" 
                                 strokeLinejoin="round" 
-                                strokeWidth={3} 
+                                strokeWidth={2.5} 
                                 d="M13 7l5 5m0 0l-5 5m5-5H6" 
                             />
                         </svg>
                     </span>
                     
                     {/* Outer glow effect */}
-                    <div className="absolute inset-0 rounded-4xl bg-gradient-to-r from-blue-400/50 via-purple-400/50 to-pink-400/50 blur-2xl group-hover:blur-3xl transition-all duration-700 opacity-0 group-hover:opacity-100 -z-10"></div>
+                    <div className="absolute inset-0 rounded-2xl md:rounded-4xl bg-gradient-to-r from-blue-400/50 via-purple-400/50 to-pink-400/50 blur-lg md:blur-2xl group-hover:blur-xl md:group-hover:blur-3xl transition-all duration-700 opacity-0 group-hover:opacity-100 -z-10"></div>
                     
                     {/* Pulse ring effect */}
-                    <div className="absolute inset-0 rounded-4xl border-4 border-white/40 group-hover:border-white/60 transition-all duration-500 animate-pulse-fast"></div>
+                    <div className="absolute inset-0 rounded-2xl md:rounded-4xl border-2 md:border-4 border-white/40 group-hover:border-white/60 transition-all duration-500 animate-pulse-fast"></div>
                 </Link>
             </div>
         );

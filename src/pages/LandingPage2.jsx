@@ -57,31 +57,31 @@ function LandingPage() {
 
     const FancyInspectionButton = () => {
         return (
-            <div className="relative flex items-center justify-center gap-6 py-20 px-6 bg-gradient-to-br from-green-50 via-white to-blue-50 min-h-[500px] overflow-hidden">
+            <div className="relative flex items-center justify-center gap-6 py-10 md:py-20 px-4 md:px-6 bg-gradient-to-br from-green-50 via-white to-blue-50 min-h-[300px] md:min-h-[500px] overflow-hidden">
                 {/* Animated background elements */}
-                <div className="absolute top-10 left-10 w-80 h-80 bg-gradient-to-r from-green-200 to-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float-slow"></div>
-                <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-r from-blue-200 to-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-float-medium"></div>
-                <div className="absolute bottom-20 left-1/4 w-72 h-72 bg-gradient-to-r from-purple-200 to-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float-fast"></div>
+                <div className="absolute top-10 left-10 w-40 h-40 md:w-80 md:h-80 bg-gradient-to-r from-green-200 to-blue-200 rounded-full mix-blend-multiply filter blur-xl md:blur-3xl opacity-60 animate-float-slow"></div>
+                <div className="absolute top-20 right-20 w-48 h-48 md:w-96 md:h-96 bg-gradient-to-r from-blue-200 to-purple-200 rounded-full mix-blend-multiply filter blur-xl md:blur-3xl opacity-50 animate-float-medium"></div>
+                <div className="absolute bottom-20 left-1/4 w-36 h-36 md:w-72 md:h-72 bg-gradient-to-r from-purple-200 to-green-200 rounded-full mix-blend-multiply filter blur-xl md:blur-3xl opacity-60 animate-float-fast"></div>
                 
                 {/* Floating emojis */}
-                <div className="absolute top-1/4 left-1/4 text-6xl opacity-30 animate-bounce-slow">🏡</div>
-                <div className="absolute top-1/3 right-1/4 text-4xl opacity-30 animate-bounce-medium">📈</div>
-                <div className="absolute bottom-1/4 left-1/3 text-5xl opacity-30 animate-bounce-fast">💰</div>
+                <div className="absolute top-1/4 left-1/4 text-4xl md:text-6xl opacity-30 animate-bounce-slow">🏡</div>
+                <div className="absolute top-1/3 right-1/4 text-3xl md:text-4xl opacity-30 animate-bounce-medium">📈</div>
+                <div className="absolute bottom-1/4 left-1/3 text-4xl md:text-5xl opacity-30 animate-bounce-fast">💰</div>
                 
                 <Link
                     to="/inspection"
-                    className="relative group inline-flex items-center justify-center px-20 py-12 text-5xl font-extrabold text-white bg-gradient-to-br from-green-600 via-blue-600 to-purple-600 rounded-4xl shadow-2xl hover:shadow-4xl transform hover:scale-110 transition-all duration-500 ease-out hover:from-green-700 hover:via-blue-700 hover:to-purple-700 overflow-hidden border-4 border-white/30"
+                    className="relative group inline-flex items-center justify-center px-6 py-4 md:px-20 md:py-12 text-lg md:text-5xl font-bold md:font-extrabold text-white bg-gradient-to-br from-green-600 via-blue-600 to-purple-600 rounded-2xl md:rounded-4xl shadow-xl md:shadow-2xl hover:shadow-2xl md:hover:shadow-4xl transform hover:scale-105 transition-all duration-500 ease-out hover:from-green-700 hover:via-blue-700 hover:to-purple-700 overflow-hidden border-2 md:border-4 border-white/30 w-full max-w-xs md:max-w-none mx-4"
                 >
                     {/* Animated background shine effect */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-12 translate-x-[-150%] group-hover:translate-x-[150%] transition-transform duration-1500 ease-out"></div>
                     
                     {/* Main button content */}
-                    <span className="relative z-10 flex items-center gap-8 tracking-wider">
-                        <span className="text-shadow-lg bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
+                    <span className="relative z-10 flex items-center gap-3 md:gap-8 tracking-normal md:tracking-wider text-center justify-center w-full">
+                        <span className="text-shadow md:text-shadow-lg bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent text-base md:text-5xl leading-tight">
                             Book Inspection Now!!
                         </span>
                         <svg 
-                            className="w-12 h-12 group-hover:translate-x-3 group-hover:scale-125 transition-all duration-300 ease-out" 
+                            className="w-5 h-5 md:w-12 md:h-12 group-hover:translate-x-1 md:group-hover:translate-x-3 group-hover:scale-110 md:group-hover:scale-125 transition-all duration-300 ease-out flex-shrink-0" 
                             fill="none" 
                             stroke="currentColor" 
                             viewBox="0 0 24 24"
@@ -89,17 +89,17 @@ function LandingPage() {
                             <path 
                                 strokeLinecap="round" 
                                 strokeLinejoin="round" 
-                                strokeWidth={3} 
+                                strokeWidth={2.5} 
                                 d="M13 7l5 5m0 0l-5 5m5-5H6" 
                             />
                         </svg>
                     </span>
                     
                     {/* Outer glow effect */}
-                    <div className="absolute inset-0 rounded-4xl bg-gradient-to-r from-green-400/50 via-blue-400/50 to-purple-400/50 blur-2xl group-hover:blur-3xl transition-all duration-700 opacity-0 group-hover:opacity-100 -z-10"></div>
+                    <div className="absolute inset-0 rounded-2xl md:rounded-4xl bg-gradient-to-r from-green-400/50 via-blue-400/50 to-purple-400/50 blur-lg md:blur-2xl group-hover:blur-xl md:group-hover:blur-3xl transition-all duration-700 opacity-0 group-hover:opacity-100 -z-10"></div>
                     
                     {/* Pulse ring effect */}
-                    <div className="absolute inset-0 rounded-4xl border-4 border-white/40 group-hover:border-white/60 transition-all duration-500 animate-pulse-fast"></div>
+                    <div className="absolute inset-0 rounded-2xl md:rounded-4xl border-2 md:border-4 border-white/40 group-hover:border-white/60 transition-all duration-500 animate-pulse-fast"></div>
                 </Link>
             </div>
         );
@@ -113,45 +113,45 @@ function LandingPage() {
             </Helmet>
 
             {/* Enhanced Hero Section */}
-            <section className="relative w-full h-screen min-h-[600px] overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-purple-900/50 z-10"></div>
-                <img 
-                    src={LWH} 
-                    alt="Novara Court Land Development - Prime Plots Near Lagos" 
-                    className="w-full h-full object-cover transform scale-105 hover:scale-100 transition-transform duration-7000 ease-out"
-                />
-                <div className="absolute inset-0 z-20 flex items-center justify-center">
-                    <div className={`text-center text-white px-6 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-green-100 to-blue-100 bg-clip-text text-transparent">
-                            NOVARA COURT
-                        </h1>
-                        <p className="text-xl md:text-2xl lg:text-3xl font-light mb-8 italic">
-                            Own Your Land Near Lagos
-                        </p>
-                        <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-400 mx-auto mb-8 rounded-full"></div>
-                        <p className="text-lg md:text-xl max-w-4xl mx-auto leading-relaxed mb-12">
-                            Immediate allocation | All-inclusive pricing | 300-600 SQM plots in Orilemo, Mowe
-                        </p>
-                        
-                        <Link
-                            to="/inspection" 
-                            className="inline-flex items-center px-12 py-6 text-xl md:text-2xl font-semibold text-white bg-gradient-to-r from-green-600 to-blue-600 rounded-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 border-2 border-white/30 hover:border-white/50"
-                        >
-                            Book Inspection Now!!
-                            <svg className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                            </svg>
-                        </Link>
-                    </div>
-                </div>
-                
-                {/* Scroll indicator */}
-                <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
-                    <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-                        <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
-                    </div>
-                </div>
-            </section>
+<section className="relative w-full h-screen min-h-[600px] overflow-hidden">
+    <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-purple-900/50 z-10"></div>
+    <img 
+        src={LWH} 
+        alt="Novara Court Land Development - Prime Plots Near Lagos" 
+        className="w-full h-full object-cover transform scale-105 hover:scale-100 transition-transform duration-7000 ease-out"
+    />
+    <div className="absolute inset-0 z-20 flex items-center justify-center">
+        <div className={`text-center text-white px-6 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-green-100 to-blue-100 bg-clip-text text-transparent">
+                NOVARA COURT
+            </h1>
+            <p className="text-xl md:text-2xl lg:text-3xl font-light mb-8 italic">
+                Own Your Land Near Lagos
+            </p>
+            <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-400 mx-auto mb-8 rounded-full"></div>
+            <p className="text-lg md:text-xl max-w-4xl mx-auto leading-relaxed mb-8 md:mb-12">
+                Immediate allocation | All-inclusive pricing | 300-600 SQM plots in Orilemo, Mowe
+            </p>
+            
+            <Link
+                to="/inspection" 
+                className="inline-flex items-center px-6 py-3 md:px-12 md:py-6 text-base md:text-xl lg:text-2xl font-semibold text-white bg-gradient-to-r from-green-600 to-blue-600 rounded-xl md:rounded-2xl shadow-lg md:shadow-2xl hover:shadow-xl md:hover:shadow-3xl transform hover:scale-105 transition-all duration-300 border-2 border-white/30 hover:border-white/50 mx-4 md:mx-0"
+            >
+                Book Inspection Now!!
+                <svg className="w-4 h-4 md:w-6 md:h-6 ml-2 md:ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+            </Link>
+        </div>
+    </div>
+    
+    {/* Scroll indicator */}
+    <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+        </div>
+    </div>
+</section>
 
             {/* Why Location Matters Section */}
             <section className="py-20 bg-gradient-to-br from-white via-blue-50 to-green-50 relative overflow-hidden">
