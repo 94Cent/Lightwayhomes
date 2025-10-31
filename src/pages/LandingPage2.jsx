@@ -2,7 +2,12 @@ import React, { useState, useEffect, useRef } from "react";
 import NovaraHero from "../assets/images/novara-hero-home.jpg";
 import NaplesHero from "../assets/images/naples-hero-home.jpg";
 import RomanHero from "../assets/images/roman-height-home-hero.jpg";
-import TneDupelex from "../assets/images/Lightway Hero.jpg"
+import LWH from "../assets/images/LWH PORTRAITS.jpg";
+import LWH2 from "../assets/images/LWH location.jpg";
+import LWH3 from "../assets/images/LWH PLOT.jpg";
+import LWH4 from "../assets/images/LWH REASONS.jpg";
+import LWH5 from "../assets/images/LWH ALLOCATION.jpg";
+import TneDupelex from "../assets/images/TNE 4 BED DUPLEX2.jpeg"
 import House1 from "../assets/images/House1.jpeg"
 import House2 from "../assets/images/House2.jpeg"
 import House3 from "../assets/images/House3.jpeg"
@@ -22,14 +27,12 @@ import { Link } from "react-router-dom";
 function LandingPage() {
 
     const features = [
-        "Spacious 4 Bedroom Terrace + BQ",
-        "Gated Community at Arepo",
-        "Spacious Parking & Living Areas",
-        "Title: C of O",
-        "Price: ₦150 Million (Building) all inclusive price",
-        "Serviced Plots: ₦30 Million (500 SQM), ₦25 Million (300 SQM) all inclusive plot price.",
-        "Few Units Left -- Fully Finished",
-        "Flexible payment plan available",
+        "600 SQM: N7,500,000",
+        "500 SQM: N6,500,000",
+        "300 SQM: N4,500,000",
+        "All inclusive price – you pay the quoted amount and nothing hidden",
+        "Flexible payment plan from 3 to 24 months + instant allocation to begin building when you’re ready",
+        "Build your home near Lagos",
     ];
 
     
@@ -47,19 +50,72 @@ function LandingPage() {
 
     return(
         <>
-          <section className="w-full h-[400px]" >
+          <section className="w-full h-[400px] relative">
   <img 
-    src={TneDupelex} 
+    src={LWH} 
     alt="4-Bedroom Terrace Duplex" 
-    className="w-full h-full object-cover"
+    className="w-full h-full object-cover" 
   />
+  <div className="absolute inset-0 bg-black opacity-50"></div>
+
+  <div className="absolute inset-0 flex flex-col items-center justify-center p-4 z-10">
+    
+    <h2 className="
+      text-center 
+      italic 
+      font-light 
+      leading-tight
+      text-2xl              
+      sm:text-3xl           
+      md:text-5xl          
+      text-white mb-4
+    ">
+      Own Your Land Near Lagos – Novara Court, Orilemo, Mowe
+    </h2>
+    
+    <p className="
+      text-center 
+      font-light 
+      mb-10
+      text-white 
+      max-w-md 
+      text-4xl               
+      sm:text-lg            
+      md:text-xl            
+    ">
+      Immediate allocation | All-inclusive pricing | 300-600 SQM plots in a prime growing location
+    </p>
+
+    <Link
+  to="/inspection" 
+  className="
+    text-lg             
+    sm:text-xl          
+    md:text-2xl         
+    font-light 
+    hover:opacity-90 
+    transition 
+    py-3 
+    px-6                
+    sm:px-8 
+    sm:py-4
+    border border-solid border-gray-800 rounded-lg 
+    bg-purple 
+    text-white 
+    hover:bg-purple-800
+    hover:border-purple-800
+    hover:shadow-lg
+  "
+>
+  Book Inspection Now!!
+</Link>
+  </div>
 </section>
 
-
        <section className="flex flex-col items-center justify-center px-8 py-12 bg-white rounded-t-xl shadow-lg">
-  <div className="w-full flex justify-center">
+  <div className="w-full justify-center">
     <h2 className="text-purple text-4xl md:text-5xl text-center italic font-light leading-tight">
-      Own a 4-Bedroom Terrace Duplex <br /> + BQ in Arepo Today!
+     Why This Location Matters
     </h2>
   </div>
 
@@ -67,23 +123,29 @@ function LandingPage() {
     <Slider {...settings}>
       {/** Example of one slide; repeat for other images **/}
       <div className="relative w-full h-80 md:h-96 lg:h-[500px] overflow-hidden">
-        <img src={House1} alt="" className="w-full h-full object-cover" />
+        <img src={LWH2} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
       </div>
       <div className="relative w-full h-80 md:h-96 lg:h-[500px] overflow-hidden">
-        <img src={House2} alt="" className="w-full h-full object-cover" />
+        <img src={LWH} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
       </div>
       <div className="relative w-full h-80 md:h-96 lg:h-[500px] overflow-hidden">
-        <img src={House3} alt="" className="w-full h-full object-cover" />
+        <img src={LWH3} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
       </div>
       <div className="relative w-full h-80 md:h-96 lg:h-[500px] overflow-hidden">
-        <img src={House4} alt="" className="w-full h-full object-cover" />
+        <img src={LWH4} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
       </div>
     </Slider>
   </div>
+  <p>
+        Lagos is expanding fast and apartments are getting more expensive. More families and investors are looking for <br />affordable serviced land near Lagos.
+         Novara Court sits in Orilemo, Mowe, a strategic land-investment zone with <br />easy access to Lagos-Ibadan Expressway,notable landmarks like RCCG Camp, 
+         Nestlé, Olam Group and more. <br />This location offers value, accessibility and strong future appreciation!
+
+    </p>
 </section>
 
 <section className="py-4 lg:py-10 bg-white">
@@ -128,7 +190,7 @@ function LandingPage() {
 
                 <div className="w-full lg:w-5/12"> 
                     <img 
-                        src={House4} 
+                        src={LWH3} 
                         alt="The Naples Estate Building" 
                         className="w-full h-96 object-cover rounded-lg shadow-xl" 
                     />
@@ -136,7 +198,7 @@ function LandingPage() {
 
                 <div className="w-full lg:w-7/12">
                   <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-8 text-purple text-center">
-                     Why Choose The Naples <br className="hidden sm:inline" />Estate?
+                     Available Plots
                   </h2>
 
                   <ul className="space-y-2 text-gray-700 text-lg md:text-xl">
@@ -153,7 +215,8 @@ function LandingPage() {
 
 <section className="bg-white py-20">
     <div className="text-center">
-        <h2 className="text-2xl md:text-3xl lg:text-6xl font-light text-purple">We Have Come A Long way</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-6xl font-light text-purple">Development Features & Value
+</h2>
     </div>
 
      <div className="flex justify-center py-8">
@@ -163,70 +226,75 @@ function LandingPage() {
       className="w-[800px] h-[450px] object-cover"
     />
   </div>
-  <p className="text-center">Massive thanks to our investors who believed in their dream unit with Light Way Homes - even before they saw it!</p>
+  <p className="text-center">This estate features good road networks, perimeter fencing, effective drainage systems,<br /> and more. 
+    Ideal for those who want to buy now and build immediately or later. Enjoy the benefits of land ownership in a <br />fast-growing 
+    area without waiting for years.
+</p>
 </section>
 
 <hr className="border-t-2 border-gray-400 w-4/5 mx-auto" />
 
 <section className="bg-white py-20">
     <div className="text-center">
-        <h2 className="text-2xl md:text-3xl lg:text-6xl font-light text-purple">The Longer You Procrastinate, The <br />Faster You Lose Out </h2>
+        <h2 className="text-2xl md:text-3xl lg:text-6xl font-light text-purple"> Why It’s the Smart Move
+ </h2>
     </div>
 
      <div className="flex justify-center py-8">
     <img
-      src={House2}
+      src={LWH4}
       alt=""
       className="w-[800px] h-[450px] object-cover"
     />
   </div>
-  <p className="text-center">Book an inspection today. The few units left won't wait for long. Get started below.</p>
+  <p className="text-center">With demand for housing near Lagos increasing and supply in core Lagos areas limited, smart investors are moving <br />ahead of the curve. 
+    Land in Mowe/Orilemo is now becoming one of the highest potential growth zones around Lagos. Novara Court gives you an <br />opportunity to secure a high-value asset 
+    at an affordable price before the market catches up.
+</p>
 </section>
 
-<section className="relative bg-purple text-white rounded-lg overflow-hidden my-12">
-        {/* Background image */}
-        <img
-          src={House2}
-          alt="Background"
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
-        />
+<section className="bg-white py-20">
+    <div className="text-center">
+        <h2 className="text-2xl md:text-3xl lg:text-6xl font-light text-purple">Ready to join our community of landowners at Novara Court?
+</h2>
+    </div>
 
-        {/* Overlay content */}
-         <div className="relative flex items-center justify-center gap-6 py-16 px-6">
-        <Link
-          to="/inspection"
-          className="text-5xl font-light hover:underline hover:opacity-90 transition"
-        >
-          Book Inspection Now!!
-        </Link>
-      </div>
-      </section>
+     <div className="flex justify-center py-8">
+    <img
+      src={LWH5}
+      alt=""
+      className="w-[800px] h-[450px] object-cover"
+    />
+  </div>
+  <p className="text-center">Send in your enquiries to our dedicated Customer Service team on WhatsApp
+</p>
+</section>
 
-      <a 
-        href="http://wa.me/2348075161213"
-        target="_blank" // Opens the chat in a new tab
-        rel="noopener noreferrer"
-        className="
-          fixed 
-          bottom-6 
-          right-6 
-          bg-white 
-          rounded-full 
-          p-2 
-          shadow-2xl 
-          z-50 
-          transition-transform 
-          duration-300 
-          hover:scale-110
-        "
-        aria-label="Chat with us on WhatsApp"
-      >
-        <FontAwesomeIcon 
-          icon={faWhatsapp} 
-          className="text-6xl" // Large size for visibility
-          style={{ color: WHATSAPP_GREEN }}
-        />
-      </a>
+<a 
+  href="http://wa.me/2348075161213"
+  target="_blank" // Opens the chat in a new tab
+  rel="noopener noreferrer"
+  className="
+    fixed 
+    bottom-6 
+    right-6 
+    bg-white 
+    rounded-full 
+    p-2 
+    shadow-2xl 
+    z-50 
+    transition-transform 
+    duration-300 
+    hover:scale-110
+  "
+  aria-label="Chat with us on WhatsApp"
+>
+  <FontAwesomeIcon 
+    icon={faWhatsapp} 
+    className="text-6xl" // Large size for visibility
+    style={{ color: WHATSAPP_GREEN }}
+  />
+</a>
 
 
         </>
