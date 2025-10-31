@@ -19,8 +19,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { Link } from "react-router-dom";
-function LandingPage() {
 
+function LandingPage() {
     const features = [
         "Spacious 4 Bedroom Terrace + BQ",
         "Gated Community at Arepo",
@@ -32,205 +32,360 @@ function LandingPage() {
         "Flexible payment plan available",
     ];
 
-    
-        const settings = {
-            dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            autoplay: true,
-        };
+    const [isVisible, setIsVisible] = useState(false);
 
-        const WHATSAPP_GREEN = '#25D366';
+    useEffect(() => {
+        setIsVisible(true);
+    }, []);
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        fade: true,
+        autoplaySpeed: 5000,
+    };
+
+    const WHATSAPP_GREEN = '#25D366';
+
+    const FancyInspectionButton = () => {
+        return (
+            <div className="relative flex items-center justify-center gap-6 py-20 px-6 bg-gradient-to-br from-purple-50 via-white to-blue-50 min-h-[500px] overflow-hidden">
+                {/* Animated background elements */}
+                <div className="absolute top-10 left-10 w-80 h-80 bg-gradient-to-r from-blue-200 to-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float-slow"></div>
+                <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-r from-purple-200 to-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-float-medium"></div>
+                <div className="absolute bottom-20 left-1/4 w-72 h-72 bg-gradient-to-r from-pink-200 to-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float-fast"></div>
+                
+                {/* Floating emojis instead of icons */}
+                <div className="absolute top-1/4 left-1/4 text-6xl opacity-30 animate-bounce-slow">🏠</div>
+                <div className="absolute top-1/3 right-1/4 text-4xl opacity-30 animate-bounce-medium">🔒</div>
+                <div className="absolute bottom-1/4 left-1/3 text-5xl opacity-30 animate-bounce-fast">⭐</div>
+                
+                <Link
+                    to="/inspection"
+                    className="relative group inline-flex items-center justify-center px-20 py-12 text-5xl font-extrabold text-white bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 rounded-4xl shadow-2xl hover:shadow-4xl transform hover:scale-110 transition-all duration-500 ease-out hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 overflow-hidden border-4 border-white/30"
+                >
+                    {/* Animated background shine effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-12 translate-x-[-150%] group-hover:translate-x-[150%] transition-transform duration-1500 ease-out"></div>
+                    
+                    {/* Main button content */}
+                    <span className="relative z-10 flex items-center gap-8 tracking-wider">
+                        <span className="text-shadow-lg bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
+                            Book Inspection Now!!
+                        </span>
+                        <svg 
+                            className="w-12 h-12 group-hover:translate-x-3 group-hover:scale-125 transition-all duration-300 ease-out" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24"
+                        >
+                            <path 
+                                strokeLinecap="round" 
+                                strokeLinejoin="round" 
+                                strokeWidth={3} 
+                                d="M13 7l5 5m0 0l-5 5m5-5H6" 
+                            />
+                        </svg>
+                    </span>
+                    
+                    {/* Outer glow effect */}
+                    <div className="absolute inset-0 rounded-4xl bg-gradient-to-r from-blue-400/50 via-purple-400/50 to-pink-400/50 blur-2xl group-hover:blur-3xl transition-all duration-700 opacity-0 group-hover:opacity-100 -z-10"></div>
+                    
+                    {/* Pulse ring effect */}
+                    <div className="absolute inset-0 rounded-4xl border-4 border-white/40 group-hover:border-white/60 transition-all duration-500 animate-pulse-fast"></div>
+                </Link>
+            </div>
+        );
+    };
 
     return(
         <>
-          <section className="w-full h-[400px]" >
-  <img 
-    src={TneDupelex} 
-    alt="4-Bedroom Terrace Duplex" 
-    className="w-full h-full object-cover"
-  />
-</section>
+            <Helmet>
+                <title>Luxury 4-Bedroom Terrace Duplex + BQ in Arepo | Premium Living</title>
+                <meta name="description" content="Own a luxurious 4-bedroom terrace duplex with BQ in Arepo's gated community. Limited units available with flexible payment plans." />
+            </Helmet>
 
-
-       <section className="flex flex-col items-center justify-center px-8 py-12 bg-white rounded-t-xl shadow-lg">
-  <div className="w-full flex justify-center">
-    <h2 className="text-purple text-4xl md:text-5xl text-center italic font-light leading-tight">
-      Own a 4-Bedroom Terrace Duplex <br /> + BQ in Arepo Today!
-    </h2>
-  </div>
-
-  <div className="w-full md:w-3/4 lg:w-2/3 mt-8">
-    <Slider {...settings}>
-      {/** Example of one slide; repeat for other images **/}
-      <div className="relative w-full h-80 md:h-96 lg:h-[500px] overflow-hidden">
-        <img src={House1} alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-      </div>
-      <div className="relative w-full h-80 md:h-96 lg:h-[500px] overflow-hidden">
-        <img src={House2} alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-      </div>
-      <div className="relative w-full h-80 md:h-96 lg:h-[500px] overflow-hidden">
-        <img src={House3} alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-      </div>
-      <div className="relative w-full h-80 md:h-96 lg:h-[500px] overflow-hidden">
-        <img src={House4} alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-      </div>
-    </Slider>
-  </div>
-</section>
-
-<section className="py-4 lg:py-10 bg-white">
-    <hr className="border-t-2 border-gray-300 my-6" />
-
-    <div className="flex flex-col md:flex-row justify-between items-center py-10 max-w-3xl mx-auto">
-
-        <div className="text-4xl sm:text-2xl mb-8 px-6 lg:px-0 md:mb-0">
-            <span className="text-purple font-bold">Few units left.</span> Fully -finished. Book <br className="hidden sm:inline"/> 
-            a free inspection now or send in <br /> your enquries
-        </div>
-
-        <a 
-          href="http://wa.me/2348075161213"
-          rel=""
-          className="flex items-center space-x-4 cursor-pointer hover:opacity-80 transition duration-300 py-20 lg:py-0"
-        >
-
-        <div className="w-16 h-16 rounded-full flex items-center justify-center border-4">
-            <span className="text-4xl">
-                <FontAwesomeIcon 
-              icon={faWhatsapp} // Specify the imported icon
-              className="text-9xl" // Tailwind class to set the icon size
-              style={{ color: WHATSAPP_GREEN }} // Inline style for the green color
-            />
-            </span>
-        </div>
-
-        <div className="text-4xl sm:text-3xl text-black px-5">
-            Chat on
-            <div className="font-semibold">WhatsApp</div>
-        </div>
-        </a>
-    </div>
-
-    <hr class="border-t-2 border-gray-300 my-6" />
-</section>
-
-<section className="bg-white px-6"> 
-            
-            <div className="max-w-7xl mx-auto flex flex-col lg:flex-row space-y-10 lg:space-y-0 lg:space-x-12 items-center lg:items-start">
-
-                <div className="w-full lg:w-5/12"> 
-                    <img 
-                        src={House4} 
-                        alt="The Naples Estate Building" 
-                        className="w-full h-96 object-cover rounded-lg shadow-xl" 
-                    />
+            {/* Hero Section with Enhanced Design */}
+            <section className="relative w-full h-screen min-h-[600px] overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-purple-900/40 z-10"></div>
+                <img 
+                    src={TneDupelex} 
+                    alt="Luxury 4-Bedroom Terrace Duplex in Arepo" 
+                    className="w-full h-full object-cover transform scale-105 hover:scale-100 transition-transform duration-7000 ease-out"
+                />
+                <div className="absolute inset-0 z-20 flex items-center justify-center">
+                    <div className={`text-center text-white px-6 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+                        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent">
+                            THE NAPLES ESTATE
+                        </h1>
+                        <p className="text-2xl md:text-3xl lg:text-4xl font-light mb-8 italic">
+                            Luxury Living in Arepo
+                        </p>
+                        <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-8 rounded-full"></div>
+                        <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
+                            Premium 4-Bedroom Terrace Duplex + BQ in Exclusive Gated Community
+                        </p>
+                    </div>
                 </div>
-
-                <div className="w-full lg:w-7/12">
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-8 text-purple text-center">
-                     Why Choose The Naples <br className="hidden sm:inline" />Estate?
-                  </h2>
-
-                  <ul className="space-y-2 text-gray-700 text-lg md:text-xl">
-                    {features.map((feature, index) =>(
-                        <li key={index} className="flex items-start">
-                            <span className="mr-3 mt-3 inline-block w-2 h-2 bg-black flex-shrink-0"></span>
-                            {feature}
-                        </li>
-                    ))}
-                  </ul>
+                
+                {/* Scroll indicator */}
+                <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+                    <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+                        <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+                    </div>
                 </div>
-            </div>
-</section>
+            </section>
 
-<section className="bg-white py-20">
-    <div className="text-center">
-        <h2 className="text-2xl md:text-3xl lg:text-6xl font-light text-purple">We Have Come A Long way</h2>
-    </div>
+            {/* Main Heading Section */}
+            <section className="relative py-20 bg-gradient-to-br from-white via-blue-50 to-purple-50 overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-50"></div>
+                
+                <div className="max-w-6xl mx-auto px-6 text-center">
+                    <div className={`transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+                        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-transparent bg-gradient-to-r from-purple-600 via-blue-600 to-pink-600 bg-clip-text mb-8">
+                            Own Your Dream Home Today!
+                        </h2>
+                        <p className="text-2xl md:text-3xl text-gray-700 font-light italic mb-12">
+                            4-Bedroom Terrace Duplex + BQ in Prestigious Arepo
+                        </p>
+                        
+                        {/* Feature badges */}
+                        <div className="flex flex-wrap justify-center gap-4 mb-12">
+                            {["🏠 Gated Community", "🔒 24/7 Security", "🌳 Serene Environment", "🚗 Spacious Parking"].map((feature, index) => (
+                                <span 
+                                    key={index}
+                                    className="px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full border border-gray-200 shadow-lg text-lg font-semibold text-gray-800 hover:scale-105 transition-transform duration-300"
+                                >
+                                    {feature}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-     <div className="flex justify-center py-8">
-    <img
-      src={House4}
-      alt=""
-      className="w-[800px] h-[450px] object-cover"
-    />
-  </div>
-  <p className="text-center">Massive thanks to our investors who believed in their dream unit with Light Way Homes - even before they saw it!</p>
-</section>
+            {/* Enhanced Image Gallery Slider */}
+            <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+                <div className="max-w-7xl mx-auto px-6">
+                    <div className={`text-center mb-16 transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+                        <h3 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6">
+                            Explore Our Premium Properties
+                        </h3>
+                        <div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full"></div>
+                    </div>
 
-<hr className="border-t-2 border-gray-400 w-4/5 mx-auto" />
+                    <div className="relative">
+                        <Slider {...settings}>
+                            {[House1, House2, House3, House4].map((house, index) => (
+                                <div key={index} className="relative group">
+                                    <div className="relative h-96 md:h-[600px] lg:h-[700px] overflow-hidden rounded-3xl shadow-2xl">
+                                        <img 
+                                            src={house} 
+                                            alt={`Luxury property ${index + 1}`} 
+                                            className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                        <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
+                                            <h4 className="text-2xl md:text-3xl font-bold mb-2">Luxury Unit {index + 1}</h4>
+                                            <p className="text-lg opacity-90">Experience premium living at its finest</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </Slider>
+                    </div>
+                </div>
+            </section>
 
-<section className="bg-white py-20">
-    <div className="text-center">
-        <h2 className="text-2xl md:text-3xl lg:text-6xl font-light text-purple">The Longer You Procrastinate, The <br />Faster You Lose Out </h2>
-    </div>
+            {/* WhatsApp CTA Section - Enhanced */}
+            <section className="py-16 bg-gradient-to-r from-green-50 via-white to-green-50 relative overflow-hidden">
+                <div className="absolute inset-0 bg-pattern opacity-5"></div>
+                
+                <div className="max-w-4xl mx-auto px-6">
+                    <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl border border-green-200 p-12 transform hover:scale-[1.02] transition-transform duration-500">
+                        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+                            <div className="text-center lg:text-left">
+                                <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                                    <span className="text-green-600">Few Units Left.</span> Fully Finished.
+                                </h3>
+                                <p className="text-xl text-gray-600 mb-2">
+                                    Book a free inspection now
+                                </p>
+                                <p className="text-lg text-gray-500">
+                                    or send in your enquiries
+                                </p>
+                            </div>
 
-     <div className="flex justify-center py-8">
-    <img
-      src={House2}
-      alt=""
-      className="w-[800px] h-[450px] object-cover"
-    />
-  </div>
-  <p className="text-center">Book an inspection today. The few units left won't wait for long. Get started below.</p>
-</section>
+                            <a 
+                                href="https://wa.me/2348075161213"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group relative flex items-center space-x-6 bg-gradient-to-r from-green-500 to-green-600 px-12 py-8 rounded-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
+                            >
+                                <div className="relative">
+                                    <div className="absolute inset-0 bg-white/20 rounded-full animate-ping"></div>
+                                    <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-lg">
+                                        <FontAwesomeIcon 
+                                            icon={faWhatsapp}
+                                            className="text-4xl"
+                                            style={{ color: WHATSAPP_GREEN }}
+                                        />
+                                    </div>
+                                </div>
+                                
+                                <div className="text-white text-center lg:text-left">
+                                    <div className="text-2xl font-semibold">Chat on</div>
+                                    <div className="text-3xl font-bold">WhatsApp</div>
+                                </div>
+                                
+                                {/* Hover effect */}
+                                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-<section className="relative bg-purple text-white rounded-lg overflow-hidden my-12">
-        {/* Background image */}
-        <img
-          src={House2}
-          alt="Background"
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
-        />
+            {/* First Fancy Button */}
+            <FancyInspectionButton />
 
-        {/* Overlay content */}
-         <div className="relative flex items-center justify-center gap-6 py-16 px-6">
-        <Link
-          to="/inspection"
-          className="text-5xl font-light hover:underline hover:opacity-90 transition"
-        >
-          Book Inspection Now!!
-        </Link>
-      </div>
-      </section>
+            {/* Features Section - Enhanced */}
+            <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-96 h-96 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow"></div>
+                
+                <div className="max-w-7xl mx-auto px-6">
+                    <div className="flex flex-col lg:flex-row gap-16 items-center">
+                        <div className="lg:w-1/2">
+                            <div className="relative group">
+                                <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+                                <img 
+                                    src={House4} 
+                                    alt="The Naples Estate Luxury Building" 
+                                    className="relative w-full h-96 lg:h-[500px] object-cover rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
+                                />
+                            </div>
+                        </div>
 
-      <a 
-        href="http://wa.me/2348075161213"
-        target="_blank" // Opens the chat in a new tab
-        rel="noopener noreferrer"
-        className="
-          fixed 
-          bottom-6 
-          right-6 
-          bg-white 
-          rounded-full 
-          p-2 
-          shadow-2xl 
-          z-50 
-          transition-transform 
-          duration-300 
-          hover:scale-110
-        "
-        aria-label="Chat with us on WhatsApp"
-      >
-        <FontAwesomeIcon 
-          icon={faWhatsapp} 
-          className="text-6xl" // Large size for visibility
-          style={{ color: WHATSAPP_GREEN }}
-        />
-      </a>
+                        <div className="lg:w-1/2">
+                            <div className={`transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+                                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text mb-8 text-center lg:text-left">
+                                    Why Choose The Naples Estate?
+                                </h2>
+                                
+                                <div className="space-y-6">
+                                    {features.map((feature, index) => (
+                                        <div 
+                                            key={index}
+                                            className="flex items-start space-x-4 p-4 rounded-2xl bg-white/50 backdrop-blur-sm border border-gray-200 shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300"
+                                        >
+                                            <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center shadow-lg">
+                                                <span className="text-white text-lg font-bold">✓</span>
+                                            </div>
+                                            <span className="text-lg md:text-xl text-gray-800 font-medium pt-2">
+                                                {feature}
+                                            </span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            {/* Progress Section - Enhanced */}
+            <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50 relative overflow-hidden">
+                <div className="absolute -left-20 -top-20 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-float-slow"></div>
+                
+                <div className="max-w-6xl mx-auto px-6 text-center">
+                    <div className={`transform transition-all duration-1000 delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+                        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text mb-8">
+                            We've Come A Long Way
+                        </h2>
+                        <p className="text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
+                            Building dreams and creating lasting legacies in the heart of Arepo
+                        </p>
 
+                        <div className="relative group max-w-4xl mx-auto">
+                            <div className="absolute -inset-6 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+                            <img
+                                src={House4}
+                                alt="Our journey and progress"
+                                className="relative w-full h-96 object-cover rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        
+                        <p className="text-xl md:text-2xl text-gray-700 mt-12 font-light italic max-w-3xl mx-auto">
+                            Massive thanks to our visionary investors who believed in their dream unit with Light Way Homes - even before they saw it!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Urgency Section - Enhanced */}
+            <section className="py-20 bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50 relative overflow-hidden">
+                <div className="absolute -right-20 -bottom-20 w-96 h-96 bg-red-200 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-pulse-medium"></div>
+                
+                <div className="max-w-6xl mx-auto px-6 text-center">
+                    <div className={`transform transition-all duration-1000 delay-1100 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+                        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-transparent bg-gradient-to-r from-red-600 via-orange-600 to-yellow-600 bg-clip-text mb-8">
+                            Time Is Running Out!
+                        </h2>
+                        <p className="text-3xl md:text-4xl text-gray-800 mb-12 font-semibold">
+                            The Longer You Wait, The More You Miss
+                        </p>
+
+                        <div className="relative group max-w-4xl mx-auto mb-12">
+                            <div className="absolute -inset-6 bg-gradient-to-r from-red-600 to-orange-600 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+                            <img
+                                src={House2}
+                                alt="Don't miss this opportunity"
+                                className="relative w-full h-96 object-cover rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
+                            />
+                        </div>
+                        
+                        <p className="text-2xl md:text-3xl text-gray-700 mb-8 font-medium">
+                            ⚡ Limited Units Available ⚡
+                        </p>
+                        <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                            Book your inspection today. These premium units won't wait for long. Secure your dream home before it's too late!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Final Fancy Button */}
+            <FancyInspectionButton />
+
+            {/* Floating WhatsApp Button - Enhanced */}
+            <a 
+                href="https://wa.me/2348075161213"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="fixed bottom-8 right-8 z-50 group"
+                aria-label="Chat with us on WhatsApp"
+            >
+                <div className="relative">
+                    <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-75"></div>
+                    <div className="relative bg-white rounded-full p-4 shadow-2xl transform group-hover:scale-110 transition-all duration-300 border-2 border-green-200">
+                        <FontAwesomeIcon 
+                            icon={faWhatsapp} 
+                            className="text-5xl"
+                            style={{ color: WHATSAPP_GREEN }}
+                        />
+                    </div>
+                    <div className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full animate-bounce">
+                        LIVE
+                    </div>
+                </div>
+            </a>
         </>
-        
-    )
+    );
 }
-export default LandingPage
+
+export default LandingPage;
