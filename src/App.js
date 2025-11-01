@@ -52,8 +52,8 @@ function App() {
         )
       }
       <Routes>
-        <Route path="/landing-page" element={<LandingPage />} />
-        <Route path="/landing-page2" element={<LandingPage2 />} />
+        <Route path="/Naples-landing-page" element={<LandingPage />} />
+        <Route path="/Novara-landing-page" element={<LandingPage2 />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs testimonials={data.testimonials} teams={data.teams} />} />
         <Route path="/contact" element={<Contact />} />

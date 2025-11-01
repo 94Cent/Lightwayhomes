@@ -7,6 +7,8 @@ import LWH2 from "../assets/images/LWH location.jpg";
 import LWH3 from "../assets/images/LWH PLOT.jpg";
 import LWH4 from "../assets/images/LWH REASONS.jpg";
 import LWH5 from "../assets/images/LWH ALLOCATION.jpg";
+import LWH6 from "../assets/images/LWH PLOT1.jpg";
+import LWH7 from "../assets/images/LWH PLOT2.jpg";
 import TneDupelex from "../assets/images/TNE 4 BED DUPLEX2.jpeg"
 import House1 from "../assets/images/House1.jpeg"
 import House2 from "../assets/images/House2.jpeg"
@@ -70,7 +72,7 @@ function LandingPage() {
                 
                 <Link
                     to="/inspection"
-                    className="relative group inline-flex items-center justify-center px-6 py-4 md:px-20 md:py-12 text-lg md:text-5xl font-bold md:font-extrabold text-white bg-gradient-to-br from-green-600 via-blue-600 to-purple-600 rounded-2xl md:rounded-4xl shadow-xl md:shadow-2xl hover:shadow-2xl md:hover:shadow-4xl transform hover:scale-105 transition-all duration-500 ease-out hover:from-green-700 hover:via-blue-700 hover:to-purple-700 overflow-hidden border-2 md:border-4 border-white/30 w-full max-w-xs md:max-w-none mx-4"
+                    className="relative group inline-flex items-center justify-center px-6 py-4 md:px-20 md:py-12 text-xl md:text-5xl font-bold md:font-extrabold text-white bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 rounded-2xl md:rounded-4xl shadow-xl md:shadow-2xl hover:shadow-2xl md:hover:shadow-4xl transform hover:scale-105 transition-all duration-500 ease-out hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 overflow-hidden border-2 md:border-4 border-white/30 w-full max-w-xs md:max-w-none mx-4"
                 >
                     {/* Animated background shine effect */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-12 translate-x-[-150%] group-hover:translate-x-[150%] transition-transform duration-1500 ease-out"></div>
@@ -135,7 +137,7 @@ function LandingPage() {
             
             <Link
                 to="/inspection" 
-                className="inline-flex items-center px-6 py-3 md:px-12 md:py-6 text-base md:text-xl lg:text-2xl font-semibold text-white bg-gradient-to-r from-green-600 to-blue-600 rounded-xl md:rounded-2xl shadow-lg md:shadow-2xl hover:shadow-xl md:hover:shadow-3xl transform hover:scale-105 transition-all duration-300 border-2 border-white/30 hover:border-white/50 mx-4 md:mx-0"
+                className="inline-flex items-center px-6 py-3 md:px-12 md:py-6 text-base md:text-xl lg:text-2xl font-semibold text-white bg-gradient-to-r from-green-600 to-purple-600 rounded-xl md:rounded-2xl shadow-lg md:shadow-2xl hover:shadow-xl md:hover:shadow-3xl transform hover:scale-105 transition-all duration-300 border-2 border-white/30 hover:border-white/50 mx-4 md:mx-0"
             >
                 Book Inspection Now!!
                 <svg className="w-4 h-4 md:w-6 md:h-6 ml-2 md:ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -159,7 +161,7 @@ function LandingPage() {
                 
                 <div className="max-w-7xl mx-auto px-6">
                     <div className={`text-center mb-16 transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-                        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-transparent bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 bg-clip-text mb-8">
+                        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-transparent bg-gradient-to-r from-purple-600 via-blue-600 to-pink-600 bg-clip-text mb-8">
                             Why This Location Matters
                         </h2>
                         <div className="w-32 h-1 bg-gradient-to-r from-green-400 to-blue-400 mx-auto rounded-full mb-12"></div>
@@ -167,7 +169,7 @@ function LandingPage() {
 
                     <div className="relative mb-16">
                         <Slider {...settings}>
-                            {[LWH2, LWH, LWH3, LWH4].map((image, index) => (
+                            {[LWH2, LWH, LWH6, LWH4].map((image, index) => (
                                 <div key={index} className="relative group">
                                     <div className="relative h-96 md:h-[600px] lg:h-[700px] overflow-hidden rounded-3xl shadow-2xl">
                                         <img 
@@ -263,7 +265,7 @@ function LandingPage() {
 
                         <div className="lg:w-1/2">
                             <div className={`transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-                                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text mb-8 text-center lg:text-left">
+                                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-gradient-to-r from-purple-600 via-blue-600 to-pink-600 bg-clip-text mb-8 text-center lg:text-left">
                                     Available Plots
                                 </h2>
                                 
@@ -294,14 +296,14 @@ function LandingPage() {
                 
                 <div className="max-w-6xl mx-auto px-6 text-center">
                     <div className={`transform transition-all duration-1000 delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-                        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-transparent bg-gradient-to-r from-blue-600 via-green-600 to-purple-600 bg-clip-text mb-8">
+                        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-transparent bg-gradient-to-r from-purple-600 via-blue-600 to-pink-600 bg-clip-text mb-8">
                             Development Features & Value
                         </h2>
 
                         <div className="relative group max-w-4xl mx-auto mb-12">
                             <div className="absolute -inset-6 bg-gradient-to-r from-blue-600 to-green-600 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
                             <img
-                                src={House4}
+                                src={LWH7}
                                 alt="Novara Court Development Features"
                                 className="relative w-full h-96 object-cover rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
                             />
@@ -322,7 +324,7 @@ function LandingPage() {
                 
                 <div className="max-w-6xl mx-auto px-6 text-center">
                     <div className={`transform transition-all duration-1000 delay-1100 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-                        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-transparent bg-gradient-to-r from-purple-600 via-blue-600 to-green-600 bg-clip-text mb-8">
+                        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-transparent bg-gradient-to-r from-purple-600 via-blue-600 to-pink-600 bg-clip-text mb-8">
                             Why It's the Smart Move
                         </h2>
 
@@ -350,7 +352,7 @@ function LandingPage() {
                 
                 <div className="max-w-6xl mx-auto px-6 text-center">
                     <div className={`transform transition-all duration-1000 delay-1300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-                        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-transparent bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text mb-8">
+                        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-transparent bg-gradient-to-r from-purple-600 via-blue-600 to-pink-600 bg-clip-text mb-8">
                             Ready to Join Our Community?
                         </h2>
                         <p className="text-2xl md:text-3xl text-gray-600 mb-12 max-w-4xl mx-auto">

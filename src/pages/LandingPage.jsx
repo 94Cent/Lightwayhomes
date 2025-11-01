@@ -119,7 +119,7 @@ function LandingPage() {
                 />
                 <div className="absolute inset-0 z-20 flex items-center justify-center">
                     <div className={`text-center text-white px-6 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-                        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent">
+                        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text ">
                             THE NAPLES ESTATE
                         </h1>
                         <p className="text-2xl md:text-3xl lg:text-4xl font-light mb-8 italic">
@@ -190,7 +190,7 @@ function LandingPage() {
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                         <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
-                                            <h4 className="text-2xl md:text-3xl font-bold mb-2">Luxury Unit {index + 1}</h4>
+                                            <h4 className="text-2xl md:text-3xl font-bold mb-2">Luxury Unit</h4>
                                             <p className="text-lg opacity-90">Experience premium living at its finest</p>
                                         </div>
                                     </div>
