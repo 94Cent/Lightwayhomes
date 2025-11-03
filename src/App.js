@@ -23,6 +23,7 @@ import AutoScroll from "components/AutoScroll";
 import LandingPage from "pages/LandingPage";
 import InspectionPage from "pages/InspectionPage";
 import LandingPage2 from "pages/LandingPage2";
+import PdfLandingPage from "pages/PdfLandingPage";
 
 function App() {
   const location = useLocation();
@@ -54,6 +55,7 @@ function App() {
       <Routes>
         <Route path="/landing-page" element={<LandingPage />} />
         <Route path="/landing-page2" element={<LandingPage2 />} />
+        <Route path="/pdflanding-page" element={<PdfLandingPage />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs testimonials={data.testimonials} teams={data.teams} />} />
         <Route path="/contact" element={<Contact />} />
