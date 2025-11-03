@@ -12,12 +12,25 @@ const Header = () => {
   };
   return (
     <header className="shadow-md bg-white">
-      <div className="container mx-auto xl:px-12 md:px-6 px-4 py-4 flex justify-between items-center text-purple">
-        <Link to="/" className="text-2xl text-purple">
-        <img src={LogoColoured} alt="Logo" className="w-28 h-25" />
-        </Link>
+  <div className="container mx-auto xl:px-12 md:px-6 px-4 py-3 md:py-4 flex justify-between items-center text-purple">
+    <Link to="/" className="flex items-center">
+      <img 
+        src={LogoColoured} 
+        alt="Logo" 
+        className="
+          w-24 h-16     /* Mobile: 96px × 64px */
+          sm:w-28 sm:h-18 /* Small tablets: 112px × 72px */
+          md:w-32 md:h-20 /* Tablets: 128px × 80px */
+          lg:w-36 lg:h-24 /* Desktops: 144px × 96px */
+          xl:w-40 xl:h-28 /* Large desktops: 160px × 112px */
+          object-contain /* Prevents stretching */
+          transition-all duration-300 /* Smooth scaling */
+        " 
+      />
+    </Link>
 
-        <Navbar />
+    <Navbar />
+  
         <div className="md:flex hidden gap-x-1 justify-center item-center flex-row-reverse my-auto text-purple border-[1.5px] border-purple rounded-[10px] py-2 px-3">
           <a href="tel:+2348075161213" className="">
             +2348075161213

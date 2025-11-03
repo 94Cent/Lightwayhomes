@@ -7,9 +7,8 @@ function AppointmentForm(){
         email: '',
         phoneNumber: '',
         estate: 'Select Estate',
-        category: 'Select Category',
         date: '',
-        pickupLocation: 'Office',
+        pickupLocation: 'Select Location',
         time: '09:00',
         message: ''
     });
@@ -109,26 +108,8 @@ function AppointmentForm(){
                         required
                         className="w-full border border-gray-300 rounded-lg p-3 bg-white focus:outline-none focus:ring-2 focus:ring-purple">
                             <option disabled value="Select Estate">Select Estate</option>
-                            <option>Pineville</option>
-                            <option>Palm Meadows</option>
-                            <option>Golden Gates</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label htmlFor="category" className="block text-gray-800 font-semibold mb-2">
-                              Category <span className="text-red-500">*</span>
-                        </label>
-                        <select 
-                        id="category"
-                        name="Category"
-                        value={formData.category}
-                        onChange={handleChange}
-                        required
-                        className="w-full border border-gray-300 rounded-lg p-3 bg-white focus:outline-none focus:ring-2 focus:ring-purple">
-                            <option disabled value="Select Category">Select Category</option>
-                            <option>Luxury</option>
-                            <option>Affordable</option>
+                            <option>Naples Estate</option>
+                            <option>Novara Court</option>
                         </select>
                     </div>
 
@@ -157,6 +138,7 @@ function AppointmentForm(){
                         onChange={handleChange}
                         required
                         className="w-full border border-gray-300 rounded-lg p-3 bg-white focus:outline-none focus:ring-2 focus:ring-purple">
+                           <option disabled value="Select Location">Select Location</option>
                             <option>Office</option>
                             <option>Arepo</option>
                             <option>Berger</option>
