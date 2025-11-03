@@ -53,14 +53,10 @@ function App() {
         )
       }
       <Routes>
-<<<<<<< HEAD
-        <Route path="/landing-page" element={<LandingPage />} />
-        <Route path="/landing-page2" element={<LandingPage2 />} />
         <Route path="/pdflanding-page" element={<PdfLandingPage />} />
-=======
+
         <Route path="/Naples-landing-page" element={<LandingPage />} />
         <Route path="/Novara-landing-page" element={<LandingPage2 />} />
->>>>>>> 56fb99831039810f995e6e8abba20433ecd83757
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs testimonials={data.testimonials} teams={data.teams} />} />
         <Route path="/contact" element={<Contact />} />
