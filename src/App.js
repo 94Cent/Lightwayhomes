@@ -24,6 +24,7 @@ import LandingPage from "pages/LandingPage";
 import InspectionPage from "pages/InspectionPage";
 import LandingPage2 from "pages/LandingPage2";
 import SuccessPage from "pages/SuccessPage";
+import PdfLandingPage from "pages/PdfLandingPage";
 
 function App() {
   const location = useLocation();
@@ -53,6 +54,8 @@ function App() {
         )
       }
       <Routes>
+        <Route path="/pdflanding-page" element={<PdfLandingPage />} />
+
         <Route path="/Naples-landing-page" element={<LandingPage />} />
         <Route path="/Novara-landing-page" element={<LandingPage2 />} />
         <Route path="/" element={<Home />} />
