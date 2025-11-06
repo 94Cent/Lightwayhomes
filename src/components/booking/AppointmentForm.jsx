@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function AppointmentForm(){
-    // 1. State only needed to manage form field values
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
@@ -13,9 +13,8 @@ function AppointmentForm(){
         message: ''
     });
 
-    // We no longer need isSubmitting or submitStatus!
+    const navigate = useNavigate();
 
-    // 2. Generic change handler to update state for any input
     const handleChange = (e) => {
         const { id, value } = e.target;
         setFormData(prevData => ({
@@ -23,9 +22,20 @@ function AppointmentForm(){
             [id]: value
         }));
     };
-    
-    // We no longer need the complex handleSubmit function!
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        
+        // Submit the form data to FormSubmit
+        const form = e.target;
+        form.submit();
+        
+        // Navigate to success page after a brief delay
+        setTimeout(() => {
+            navigate('/success');
+        }, 100);
+    };
+    
     return(
         <>
           <section className="py-10 px-6 md:px-16 rounded-xl shadow-lg m-4 max-w-7xl mx-auto">
@@ -38,16 +48,18 @@ function AppointmentForm(){
                 </div>
 
                 <form 
-                    action="https://formsubmit.co/lwh.investment@gmail.com" 
+                    onSubmit={handleSubmit}
+                    action="https://formsubmit.co/info.lightwayhomesltd@gmail.com" 
                     method="POST" 
                     className="grid grid-cols-1 md:grid-cols-2 gap-6"
                 >
                     
                     <input type="hidden" name="_subject" value="New Inspection Booking Request" />
-                    
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_template" value="table" />
 
-                    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" /> 
-
+                    {/* Remove the _next redirect since we're handling it in React */}
+                    {/* <input type="hidden" name="_next" value="https://www.lightwayhomesltd.com/contact_successpage.html"></input> */}
 
                     <div>
                         <label htmlFor="fullName" className="block text-gray-800 font-semibold mb-2">
@@ -177,7 +189,7 @@ function AppointmentForm(){
                     <div className="text-center mt-4 md:col-span-2">
                         <button
                             type="submit"
-                            className="bg-purple text-white font-semibold py-3 px-12 rounded-lg shadow-lghover:bg-purple-800 hover:border-purple-800 hover:shadow-lg transition duration-300 flex items-center justify-center mx-auto"
+                            className="bg-purple text-white font-semibold py-3 px-12 rounded-lg shadow-lg hover:bg-purple-800 hover:border-purple-800 hover:shadow-xl transition-all duration-300 flex items-center justify-center mx-auto transform hover:scale-105"
                         >
                             Book Inspection
                         </button>
@@ -188,4 +200,5 @@ function AppointmentForm(){
         </>
     )
 }
-export default AppointmentForm
+
+export default AppointmentForm;
