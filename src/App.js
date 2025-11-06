@@ -54,7 +54,7 @@ function App() {
         )
       }
       <Routes>
-        <Route path="/pdflanding-page" element={<PdfLandingPage />} />
+        <Route path="/pdf-page" element={<PdfLandingPage />} />
 
         <Route path="/Naples-landing-page" element={<LandingPage />} />
         <Route path="/Novara-landing-page" element={<LandingPage2 />} />
