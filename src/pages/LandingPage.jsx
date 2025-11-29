@@ -272,7 +272,7 @@ function LandingPage() {
 
                         <div className="lg:w-1/2">
                             <div className={`transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-                                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text mb-8 text-center lg:text-left">
+                                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text mb-8 text-center lg:text-left">
                                     Why Choose The Naples Estate?
                                 </h2>
                                 

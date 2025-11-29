@@ -23,6 +23,7 @@ import AutoScroll from "components/AutoScroll";
 import LandingPage from "pages/LandingPage";
 import InspectionPage from "pages/InspectionPage";
 import LandingPage2 from "pages/LandingPage2";
+import SuccessPage from "pages/SuccessPage";
 import PdfLandingPage from "pages/PdfLandingPage";
 import Blog from "pages/Blog"
 
@@ -54,7 +55,7 @@ function App() {
         )
       }
       <Routes>
-        <Route path="/pdflanding-page" element={<PdfLandingPage />} />
+        <Route path="/pdf-page" element={<PdfLandingPage />} />
 
         <Route path="/Naples-landing-page" element={<LandingPage />} />
         <Route path="/Novara-landing-page" element={<LandingPage2 />} />
@@ -64,6 +65,7 @@ function App() {
         <Route path="/career" element={<Careers />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/inspection" element={<InspectionPage />} />
+        <Route path="/success" element={<SuccessPage />} />
         <Route path="/projects/:name" element={<WebProjectPage projects={data.projects} />} />
         <Route path="/projects-update/:name" element={<ProjectUpdate project={data.projectsUpdate} />} />
         <Route path="/admin/auth/login" element={<AdminLogin />} />
