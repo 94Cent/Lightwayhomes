@@ -24,6 +24,7 @@ import LandingPage from "pages/LandingPage";
 import InspectionPage from "pages/InspectionPage";
 import LandingPage2 from "pages/LandingPage2";
 import PdfLandingPage from "pages/PdfLandingPage";
+import Blog from "pages/Blog"
 
 function App() {
   const location = useLocation();
@@ -61,6 +62,7 @@ function App() {
         <Route path="/about" element={<AboutUs testimonials={data.testimonials} teams={data.teams} />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/career" element={<Careers />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/inspection" element={<InspectionPage />} />
         <Route path="/projects/:name" element={<WebProjectPage projects={data.projects} />} />
         <Route path="/projects-update/:name" element={<ProjectUpdate project={data.projectsUpdate} />} />
