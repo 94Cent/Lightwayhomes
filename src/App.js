@@ -11,6 +11,7 @@ import ProjectUpdate from "pages/ProjectUpdate";
 import Header from "components/header/Header";
 import ScrollToTopButton from "components/ScrollToTopButton";
 import Reservation from "pages/admin/Reservation";
+import AdminBlog from "pages/admin/AdminBlog";
 import AdminLogin from "pages/admin/AdminLogin";
 import AdminSignup from "pages/admin/AdminSignup";
 import AdminProjects from "pages/admin/AdminProjects";
@@ -26,6 +27,7 @@ import LandingPage2 from "pages/LandingPage2";
 import SuccessPage from "pages/SuccessPage";
 import PdfLandingPage from "pages/PdfLandingPage";
 import Blog from "pages/Blog"
+import BlogDetails from "pages/BlogDetails"
 
 function App() {
   const location = useLocation();
@@ -47,6 +49,7 @@ function App() {
               <Link to="/admin" className={isActive("/admin")}>Home</Link>
               <Link to="/admin/projects" className={isActive("/admin/projects")}>Projects</Link>
               <Link to="/admin/reservations" className={isActive("/admin/reservations")}>Reservations</Link>
+              <Link to="/admin/blogs" className={isActive("/admin/blogs")}>Blogs</Link>
             </div>
             <div className="md:block hidden"></div>
           </div>
@@ -64,10 +67,13 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/career" element={<Careers />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogDetails />} />
         <Route path="/inspection" element={<InspectionPage />} />
         <Route path="/success" element={<SuccessPage />} />
         <Route path="/projects/:name" element={<WebProjectPage projects={data.projects} />} />
+        <Route path="/blogs/:name" element={<WebProjectPage blogs={data.blogs} />} />
         <Route path="/projects-update/:name" element={<ProjectUpdate project={data.projectsUpdate} />} />
+        <Route path="/blogs-update/:name" element={<ProjectUpdate project={data.blogsUpdate} />} />
         <Route path="/admin/auth/login" element={<AdminLogin />} />
         <Route path="/admin/auth/signup" element={<AdminSignup />} />
         <Route path="/admin/reservations" element={
@@ -80,6 +86,12 @@ function App() {
             <AdminProjects />
           </ProtectedRoute>
         } />
+         <Route path="/admin/blogs" element={
+  <ProtectedRoute>
+    <AdminBlog />
+  </ProtectedRoute>
+} />
+
         <Route path="/admin" element={
           <ProtectedRoute>
             <AdminDashboard />
